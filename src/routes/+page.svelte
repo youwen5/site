@@ -1,5 +1,6 @@
-<script>
-	import Footer from '$lib/components/Footer.svelte';
+<script lang="ts">
+	import Gpg from '$lib/components/Gpg.svelte';
+	import Socials from '$lib/components/Socials.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card';
 	import { ArrowRight, GithubLogo } from 'svelte-radix';
@@ -12,9 +13,9 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="background py-2">
-	<div class="container max-w-3xl mx-auto p-10">
-		<Typewriter mode="scramble" scrambleDuration={500}>
+<main class="background px-4">
+	<div class="container max-w-4xl 2xl:max-w-5xl mx-auto p-10">
+		<Typewriter mode="scramble" scrambleDuration={750}>
 			<h1 class="text-4xl md:text-6xl font-bold text-center tracking-tight mt-20">
 				👋 Hi, I'm Youwen.
 			</h1>
@@ -29,11 +30,11 @@
 			</Typewriter>
 			<br />
 			<Typewriter mode="scramble" scrambleDuration={1000}>
-				I'm interested in systems programming, web design, data science, and statistics.
+				Interested in systems programming, web design, data science, and statistics.
 			</Typewriter>
 		</div>
-		<span class="flex gap-2 justify-center my-8">
-			<Button href="/about" size="lg" class="text-xl">About Me</Button>
+		<span class="flex gap-2 justify-center my-8 flex-wrap">
+			<Button href="/about" size="lg" class="text-xl">More About Me</Button>
 			<Button
 				href="https://github.com/couscousdude"
 				target="_blank"
@@ -42,8 +43,8 @@
 				class="text-xl"><GithubLogo class="mr-2" />My GitHub</Button
 			>
 		</span>
-		<div class="grid sm:grid-cols-2 gap-4 grid-cols-1">
-			<Card.Root>
+		<div class="grid grid-cols-2 gap-4">
+			<Card.Root class="col-span-2 sm:col-span-1">
 				<Card.Header>
 					<Card.Title>Blog</Card.Title>
 				</Card.Header>
@@ -57,7 +58,7 @@
 					<Button variant="outline" href="/blog">Go<ArrowRight class="ml-2" /></Button>
 				</Card.Footer>
 			</Card.Root>
-			<Card.Root>
+			<Card.Root class="col-span-2 sm:col-span-1">
 				<Card.Header>
 					<Card.Title>Projects</Card.Title>
 				</Card.Header>
@@ -89,6 +90,18 @@
 						>
 					</span>
 				</Card.Footer>
+			</Card.Root>
+			<Card.Root class="col-span-2">
+				<Card.Header>
+					<Card.Title>Contact Me</Card.Title>
+				</Card.Header>
+				<Card.Content>
+					<h3>Find me on:</h3>
+					<Socials />
+					<Gpg>
+						<Button variant="outline" class="mt-4"><span class="mr-2">🔑</span> My GPG Key</Button>
+					</Gpg>
+				</Card.Content>
 			</Card.Root>
 		</div>
 	</div>

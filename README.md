@@ -13,6 +13,6 @@ bun install
 bun dev
 
 # for production:
-bun build
-bun start
+bun run build
+bun preview
 ```

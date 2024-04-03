@@ -25,7 +25,7 @@
 	});
 </script>
 
-<nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full">
+<nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full z-50">
 	<div class="container mx-auto flex justify-between items-center h-full gap-4">
 		{#if current === 'blog'}
 			<Coredump height="95%" href="/blog" />

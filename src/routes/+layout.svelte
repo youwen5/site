@@ -5,11 +5,14 @@
 	import '@fontsource/geist-sans/latin.css';
 	import '@fontsource/geist-mono/latin.css';
 	import Footer from '$lib/components/Footer.svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 </script>
 
+<Toaster />
 <ModeWatcher />
+
 <Navbar />
-<div class="px-4 pt-24">
+<div class="pt-20">
 	<slot />
 </div>
 
