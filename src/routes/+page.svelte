@@ -1,7 +1,112 @@
 <script>
-	import { faker } from '@faker-js/faker';
+	import Footer from '$lib/components/Footer.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import * as Card from '$lib/components/ui/card';
+	import { ArrowRight, GithubLogo } from 'svelte-radix';
+	import Typewriter from 'svelte-typewriter';
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-{faker.word.words(2000)}
+<svelte:head>
+	<title>Youwen Wu | Home</title>
+	<meta name="description" content="My personal website and blog." />
+	<meta name="author" content="Youwen Wu" />
+</svelte:head>
+
+<main class="background py-2">
+	<div class="container max-w-3xl mx-auto p-10">
+		<Typewriter mode="scramble" scrambleDuration={500}>
+			<h1 class="text-4xl md:text-6xl font-bold text-center tracking-tight mt-20">
+				👋 Hi, I'm Youwen.
+			</h1>
+		</Typewriter>
+		<div class="text-2xl md:text-3xl font-medium mt-10 text-center">
+			<Typewriter cursor mode="loop">
+				<p>Student.</p>
+				<p>Programmer.</p>
+				<p>Math enthusiast.</p>
+				<p>Musician.</p>
+				<p>Hacker.</p>
+			</Typewriter>
+			<br />
+			<Typewriter mode="scramble" scrambleDuration={1000}>
+				I'm interested in systems programming, web design, data science, and statistics.
+			</Typewriter>
+		</div>
+		<span class="flex gap-2 justify-center my-8">
+			<Button href="/about" size="lg" class="text-xl">About Me</Button>
+			<Button
+				href="https://github.com/couscousdude"
+				target="_blank"
+				variant="outline"
+				size="lg"
+				class="text-xl"><GithubLogo class="mr-2" />My GitHub</Button
+			>
+		</span>
+		<div class="grid sm:grid-cols-2 gap-4 grid-cols-1">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Blog</Card.Title>
+				</Card.Header>
+				<Card.Content>
+					<p>
+						Check out my blog, <strong>The Coredump</strong>, where I occasionally write about
+						computer science, math, and everything else on my mind.
+					</p>
+				</Card.Content>
+				<Card.Footer>
+					<Button variant="outline" href="/blog">Go<ArrowRight class="ml-2" /></Button>
+				</Card.Footer>
+			</Card.Root>
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Projects</Card.Title>
+				</Card.Header>
+				<Card.Content>
+					I'm currently working on:
+					<ul class="list-disc ml-4">
+						<li>
+							<a class="text-link" href="https://github.com/couscousdude/discard" target="_blank"
+								>discard</a
+							>, a lightweight self-generating flashcards app.
+						</li>
+						<li>
+							<a class="text-link" href="https://github.com/couscousdude/aural" target="_blank"
+								>aural</a
+							>, a no-frills Ollama client for interfacing with local LLMs using voice-to-text,
+							without any internet.
+						</li>
+					</ul>
+				</Card.Content>
+				<Card.Footer>
+					<span class="flex gap-2">
+						<Button variant="outline" href="/projects"
+							>My Projects<ArrowRight class="ml-2" /></Button
+						>
+						<Button
+							variant="secondary"
+							size="icon"
+							href="https://github.com/couscousdude?tab=repositories"><GithubLogo /></Button
+						>
+					</span>
+				</Card.Footer>
+			</Card.Root>
+		</div>
+	</div>
+</main>
+
+<style lang="postcss">
+	.background {
+		--dot-bg: theme('colors.background');
+		--dot-color: theme('colors.foreground');
+		--dot-size: 1px;
+		--dot-space: 22px;
+		background:
+			linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%)
+				center / var(--dot-space) var(--dot-space),
+			linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center /
+				var(--dot-space) var(--dot-space),
+			var(--dot-color);
+
+		--cursor-color: theme('colors.foreground');
+	}
+</style>

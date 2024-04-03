@@ -2,8 +2,4 @@
 	import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 </script>
 
-<svelte:head>
-	<title>Youwen Wu | About</title>
-</svelte:head>
-
 <UnderConstruction />

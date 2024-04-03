@@ -7,9 +7,15 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Youwen Wu</title>
+	<meta name="description" content="My personal website and blog." />
+	<meta name="author" content="Youwen Wu" />
+</svelte:head>
+
 <ModeWatcher />
 <Navbar />
-<div class="pb-24 px-4 pt-24">
+<div class="px-4 pt-24">
 	<slot />
 </div>
 

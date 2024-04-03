@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
+
 	export let height = '192';
 	export let width = 'auto';
 	export let href: string;
@@ -8,14 +10,15 @@
 	xmlns="http://www.w3.org/2000/svg"
 	version="1.1"
 	viewBox="0 0 2104 416"
-	class="diagram select-none hidden sm:block"
+	class="diagram select-none hidden sm:block font-mono"
 	text-anchor="middle"
-	font-family="monospace"
 	font-size="13px"
 	stroke-linecap="round"
 	fill="currentColor"
 	{height}
 	{width}
+	in:fly={{ x: -100, duration: 300, delay: 320 }}
+	out:fly={{ x: 100, duration: 300 }}
 >
 	<a {href}>
 		<path d="M 112,352 L 232,112" fill="none" stroke="black" />
