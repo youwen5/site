@@ -19,4 +19,4 @@ bun preview
 
 ## License
 
-The website's source code is licensed under the [MIT License](LICENSE). The contents my blog are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The website's source code is licensed under the [MIT License](LICENSE). The contents of my blog are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
