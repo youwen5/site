@@ -10,7 +10,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	version="1.1"
 	viewBox="0 0 2048 416"
-	class="diagram select-none font-mono"
+	class="diagram select-none font-mono logo"
 	text-anchor="middle"
 	font-size="13px"
 	stroke-linecap="round"
@@ -21,54 +21,54 @@
 	out:fly={{ x: 100, duration: 300 }}
 >
 	<a {href}>
-		<circle cx="936" cy="192" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="936" cy="208" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="944" cy="128" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="944" cy="272" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="952" cy="128" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="952" cy="272" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="960" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="960" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="968" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="968" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="176" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="192" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="208" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="224" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="976" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="984" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="984" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="992" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="992" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1000" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1000" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1008" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1008" cy="160" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1008" cy="240" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1008" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1016" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1016" cy="160" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1016" cy="240" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1016" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1024" cy="176" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1024" cy="192" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1024" cy="208" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1024" cy="224" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1032" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1032" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1040" cy="112" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1040" cy="288" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1048" cy="128" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1048" cy="272" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1056" cy="128" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1056" cy="272" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="176" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="192" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="208" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="224" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="240" r="6" class="opendot" fill="none" stroke="currentColor" />
-		<circle cx="1064" cy="256" r="6" class="opendot" fill="none" stroke="currentColor" />
+		<circle cx="936" cy="192" r="6" class="opendot" />
+		<circle cx="936" cy="208" r="6" class="opendot" />
+		<circle cx="944" cy="128" r="6" class="opendot" />
+		<circle cx="944" cy="272" r="6" class="opendot" />
+		<circle cx="952" cy="128" r="6" class="opendot" />
+		<circle cx="952" cy="272" r="6" class="opendot" />
+		<circle cx="960" cy="112" r="6" class="opendot" />
+		<circle cx="960" cy="288" r="6" class="opendot" />
+		<circle cx="968" cy="112" r="6" class="opendot" />
+		<circle cx="968" cy="288" r="6" class="opendot" />
+		<circle cx="976" cy="112" r="6" class="opendot" />
+		<circle cx="976" cy="176" r="6" class="opendot" />
+		<circle cx="976" cy="192" r="6" class="opendot" />
+		<circle cx="976" cy="208" r="6" class="opendot" />
+		<circle cx="976" cy="224" r="6" class="opendot" />
+		<circle cx="976" cy="288" r="6" class="opendot" />
+		<circle cx="984" cy="112" r="6" class="opendot" />
+		<circle cx="984" cy="288" r="6" class="opendot" />
+		<circle cx="992" cy="112" r="6" class="opendot" />
+		<circle cx="992" cy="288" r="6" class="opendot" />
+		<circle cx="1000" cy="112" r="6" class="opendot" />
+		<circle cx="1000" cy="288" r="6" class="opendot" />
+		<circle cx="1008" cy="112" r="6" class="opendot" />
+		<circle cx="1008" cy="160" r="6" class="opendot" />
+		<circle cx="1008" cy="240" r="6" class="opendot" />
+		<circle cx="1008" cy="288" r="6" class="opendot" />
+		<circle cx="1016" cy="112" r="6" class="opendot" />
+		<circle cx="1016" cy="160" r="6" class="opendot" />
+		<circle cx="1016" cy="240" r="6" class="opendot" />
+		<circle cx="1016" cy="288" r="6" class="opendot" />
+		<circle cx="1024" cy="176" r="6" class="opendot" />
+		<circle cx="1024" cy="192" r="6" class="opendot" />
+		<circle cx="1024" cy="208" r="6" class="opendot" />
+		<circle cx="1024" cy="224" r="6" class="opendot" />
+		<circle cx="1032" cy="112" r="6" class="opendot" />
+		<circle cx="1032" cy="288" r="6" class="opendot" />
+		<circle cx="1040" cy="112" r="6" class="opendot" />
+		<circle cx="1040" cy="288" r="6" class="opendot" />
+		<circle cx="1048" cy="128" r="6" class="opendot" />
+		<circle cx="1048" cy="272" r="6" class="opendot" />
+		<circle cx="1056" cy="128" r="6" class="opendot" />
+		<circle cx="1056" cy="272" r="6" class="opendot" />
+		<circle cx="1064" cy="176" r="6" class="opendot" />
+		<circle cx="1064" cy="192" r="6" class="opendot" />
+		<circle cx="1064" cy="208" r="6" class="opendot" />
+		<circle cx="1064" cy="224" r="6" class="opendot" />
+		<circle cx="1064" cy="240" r="6" class="opendot" />
+		<circle cx="1064" cy="256" r="6" class="opendot" />
 		<g class="text">
 			<text x="80" y="20">$$$$$</text>
 			<text x="80" y="36">$:::$</text>
@@ -250,3 +250,14 @@
 		</g>
 	</a>
 </svg>
+
+<style lang="postcss">
+	.opendot {
+		@apply stroke-zinc-400 dark:stroke-zinc-400 fill-none;
+	}
+	.logo {
+		& .text {
+			@apply fill-black dark:fill-white;
+		}
+	}
+</style>
