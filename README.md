@@ -1,6 +1,6 @@
 # coredump
 
-My personal website and its associated blog. Written in [SvelteKit](https://kit.svelte.dev) and [TailwindCSS](https://tailwindcss.com/).
+My personal website and its associated blog. Written in [SvelteKit](https://kit.svelte.dev) using [TailwindCSS](https://tailwindcss.com/) and components from [shadcn-svelte](https://www.shadcn-svelte.com/).
 
 ## Running locally
 

@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import { navigating } from '$app/stores';
 	import Coredump from '$lib/assets/Coredump.svelte';
+	import Separator from '../ui/separator/separator.svelte';
 
 	let current: 'blog' | 'about' | 'home' | 'projects' | string;
 
@@ -31,7 +32,7 @@
 		{:else}
 			<Name height="100%" href="/" />
 		{/if}
-		<div class="flex gap-14 justify-around align-middle">
+		<div class="flex gap-1 sm:gap-2 md:gap-4 lg:gap-14 justify-around align-middle">
 			<a
 				href="/"
 				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
@@ -64,7 +65,7 @@
 			</Button>
 		</div>
 	</div>
-	<hr />
+	<Separator />
 </nav>
 
 <style lang="postcss">
