@@ -1,4 +1,4 @@
-<main class="background w-full h-screen">
+<main class="dots-background w-full h-screen">
 	<div class="container max-w-3xl mx-auto p-10">
 		<h1 class="text-4xl md:text-5xl font-bold text-center tracking-tight mt-20">
 			🚧 Under Construction 🚧

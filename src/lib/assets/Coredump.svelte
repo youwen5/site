@@ -253,7 +253,8 @@
 
 <style lang="postcss">
 	.opendot {
-		@apply stroke-zinc-400 dark:stroke-zinc-400 fill-none;
+		/* @apply stroke-zinc-400 dark:stroke-zinc-400 fill-none; */
+		@apply stroke-zinc-400 dark:stroke-zinc-300 fill-none stroke-2;
 	}
 	.logo {
 		& .text {

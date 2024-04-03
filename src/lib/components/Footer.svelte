@@ -1,5 +1,4 @@
 <script>
-	import { GithubLogo } from 'svelte-radix';
 	import Separator from './ui/separator/separator.svelte';
 	import Socials from './Socials.svelte';
 </script>

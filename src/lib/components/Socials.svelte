@@ -61,14 +61,14 @@
 		</Popover.Trigger>
 		<Popover.Content>
 			<p>
-				You can reach my Gmail at <a class="text-link" href="mailto:youwenw@gmail.com"
+				You can reach my Gmail at <a class="link" href="mailto:youwenw@gmail.com"
 					>youwenw@gmail.com</a
 				>
 			</p>
 			<br />
 			<p>
 				Or, if you prefer, you can securely email me on Protonmail at <a
-					class="text-link"
+					class="link"
 					href="mailto:youwenw@protonmail.com">youwenw@protonmail.com</a
 				>
 			</p>

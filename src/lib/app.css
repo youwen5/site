@@ -34,6 +34,8 @@
 		--ring: 240 10% 3.9%;
 
 		--radius: 0.5rem;
+
+		--cursor-color: theme('colors.foreground');
 	}
 
 	.dark {
@@ -75,7 +77,22 @@
 	body {
 		@apply bg-background text-foreground;
 	}
-	.text-link {
+}
+
+@layer components {
+	.dots-background {
+		--dot-bg: theme('colors.background');
+		--dot-color: theme('colors.foreground');
+		--dot-size: 1px;
+		--dot-space: 22px;
+		background:
+			linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%)
+				center / var(--dot-space) var(--dot-space),
+			linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center /
+				var(--dot-space) var(--dot-space),
+			var(--dot-color);
+	}
+	.link {
 		@apply text-blue-500 dark:text-blue-600 hover:text-blue-600 dark:hover:text-blue-500 hover:underline visited:text-purple-500 dark:visited:text-purple-600;
 	}
 }

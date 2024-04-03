@@ -13,10 +13,10 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="background px-4">
+<main class="dots-background px-4">
 	<div class="container max-w-4xl 2xl:max-w-5xl mx-auto p-10">
 		<Typewriter mode="scramble" scrambleDuration={750}>
-			<h1 class="text-5xl sm:text-6xl font-bold text-center tracking-tight mt-20">
+			<h1 class="text-5xl sm:text-6xl font-bold text-center tracking-tight mt-14 sm:mt-20">
 				👋 Hi, I'm Youwen,
 			</h1>
 		</Typewriter>
@@ -66,13 +66,12 @@
 					I'm currently working on:
 					<ul class="list-disc ml-4">
 						<li>
-							<a class="text-link" href="https://github.com/couscousdude/discard" target="_blank"
+							<a class="link" href="https://github.com/couscousdude/discard" target="_blank"
 								>discard</a
 							>, a lightweight self-generating flashcards app.
 						</li>
 						<li>
-							<a class="text-link" href="https://github.com/couscousdude/aural" target="_blank"
-								>aural</a
+							<a class="link" href="https://github.com/couscousdude/aural" target="_blank">aural</a
 							>, a no-frills Ollama client for interfacing with local LLMs using voice-to-text,
 							without any internet.
 						</li>
@@ -108,18 +107,4 @@
 </main>
 
 <style lang="postcss">
-	.background {
-		--dot-bg: theme('colors.background');
-		--dot-color: theme('colors.foreground');
-		--dot-size: 1px;
-		--dot-space: 22px;
-		background:
-			linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%)
-				center / var(--dot-space) var(--dot-space),
-			linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center /
-				var(--dot-space) var(--dot-space),
-			var(--dot-color);
-
-		--cursor-color: theme('colors.foreground');
-	}
 </style>
