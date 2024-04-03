@@ -22,8 +22,8 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="container max-w-5xl mx-auto my-8">
-	<div class="mx-auto w-full min-w-0 mb-4">
+<main class="max-w-4xl my-8 mx-4 md:mx-auto">
+	<div class="w-full min-w-0 mb-4">
 		<div class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
 			<div class="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
 			<ChevronRight class="h-4 w-4" />

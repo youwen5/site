@@ -10,7 +10,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	version="1.1"
 	viewBox="0 0 2048 416"
-	class="diagram select-none font-mono hidden sm:block"
+	class="diagram select-none font-mono"
 	text-anchor="middle"
 	font-size="13px"
 	stroke-linecap="round"

@@ -5,17 +5,28 @@
 		GithubLogo,
 		LinkedinLogo,
 		DiscordLogo,
-		EnvelopeClosed
+		EnvelopeClosed,
+		ClipboardCopy
 	} from 'svelte-radix';
 	import * as Popover from '$lib/components/ui/popover';
 
 	export let center = false;
 
 	import Button from './ui/button/button.svelte';
-	import PopoverContent from './ui/popover/popover-content.svelte';
+	import { toast } from 'svelte-sonner';
+
+	const copyDiscord = async () => {
+		try {
+			await navigator.clipboard.writeText('couscousdude');
+			toast('Copied Discord username to clipboard');
+		} catch (e) {
+			console.error(e);
+			toast('Failed to copy Discord username to clipboard');
+		}
+	};
 </script>
 
-<div class="flex gap-2 mt-2" class:justify-center={center}>
+<div class="flex gap-2 mt-2 flex-wrap" class:justify-center={center}>
 	<Button variant="ghost" size="icon" href="https://github.com/couscousdude">
 		<GithubLogo />
 	</Button>
@@ -37,6 +48,9 @@
 		<Popover.Content>
 			Discord (for some reason) doesn't support direct links to profiles. You can find me on discord
 			with my username, <strong>@couscousdude</strong>.
+			<Button variant="outline" size="icon" on:click={copyDiscord} class="mt-2"
+				><ClipboardCopy /></Button
+			>
 		</Popover.Content>
 	</Popover.Root>
 	<Popover.Root>

@@ -26,13 +26,13 @@
 </script>
 
 <nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full z-50">
-	<div class="container mx-auto flex justify-between items-center h-full gap-4">
+	<div class="container mx-auto flex justify-between items-center h-full gap-4 overflow-x-auto">
 		{#if current === 'blog'}
 			<Coredump height="95%" href="/blog" />
 		{:else}
 			<Name height="100%" href="/" />
 		{/if}
-		<div class="flex gap-1 sm:gap-2 md:gap-4 lg:gap-14 justify-around align-middle">
+		<div class="flex gap-4 lg:gap-14 justify-around align-middle">
 			<a
 				href="/"
 				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"

@@ -16,9 +16,7 @@
 <main class="background px-4">
 	<div class="container max-w-4xl 2xl:max-w-5xl mx-auto p-10">
 		<Typewriter mode="scramble" scrambleDuration={750}>
-			<h1 class="text-4xl md:text-6xl font-bold text-center tracking-tight mt-20">
-				👋 Hi, I'm Youwen,
-			</h1>
+			<h1 class="text-6xl font-bold text-center tracking-tight mt-20">👋 Hi, I'm Youwen,</h1>
 		</Typewriter>
 		<div class="text-2xl md:text-3xl font-medium mt-10 text-center">
 			<Typewriter cursor mode="loop">
