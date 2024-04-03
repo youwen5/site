@@ -13,8 +13,8 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="dots-background px-4">
-	<div class="container max-w-4xl 2xl:max-w-5xl mx-auto p-10">
+<main class="dots-background">
+	<div class="container max-w-5xl mx-auto py-10 px-4 sm:px-8">
 		<Typewriter mode="scramble" scrambleDuration={750}>
 			<h1 class="text-5xl sm:text-6xl font-bold text-center tracking-tight mt-14 sm:mt-20">
 				👋 Hi, I'm Youwen,
@@ -33,16 +33,16 @@
 				I'm interested in systems programming, web design, data science, and statistics.
 			</Typewriter>
 		</div>
-		<span class="flex gap-2 justify-center my-8 flex-wrap">
-			<Button href="/about" size="lg" class="text-xl">More About Me</Button>
+		<div class="flex flex-wrap gap-4 sm:gap-2 justify-center my-8">
+			<Button href="/about" size="lg" class="text-xl w-full sm:w-min">More About Me</Button>
 			<Button
 				href="https://github.com/couscousdude"
 				target="_blank"
 				variant="outline"
 				size="lg"
-				class="text-xl"><GithubLogo class="mr-2" />My GitHub</Button
+				class="text-xl w-full sm:w-min"><GithubLogo class="mr-2" />My GitHub</Button
 			>
-		</span>
+		</div>
 		<div class="grid grid-cols-2 gap-4">
 			<Card.Root class="col-span-2 sm:col-span-1">
 				<Card.Header>
