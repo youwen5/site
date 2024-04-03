@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	version="1.1"
 	viewBox="0 0 2104 416"
-	class="diagram select-none"
+	class="diagram select-none hidden sm:block"
 	text-anchor="middle"
 	font-family="monospace"
 	font-size="13px"

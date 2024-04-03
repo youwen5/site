@@ -24,22 +24,22 @@
 </script>
 
 <nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full">
-	<div class="container mx-auto flex justify-between items-center h-full">
-		<Name height="90%" href="/" />
+	<div class="container mx-auto flex justify-between items-center h-full gap-4">
+		<Name height="100%" href="/" />
 		<div class="flex gap-14 justify-around align-middle">
 			<a
 				href="/"
-				class="text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
+				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
 				class:selected={current === 'home'}>Home</a
 			>
 			<a
 				href="/about"
-				class="text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
+				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
 				class:selected={current === 'about'}>About</a
 			>
 			<a
 				href="/blog"
-				class="text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
+				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
 				class:selected={current === 'blog'}>Blog</a
 			>
 			<Button on:click={toggleMode} variant="outline" size="icon">
