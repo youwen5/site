@@ -8,7 +8,7 @@
 	import Coredump from '$lib/assets/Coredump.svelte';
 	import Separator from '../ui/separator/separator.svelte';
 
-	let current: 'blog' | 'about' | 'home' | 'projects' | string;
+	let current: 'blog' | 'about' | 'home' | 'portfolio' | string;
 
 	const updateCurrent = () => {
 		const path = window.location.pathname;
@@ -44,9 +44,9 @@
 				class:selected={current === 'about'}>About</a
 			>
 			<a
-				href="/projects"
+				href="/portfolio"
 				class="text-md sm:text-lg md:text-xl font-medium dark:text-zinc-50 text-zinc-700 px-4 py-1 rounded-3xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
-				class:selected={current === 'projects'}>Projects</a
+				class:selected={current === 'portfolio'}>Portfolio</a
 			>
 			<a
 				href="/blog"

@@ -16,3 +16,5 @@ bun dev
 bun run build
 bun preview
 ```
+
+## License

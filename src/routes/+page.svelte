@@ -79,13 +79,13 @@
 				</Card.Content>
 				<Card.Footer>
 					<span class="flex gap-2">
-						<Button variant="outline" href="/projects"
-							>My Projects<ArrowRight class="ml-2" /></Button
-						>
 						<Button
 							variant="secondary"
 							size="icon"
 							href="https://github.com/couscousdude?tab=repositories"><GithubLogo /></Button
+						>
+						<Button variant="outline" href="/portfolio"
+							>My Portfolio<ArrowRight class="ml-2" /></Button
 						>
 					</span>
 				</Card.Footer>
