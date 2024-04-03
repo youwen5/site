@@ -6,6 +6,11 @@
 	const error = $page.error ?? { message: 'unknown' };
 </script>
 
+<svelte:head>
+	<title>Error {error.message}</title>
+	<meta name="description" content="An error occurred. This page is unavailable." />
+</svelte:head>
+
 <main class="flex justify-center h-screen">
 	<div class="max-w-md p-8 rounded outline-primary outline-1 outline mt-20 h-min">
 		<h1 class="text-4xl font-bold mb-4">Oops!</h1>
