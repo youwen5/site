@@ -7,7 +7,7 @@
 
 	let doc = {
 		title: 'Test Post',
-		description: ''
+		description: 'An insightful and succinct blurb about the post.'
 	};
 
 	export let data: PageData;
@@ -25,12 +25,12 @@
 <main class="max-w-4xl my-8 mx-4 md:mx-auto">
 	<div class="w-full min-w-0 mb-4">
 		<div class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
-			<div class="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
+			<div class="overflow-hidden text-ellipsis whitespace-nowrap">The Coredump</div>
 			<ChevronRight class="h-4 w-4" />
 			<div class="font-medium text-foreground">{doc.title}</div>
 		</div>
 		<div class="space-y-2">
-			<h1 class={cn('scroll-m-20 text-4xl font-bold tracking-tight')}>
+			<h1 class={cn('scroll-m-20 text-5xl font-bold font-serif tracking-tight')}>
 				{doc.title}
 			</h1>
 			{#if doc.description}

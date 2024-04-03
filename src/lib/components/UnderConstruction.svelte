@@ -8,20 +8,3 @@
 		</div>
 	</div>
 </main>
-
-<style lang="postcss">
-	.background {
-		--dot-bg: theme('colors.background');
-		--dot-color: theme('colors.foreground');
-		--dot-size: 1px;
-		--dot-space: 22px;
-		background:
-			linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%)
-				center / var(--dot-space) var(--dot-space),
-			linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center /
-				var(--dot-space) var(--dot-space),
-			var(--dot-color);
-
-		--cursor-color: theme('colors.foreground');
-	}
-</style>

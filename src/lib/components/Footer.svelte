@@ -7,7 +7,7 @@
 	<Separator class="mb-4" />
 	<div class="flex justify-center flex-col gap-4">
 		<Socials center />
-		<p class="text-zinc-400 dark:text-zinc-700 text-center">
+		<p class="text-muted-foreground text-center">
 			&copy 2024 Youwen Wu | Built with <a
 				href="https://kit.svelte.dev"
 				target="_blank"

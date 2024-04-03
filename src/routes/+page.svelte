@@ -16,7 +16,7 @@
 <main class="dots-background">
 	<div class="container max-w-5xl mx-auto py-10 px-4 sm:px-8">
 		<Typewriter mode="scramble" scrambleDuration={750}>
-			<h1 class="text-5xl sm:text-6xl font-bold text-center tracking-tight mt-14 sm:mt-20">
+			<h1 class="text-5xl sm:text-6xl font-bold text-center mt-14 sm:mt-20 font-display">
 				👋 Hi, I'm Youwen,
 			</h1>
 		</Typewriter>
@@ -33,14 +33,15 @@
 				I'm interested in systems programming, web design, data science, and statistics.
 			</Typewriter>
 		</div>
-		<div class="flex flex-wrap gap-4 sm:gap-2 justify-center my-8">
-			<Button href="/about" size="lg" class="text-xl w-full sm:w-min">More About Me</Button>
+		<div class="flex flex-wrap gap-4 justify-center my-8">
+			<Button href="/about" size="lg" class="text-xl flex-grow sm:flex-grow-0">More About Me</Button
+			>
 			<Button
 				href="https://github.com/couscousdude"
 				target="_blank"
 				variant="outline"
 				size="lg"
-				class="text-xl w-full sm:w-min"><GithubLogo class="mr-2" />My GitHub</Button
+				class="text-xl flex-grow sm:flex-grow-0"><GithubLogo class="mr-2" />My GitHub</Button
 			>
 		</div>
 		<div class="grid grid-cols-2 gap-4">
