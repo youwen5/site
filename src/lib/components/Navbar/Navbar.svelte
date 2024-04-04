@@ -1,14 +1,13 @@
 <script lang="ts">
-	import { Sun, Moon } from 'svelte-radix';
-	import Button from '../ui/button/button.svelte';
-	import { toggleMode } from 'mode-watcher';
 	import Name from '$lib/assets/Name.svelte';
 	import { onMount } from 'svelte';
 	import { navigating } from '$app/stores';
 	import Coredump from '$lib/assets/Coredump.svelte';
 	import Separator from '../ui/separator/separator.svelte';
-	import * as Tooltip from '$lib/components/ui/tooltip';
 	import Drawer from './Drawer.svelte';
+	import ThemePicker from '../ThemePicker.svelte';
+	import Button from '../ui/button/button.svelte';
+	import { Moon, Sun } from 'svelte-radix';
 
 	let current: 'blog' | 'about' | 'home' | 'portfolio' | string;
 
@@ -56,25 +55,13 @@
 				class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors duration-200"
 				class:selected={current === 'blog'}>Blog</a
 			>
-			<Tooltip.Root openDelay={500}>
-				<Tooltip.Trigger asChild let:builder>
-					<Button
-						builders={[builder]}
-						on:click={toggleMode}
-						variant="outline"
-						size="icon"
-						class="my-1"
-					>
-						<Sun class="dark:hidden" />
-						<Moon class="hidden dark:block" />
-						<span class="sr-only">Toggle theme</span>
-					</Button>
-				</Tooltip.Trigger>
-				<Tooltip.Content>
-					<p class="dark:hidden">Too bright? Switch to dark mode</p>
-					<p class="hidden dark:block">Too dark? Turn on the lights</p>
-				</Tooltip.Content>
-			</Tooltip.Root>
+			<ThemePicker let:builder>
+				<Button builders={[builder]} variant="outline" size="icon" class="my-1">
+					<Sun class="dark:hidden" />
+					<Moon class="hidden dark:block" />
+					<span class="sr-only">Toggle theme</span>
+				</Button>
+			</ThemePicker>
 		</div>
 	</div>
 	<Separator />

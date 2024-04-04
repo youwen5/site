@@ -2,10 +2,10 @@
 	import Name from '$lib/assets/Name.svelte';
 	import { HamburgerMenu } from 'svelte-radix';
 	import { Drawer } from 'vaul-svelte';
-	import { toggleMode } from 'mode-watcher';
 	import Separator from '../ui/separator/separator.svelte';
 	import Button from '../ui/button/button.svelte';
 	import { Sun, Moon, Home, Person, File, Backpack } from 'svelte-radix';
+	import ThemePicker from '../ThemePicker.svelte';
 
 	let open: boolean = false;
 
@@ -74,19 +74,13 @@
 							>
 						</Drawer.Close>
 						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500 my-2" />
-						<Drawer.Close asChild let:builder>
-							<Button
-								variant="outline"
-								class="bg-accent dark:border-zinc-500"
-								size="lg"
-								on:click={toggleMode}
-								builders={[builder]}
-							>
+						<ThemePicker let:builder>
+							<Button variant="outline" size="lg" builders={[builder]}>
 								<Sun class="mr-4 dark:hidden" />
 								<Moon class="mr-4 hidden dark:block" />
-								Toggle Theme
+								Change Theme
 							</Button>
-						</Drawer.Close>
+						</ThemePicker>
 					</div>
 				</div>
 				<div class="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-zinc-300" />
