@@ -4,17 +4,17 @@ My personal website and its associated blog. Written in [SvelteKit](https://kit.
 
 ## Running locally
 
-Install [bun](https://bun.sh), clone and `cd` into the repository, then run:
+Install `pnpm`, clone and `cd` into the repository, then run:
 
 ```bash
-bun install
+pnpm install
 
 # for development:
-bun dev
+pnpm dev
 
 # for production:
-bun run build
-bun preview
+pnpm build
+pnpm preview
 ```
 
 ## License
