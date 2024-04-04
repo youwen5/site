@@ -27,21 +27,37 @@
 </script>
 
 <div class="flex gap-2 mt-2 flex-wrap" class:justify-center={center}>
-	<Button variant="ghost" size="icon" href="https://github.com/couscousdude">
+	<Button
+		class="hover:scale-110 transition-transform"
+		variant="ghost"
+		size="icon"
+		href="https://github.com/couscousdude"
+	>
 		<GithubLogo />
 	</Button>
-	<Button variant="ghost" size="icon" href="https://www.instagram.com/uncle_uwon/"
-		><InstagramLogo /></Button
+	<Button
+		class="hover:scale-110 transition-transform"
+		variant="ghost"
+		size="icon"
+		href="https://www.instagram.com/uncle_uwon/"><InstagramLogo /></Button
 	>
-	<Button variant="ghost" size="icon" href="https://twitter.com/couscousdude"
-		><TwitterLogo /></Button
+	<Button
+		class="hover:scale-110 transition-transform"
+		variant="ghost"
+		size="icon"
+		href="https://twitter.com/couscousdude"><TwitterLogo /></Button
 	>
-	<Button variant="ghost" size="icon" href="https://www.linkedin.com/in/youwen-wu-306221288/>">
+	<Button
+		class="hover:scale-110 transition-transform"
+		variant="ghost"
+		size="icon"
+		href="https://www.linkedin.com/in/youwen-wu-306221288/>"
+	>
 		<LinkedinLogo />
 	</Button>
 	<Popover.Root>
 		<Popover.Trigger>
-			<Button variant="ghost" size="icon">
+			<Button class="hover:scale-110 transition-transform" variant="ghost" size="icon">
 				<DiscordLogo />
 			</Button>
 		</Popover.Trigger>
@@ -55,7 +71,7 @@
 	</Popover.Root>
 	<Popover.Root>
 		<Popover.Trigger>
-			<Button variant="ghost" size="icon">
+			<Button class="hover:scale-110 transition-transform" variant="ghost" size="icon">
 				<EnvelopeClosed />
 			</Button>
 		</Popover.Trigger>

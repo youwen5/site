@@ -14,7 +14,7 @@
 <ModeWatcher />
 
 <Navbar />
-<div class="pt-20">
+<div class="pt-24">
 	<slot />
 </div>
 

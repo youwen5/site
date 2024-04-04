@@ -1,46 +1,93 @@
-<script>
+<script lang="ts">
 	import Name from '$lib/assets/Name.svelte';
 	import { HamburgerMenu } from 'svelte-radix';
 	import { Drawer } from 'vaul-svelte';
+	import { toggleMode } from 'mode-watcher';
 	import Separator from '../ui/separator/separator.svelte';
+	import Button from '../ui/button/button.svelte';
+	import { Sun, Moon, Home, Person, File, Backpack } from 'svelte-radix';
+
+	let open: boolean = false;
+
+	const close = () => {
+		open = false;
+	};
 </script>
 
-<Drawer.Root shouldScaleBackground direction="top">
-	<Drawer.Trigger class="md:hidden">
-		<HamburgerMenu class="icon border-1 border-primary" />
+<Drawer.Root shouldScaleBackground direction="top" bind:open>
+	<Drawer.Trigger asChild let:builder>
+		<Button variant="outline" size="icon" builders={[builder]} class="px-2 md:hidden">
+			<HamburgerMenu class="icon border-1 border-primary" />
+		</Button>
 	</Drawer.Trigger>
 	<Drawer.Portal>
 		<Drawer.Overlay class="fixed inset-0 bg-black/40" />
 		<Drawer.Content
-			class="fixed top-0 left-0 right-0 mb-24 flex flex-col rounded-b-2xl z-50 bg-accent"
+			class="fixed top-0 left-0 right-0 mb-24 flex flex-col rounded-b-2xl z-50 bg-accent dark:bg-zinc-900"
 		>
-			<div class="flex-1 rounded-b-2xl bg-accent p-4 shadow-xl dark:shadow-none">
+			<div class="flex-1 rounded-b-2xl bg-accent dark:bg-zinc-900 p-4 shadow-xl dark:shadow-none">
 				<div class="mx-auto max-w-md">
-					<Drawer.Title class="mb-4 font-medium">
+					<Drawer.Title class="font-medium">
 						<span class="px-2 flex justify-center">
 							<Name href="/" width="80vw" height="auto" />
 						</span>
-						<Separator class="h-1 rounded-3xl mt-1" />
+						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500" />
 					</Drawer.Title>
-					<p class="mb-2 text-zinc-600"></p>
-					<p class="mb-8 text-zinc-600">
-						It uses
-						<a
-							href="https://www.bits-ui.com/docs/components/dialog"
-							class="underline"
-							target="_blank"
-						>
-							Bits' Dialog primitive
-						</a>
-						under the hood and is inspired by
-						<a
-							href="https://twitter.com/devongovett/status/1674470185783402496"
-							class="underline"
-							target="_blank"
-						>
-							this tweet.
-						</a>
-					</p>
+					<div class="grid grid-cols-1 my-10 gap-2">
+						<Drawer.Close asChild let:builder>
+							<Button
+								variant="link"
+								href="/"
+								builders={[builder]}
+								class="pl-2 text-4xl tracking-tight font-serif dark:text-zinc-200 w-min"
+								><Home class="mr-2" />Home</Button
+							>
+						</Drawer.Close>
+						<Separator class="dark:bg-zinc-500" />
+						<Drawer.Close asChild let:builder>
+							<Button
+								variant="link"
+								href="/about"
+								builders={[builder]}
+								class="pl-2 text-4xl tracking-tight font-serif dark:text-zinc-200 w-min"
+								><Person class="mr-2" />About Me</Button
+							>
+						</Drawer.Close>
+						<Separator class="dark:bg-zinc-500" />
+						<Drawer.Close asChild let:builder>
+							<Button
+								variant="link"
+								href="/portfolio"
+								builders={[builder]}
+								class="pl-2 text-4xl tracking-tight font-serif dark:text-zinc-200 w-min"
+								><Backpack class="mr-2" />Portfolio</Button
+							>
+						</Drawer.Close>
+						<Separator class="dark:bg-zinc-500" />
+						<Drawer.Close asChild let:builder>
+							<Button
+								href="/blog"
+								variant="link"
+								builders={[builder]}
+								class="pl-2 text-4xl tracking-tight font-serif dark:text-zinc-200 w-min"
+								><File class="mr-2" />Blog</Button
+							>
+						</Drawer.Close>
+						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500 my-2" />
+						<Drawer.Close asChild let:builder>
+							<Button
+								variant="outline"
+								class="bg-accent dark:border-zinc-500"
+								size="lg"
+								on:click={toggleMode}
+								builders={[builder]}
+							>
+								<Sun class="mr-4 dark:hidden" />
+								<Moon class="mr-4 hidden dark:block" />
+								Toggle Theme
+							</Button>
+						</Drawer.Close>
+					</div>
 				</div>
 				<div class="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-zinc-300" />
 			</div>
