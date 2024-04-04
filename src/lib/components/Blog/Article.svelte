@@ -23,7 +23,7 @@
 		{/if}
 	</div>
 
-	<div class="markdown-body mt-8">
+	<div class="markdown-body mt-8 font-serif">
 		{@html content}
 	</div>
 </article>

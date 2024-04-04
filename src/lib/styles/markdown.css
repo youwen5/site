@@ -29,7 +29,7 @@
 	}
 
 	dl {
-		font-family: monospace, monospace;
+		font-family: monospace;
 	}
 	dl dt {
 		font-weight: bold;
@@ -87,7 +87,7 @@
 		padding: 1em;
 		overflow: auto;
 		font-size: 0.85rem;
-		font-family: monospace, monospace;
+		font-family: monospace;
 		border: 1px dashed rgba(250, 100, 50, 0.5);
 	}
 
@@ -95,7 +95,7 @@
 		margin: 1em 0;
 	}
 	figure figcaption {
-		font-family: monospace, monospace;
+		font-family: monospace;
 		font-size: 0.75em;
 		text-align: center;
 		color: grey;
@@ -114,7 +114,7 @@
 		@apply border-l-red-600 bg-red-100 dark:bg-red-900 dark:text-red-100;
 	}
 	.markdown-alert-title {
-		@apply flex items-center font-medium text-xl;
+		@apply flex items-center font-medium text-xl font-sans;
 	}
 	.markdown-alert-caution > .markdown-alert-title {
 		@apply text-red-600 fill-red-600 dark:text-red-100 dark:fill-red-100;

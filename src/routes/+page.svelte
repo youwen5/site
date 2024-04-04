@@ -88,9 +88,7 @@
 					</p>
 				</Card.Content>
 				<Card.Footer>
-					<Button variant="outline" href="/blog"
-						>Go to the Coredump<ArrowRight class="ml-2" /></Button
-					>
+					<Button variant="outline" href="/blog">Go to my blog<ArrowRight class="ml-2" /></Button>
 				</Card.Footer>
 			</Card.Root>
 			<Card.Root class="col-span-2">
