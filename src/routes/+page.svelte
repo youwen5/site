@@ -22,11 +22,11 @@
 		</Typewriter>
 		<div class="text-2xl md:text-3xl font-medium mt-10 text-center">
 			<Typewriter cursor mode="loop">
-				<p>a student.</p>
-				<p>a programmer.</p>
-				<p>a math enthusiast.</p>
-				<p>a musician.</p>
-				<p>a hacker.</p>
+				<h2>a student.</h2>
+				<h2>a programmer.</h2>
+				<h2>a math enthusiast.</h2>
+				<h2>a musician.</h2>
+				<h2>a hacker.</h2>
 			</Typewriter>
 			<br />
 			<Typewriter mode="scramble" scrambleDuration={1000}>

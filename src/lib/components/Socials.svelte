@@ -56,8 +56,13 @@
 		<LinkedinLogo />
 	</Button>
 	<Popover.Root>
-		<Popover.Trigger>
-			<Button class="hover:scale-110 transition-transform" variant="ghost" size="icon">
+		<Popover.Trigger asChild let:builder>
+			<Button
+				class="hover:scale-110 transition-transform"
+				variant="ghost"
+				size="icon"
+				builders={[builder]}
+			>
 				<DiscordLogo />
 			</Button>
 		</Popover.Trigger>
@@ -70,8 +75,13 @@
 		</Popover.Content>
 	</Popover.Root>
 	<Popover.Root>
-		<Popover.Trigger>
-			<Button class="hover:scale-110 transition-transform" variant="ghost" size="icon">
+		<Popover.Trigger asChild let:builder>
+			<Button
+				class="hover:scale-110 transition-transform"
+				variant="ghost"
+				size="icon"
+				builders={[builder]}
+			>
 				<EnvelopeClosed />
 			</Button>
 		</Popover.Trigger>
