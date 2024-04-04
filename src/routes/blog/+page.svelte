@@ -4,6 +4,7 @@
 	import type { PageData } from './$types.js';
 	// import { config } from '$lib/stores/index.js';
 	import { cn } from '$lib/utils.js';
+	import Article from '$lib/components/Blog/Article.svelte';
 
 	let doc = {
 		title: 'Test Post',
@@ -22,33 +23,6 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="max-w-4xl my-8 mx-4 md:mx-auto">
-	<div class="w-full min-w-0 mb-4">
-		<div class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
-			<div class="overflow-hidden text-ellipsis whitespace-nowrap">The Coredump</div>
-			<ChevronRight class="h-4 w-4" />
-			<div class="font-medium text-foreground">{doc.title}</div>
-		</div>
-		<div class="space-y-2">
-			<h1 class={cn('scroll-m-20 text-5xl font-bold font-serif tracking-tight')}>
-				{doc.title}
-			</h1>
-			{#if doc.description}
-				<p class="text-balance text-lg text-muted-foreground">
-					{doc.description}
-				</p>
-			{/if}
-		</div>
-
-		<!-- <div class="pb-12 pt-8 mx-auto"> -->
-		<!-- </div> -->
-		<!-- <div class="hidden text-sm xl:block">
-		<div class="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] overflow-hidden pt-4">
-			{#key $page.url.pathname}
-				<TableOfContents />
-			{/key}
-		</div>
-	</div> -->
-	</div>
-	{@html markdown}
+<main class="max-w-4xl md:mx-auto mx-4 mt-8 mb-14">
+	<Article title={doc.title} description={doc.description} content={markdown} />
 </main>

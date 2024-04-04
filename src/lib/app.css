@@ -82,7 +82,7 @@
 @layer components {
 	.dots-background {
 		--dot-bg: theme('colors.background');
-		--dot-color: theme('colors.foreground');
+		--dot-color: theme('colors.muted.foreground');
 		--dot-size: 1px;
 		--dot-space: 22px;
 		background:

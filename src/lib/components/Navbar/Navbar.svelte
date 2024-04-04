@@ -7,6 +7,8 @@
 	import { navigating } from '$app/stores';
 	import Coredump from '$lib/assets/Coredump.svelte';
 	import Separator from '../ui/separator/separator.svelte';
+	import * as Tooltip from '$lib/components/ui/tooltip';
+	import Drawer from './Drawer.svelte';
 
 	let current: 'blog' | 'about' | 'home' | 'portfolio' | string;
 
@@ -25,14 +27,15 @@
 	});
 </script>
 
-<nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full z-50 font-display">
-	<div class="container mx-auto flex justify-between items-center h-full gap-4 overflow-x-auto">
+<nav class="h-20 bg-background bg-opacity-50 backdrop-blur-md fixed w-full z-40 font-display">
+	<div class="container mx-auto flex justify-between items-center h-full gap-6 overflow-x-auto">
+		<Drawer />
 		{#if current === 'blog'}
 			<Coredump height="95%" href="/blog" />
 		{:else}
 			<Name height="100%" href="/" />
 		{/if}
-		<div class="flex gap-4 lg:gap-14 justify-around align-middle">
+		<div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex">
 			<a
 				href="/"
 				class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-300 dark:hover:bg-zinc-800 transition-colors duration-200"
@@ -53,12 +56,25 @@
 				class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors duration-200"
 				class:selected={current === 'blog'}>Blog</a
 			>
-
-			<Button on:click={toggleMode} variant="outline" size="icon" class="my-1">
-				<Sun class="dark:hidden" />
-				<Moon class="hidden dark:block" />
-				<span class="sr-only">Toggle theme</span>
-			</Button>
+			<Tooltip.Root openDelay={500}>
+				<Tooltip.Trigger asChild let:builder>
+					<Button
+						builders={[builder]}
+						on:click={toggleMode}
+						variant="outline"
+						size="icon"
+						class="my-1"
+					>
+						<Sun class="dark:hidden" />
+						<Moon class="hidden dark:block" />
+						<span class="sr-only">Toggle theme</span>
+					</Button>
+				</Tooltip.Trigger>
+				<Tooltip.Content>
+					<p class="dark:hidden">Too bright? Switch to dark mode</p>
+					<p class="hidden dark:block">Too dark? Turn on the lights</p>
+				</Tooltip.Content>
+			</Tooltip.Root>
 		</div>
 	</div>
 	<Separator />

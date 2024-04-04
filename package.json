@@ -48,11 +48,14 @@
     "bits-ui": "^0.21.2",
     "clsx": "^2.1.0",
     "marked": "^12.0.1",
+    "marked-alert": "^2.0.1",
     "marked-katex-extension": "^5.0.1",
     "mode-watcher": "^0.3.0",
     "svelte-radix": "^1.1.0",
     "svelte-sonner": "^0.3.21",
     "tailwind-merge": "^2.2.2",
-    "tailwind-variants": "^0.2.1"
-  }
+    "tailwind-variants": "^0.2.1",
+    "vaul-svelte": "^0.3.0"
+  },
+  "packageManager": "pnpm@8.15.5+sha1.a58c038faac410c947dbdb93eb30994037d0fce2"
 }
