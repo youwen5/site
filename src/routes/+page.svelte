@@ -14,7 +14,7 @@
 </svelte:head>
 
 <main class="dots-background">
-	<div class="container max-w-5xl mx-auto py-10 px-4 sm:px-8">
+	<div class="container max-w-5xl mx-auto py-10 px-4 sm:px-8 justify-center">
 		<Typewriter mode="scramble" scrambleDuration={750}>
 			<h1 class="text-5xl sm:text-6xl font-bold text-center mt-14 sm:mt-20 font-display">
 				👋 Hi, I'm Youwen,
@@ -30,7 +30,7 @@
 			</Typewriter>
 			<br />
 			<Typewriter mode="scramble" scrambleDuration={1000}>
-				I'm interested in systems programming, web design, data science, and statistics.
+				<p>I'm interested in systems programming, web design, data science, and statistics.</p>
 			</Typewriter>
 		</div>
 		<div class="flex flex-wrap gap-4 justify-center my-8">
@@ -45,20 +45,6 @@
 			>
 		</div>
 		<div class="grid grid-cols-2 gap-4">
-			<Card.Root class="col-span-2 sm:col-span-1">
-				<Card.Header>
-					<Card.Title>Blog</Card.Title>
-				</Card.Header>
-				<Card.Content>
-					<p>
-						Check out my blog, <strong>The Coredump</strong>, where I occasionally write about
-						computer science, math, and everything else on my mind.
-					</p>
-				</Card.Content>
-				<Card.Footer>
-					<Button variant="outline" href="/blog">Go<ArrowRight class="ml-2" /></Button>
-				</Card.Footer>
-			</Card.Root>
 			<Card.Root class="col-span-2 sm:col-span-1">
 				<Card.Header>
 					<Card.Title>Projects</Card.Title>
@@ -91,6 +77,20 @@
 					</span>
 				</Card.Footer>
 			</Card.Root>
+			<Card.Root class="col-span-2 sm:col-span-1">
+				<Card.Header>
+					<Card.Title>Blog</Card.Title>
+				</Card.Header>
+				<Card.Content>
+					<p>
+						Check out my blog, <strong>The Coredump</strong>, where I occasionally write about
+						computer science, math, and everything else on my mind.
+					</p>
+				</Card.Content>
+				<Card.Footer>
+					<Button variant="outline" href="/blog">Go<ArrowRight class="ml-2" /></Button>
+				</Card.Footer>
+			</Card.Root>
 			<Card.Root class="col-span-2">
 				<Card.Header>
 					<Card.Title>Contact Me</Card.Title>
@@ -106,6 +106,3 @@
 		</div>
 	</div>
 </main>
-
-<style lang="postcss">
-</style>
