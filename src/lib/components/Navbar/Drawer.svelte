@@ -74,7 +74,7 @@
 							>
 						</Drawer.Close>
 						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500 my-2" />
-						<ThemePicker let:builder>
+						<ThemePicker let:builder hideLabel wide>
 							<Button variant="outline" size="lg" builders={[builder]}>
 								<Sun class="mr-4 dark:hidden" />
 								<Moon class="mr-4 hidden dark:block" />

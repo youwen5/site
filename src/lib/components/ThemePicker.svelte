@@ -5,11 +5,16 @@
   change the color theme of the website.
 
   @slot builder - A slot for the button that triggers the dropdown menu.
+
+  @prop hideLabel - A boolean that determines whether to show the label
  -->
 
 <script lang="ts">
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import { setMode } from 'mode-watcher';
+
+	export let hideLabel: boolean = true;
+	export let wide: boolean = false;
 
 	let modes = [
 		{ value: 'light', label: 'Light' },
@@ -26,10 +31,15 @@
 	<DropdownMenu.Trigger asChild let:builder>
 		<slot {builder} />
 	</DropdownMenu.Trigger>
-	<DropdownMenu.Content>
+	<DropdownMenu.Content class={wide ? 'w-[80%]' : ''}>
+		{#if hideLabel}
+			<DropdownMenu.Label>Color Theme</DropdownMenu.Label>
+		{/if}
 		<DropdownMenu.Group>
 			{#each modes as { value, label } (value)}
-				<DropdownMenu.Item on:click={() => changeMode(value)}>{label}</DropdownMenu.Item>
+				<DropdownMenu.Item on:click={() => changeMode(value)} class={wide ? 'text-md' : ''}>
+					{label}</DropdownMenu.Item
+				>
 			{/each}
 		</DropdownMenu.Group>
 	</DropdownMenu.Content>
