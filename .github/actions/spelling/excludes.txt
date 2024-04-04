@@ -1,0 +1,3 @@
+(?:|$^ 93.94% - excluded 62/66)^src/lib/assets/
+[^/]\.ico$
+^\Qsrc/globals.d.ts\E$
