@@ -107,12 +107,16 @@ jobs:
           extra_dictionary_limit: 20
           extra_dictionaries: cspell:software-terms/dict/softwareTerms.txt
             cspell:css/css.txt
-            cspell:html/html.txt
+            cspell:html/dict/html.txt
             cspell:svelte/src/svelte.txt
             cspell:bash/src/bash-words.txt
             cspell:lorem-ipsum/dictionary.txt
             cspell:typescript/dict/typescript.txt
             cspell:npm/dict/npm.txt
+            cspell:latex/dict/latex.txt
+            cspell:node/dict/node.txt
+            cspell:php/dict/php.txt
+            cspell:golang/dict/go.txt
 
   comment-push:
     name: Report (Push)
