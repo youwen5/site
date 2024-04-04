@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Separator from './ui/separator/separator.svelte';
 	import Socials from './Socials.svelte';
-	import getUnicodeFlagIcon from 'country-flag-icons/unicode';
+	import { Code } from 'svelte-radix';
 </script>
 
-<footer class="h-24 px-2 mb-10 text-sm md:text-md xl:text-lg">
+<footer class="h-24 px-2 mb-12 text-sm md:text-md xl:text-lg">
 	<Separator class="mb-4" />
 	<div class="flex justify-center flex-col gap-4">
 		<Socials center />
@@ -22,7 +22,6 @@
 			<a href="https://github.com/couscousdude/coredump" target="_blank" class="hover:underline"
 				>View the source</a
 			>
-			| Long Live Palestine <span class="font-normal">{getUnicodeFlagIcon('PS')}</span>
 		</p>
 	</div>
 </footer>

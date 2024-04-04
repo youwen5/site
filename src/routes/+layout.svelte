@@ -6,7 +6,6 @@
 	import '@fontsource/geist-mono/latin.css';
 	import '@fontsource/zilla-slab/latin.css';
 	import '@fontsource/merriweather/latin.css';
-	import '@fontsource/noto-color-emoji';
 	import Footer from '$lib/components/Footer.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
 </script>
