@@ -33,7 +33,7 @@
 						</span>
 						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500" />
 					</Drawer.Title>
-					<div class="grid grid-cols-1 my-10 gap-2">
+					<div class="grid grid-cols-1 my-10 gap-4">
 						<Drawer.Close asChild let:builder>
 							<Button
 								variant="link"
