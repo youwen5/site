@@ -14,7 +14,7 @@
 </svelte:head>
 
 <main class="dots-background">
-	<div class="container max-w-5xl mx-auto py-10 px-4 sm:px-8 justify-center">
+	<div class="container max-w-5xl mx-auto py-14 px-4 sm:px-8 justify-center">
 		<Typewriter mode="scramble" scrambleDuration={750}>
 			<h1 class="text-5xl sm:text-6xl font-bold text-center mt-14 sm:mt-20 font-display">
 				👋 Hi, I'm Youwen,

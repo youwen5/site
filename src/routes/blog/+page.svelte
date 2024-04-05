@@ -26,7 +26,7 @@
 </svelte:head>
 
 <main class="dots-background">
-	<div class="max-w-5xl md:mx-auto py-8 my-1 container px-4">
+	<div class="max-w-5xl md:mx-auto py-12 my-1 container px-4">
 		<!-- <h1 class="text-5xl md:text-6xl font-serif font-bold mt-14 sm:mt-18">The Coredump</h1> -->
 		{#if loaded}
 			<Coredump width="100%" height="auto" transition="vertical" />
