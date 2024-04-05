@@ -4,6 +4,7 @@ import markedKatex from 'marked-katex-extension';
 import markedAlert from 'marked-alert';
 
 export const prerender = true;
+export const csr = false;
 
 const options = {
 	throwOnError: false
