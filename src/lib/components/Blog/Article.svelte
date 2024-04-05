@@ -1,29 +1,35 @@
 <script lang="ts">
 	import { ChevronRight } from 'svelte-radix';
+	import PostMetadata from './PostMetadata.svelte';
 
-	export let content: string;
-	export let title: string;
-	export let description: string;
+	export let doc: BlogDocument;
 </script>
 
 <article>
 	<div class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
 		<div class="overflow-hidden text-ellipsis whitespace-nowrap">The Coredump</div>
 		<ChevronRight class="h-4 w-4" />
-		<div class="font-medium text-foreground">{title}</div>
+		<div class="font-medium text-foreground">{doc.title}</div>
 	</div>
 	<div class="space-y-2">
 		<h1 class="scroll-m-20 text-5xl font-bold font-serif tracking-tight">
-			{title}
+			{doc.title}
 		</h1>
-		{#if description}
+		{#if doc.description}
 			<p class="text-balance text-lg text-muted-foreground">
-				{description}
+				{doc.description}
 			</p>
 		{/if}
+		<PostMetadata
+			primaryTags={doc.primaryTags}
+			secondaryTags={doc.secondaryTags}
+			time={doc.time}
+			length={doc.content.length}
+			reverseDateAndRest
+		/>
 	</div>
 
 	<div class="markdown-body mt-8 font-serif">
-		{@html content}
+		{@html doc.content}
 	</div>
 </article>

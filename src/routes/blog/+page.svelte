@@ -17,6 +17,18 @@
 	onMount(() => {
 		loaded = true;
 	});
+
+	let testDoc: BlogDocument = {
+		title: 'An introduction to Taylor Series',
+		primaryTags: ['Computer Science', 'Mathematics'],
+		secondaryTags: ['Calculus', 'Taylor Series'],
+		time: Date.now() / 1000,
+		content:
+			"This is a test post to test the layout and rendering of the blog. It's taken directly from my obsidian notebook, so some of the formatting may be off. The blog supports KaTeX math rendering and GitHub markdown alerts. Support for syntax highlighting and graphs is coming soon.",
+		blurb: 'A brief introduction to Taylor Series and its applications in calculus.',
+		description:
+			'An insightful and longer description of the post. This should be a bit more detailed than the blurb. It should give the reader a good idea of what the post is about.'
+	};
 </script>
 
 <svelte:head>
@@ -43,22 +55,38 @@
 						Latest Posts
 					</h2>
 					{#each Array(5) as _, i}
-						<div
-							class="grid grid-cols-1 gap-4 mt-8"
-							in:fly|global={{ x: -50, delay: 350 + i * 100 }}
-						>
-							<PostCard
-								title={faker.hacker.noun() +
-									' ' +
-									faker.hacker.verb() +
-									' ' +
-									faker.hacker.adjective() +
-									' ' +
-									faker.hacker.noun()}
-								blurb={faker.hacker.phrase()}
-								description={faker.lorem.paragraphs(2)}
-							/>
-						</div>
+						{#if i > 0}
+							<div
+								class="grid grid-cols-1 gap-4 mt-8"
+								in:fly|global={{ x: -50, delay: 350 + i * 100 }}
+							>
+								<PostCard
+									doc={{
+										title:
+											faker.hacker.noun() +
+											' ' +
+											faker.hacker.verb() +
+											' ' +
+											faker.hacker.adjective() +
+											' ' +
+											faker.hacker.noun(),
+										primaryTags: Array(2).map(() => faker.hacker.noun()),
+										secondaryTags: Array(2).map(() => faker.hacker.noun()),
+										time: Date.now() / 1000,
+										content: faker.lorem.paragraphs(5),
+										blurb: faker.hacker.phrase(),
+										description: faker.lorem.paragraphs(2)
+									}}
+								/>
+							</div>
+						{:else}
+							<div
+								class="grid grid-cols-1 gap-4 mt-8"
+								in:fly|global={{ x: -50, delay: 350 + i * 100 }}
+							>
+								<PostCard doc={testDoc} />
+							</div>
+						{/if}
 					{/each}
 				</div>
 				<div in:fly={{ y: -50, delay: 300 }} class="col-span-3 md:col-span-1">
