@@ -3,6 +3,8 @@ import { marked } from 'marked';
 import markedKatex from 'marked-katex-extension';
 import markedAlert from 'marked-alert';
 
+export const prerender = true;
+
 const options = {
 	throwOnError: false
 };
