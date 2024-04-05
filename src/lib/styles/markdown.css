@@ -11,7 +11,7 @@
 	}
 
 	p {
-		@apply leading-relaxed my-2;
+		@apply leading-loose my-2;
 	}
 
 	ol,
