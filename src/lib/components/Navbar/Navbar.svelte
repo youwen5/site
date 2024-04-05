@@ -26,7 +26,7 @@
 	});
 </script>
 
-<nav class="h-24 bg-background bg-opacity-50 backdrop-blur-md fixed w-full z-40 font-display">
+<nav class="h-24 bg-background bg-opacity-50 backdrop-blur-lg fixed w-full z-40 font-display">
 	<div class="container mx-auto flex justify-between items-center h-full gap-6 overflow-x-auto">
 		<Drawer />
 		{#if current === 'blog'}
