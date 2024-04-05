@@ -43,7 +43,7 @@
 		{#if loaded}
 			<Coredump width="100%" height="auto" transition="vertical" />
 			<p
-				class="text-xl sm:text-2xl text-muted-foreground font-mono"
+				class="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono"
 				in:fly={{ duration: 300, y: -50, delay: 200 }}
 			>
 				my blog on computer science, math, games, art, and more.
