@@ -9,7 +9,7 @@
 	<div class="flex justify-center flex-col gap-4">
 		<Socials center />
 		<p class="text-muted-foreground text-center">
-			&copy 2024 Youwen Wu | Built with <a
+			&copy 2024 Youwen Wu | Powered by <a
 				href="https://kit.svelte.dev"
 				target="_blank"
 				class="hover:underline"><strong>SvelteKit</strong></a
