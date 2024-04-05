@@ -13,6 +13,8 @@
 
 	const updateCurrent = () => {
 		const path = window.location.pathname;
+		console.log(path);
+		console.log(path.split('/'));
 		if (path === '/') {
 			current = 'home';
 		} else {
@@ -22,6 +24,7 @@
 	};
 
 	onMount(() => {
+		console.log('test');
 		return navigating.subscribe(updateCurrent);
 	});
 </script>
@@ -32,7 +35,7 @@
 		{#if current === 'blog'}
 			<Coredump height="95%" href="/blog" />
 		{:else}
-			<Name height="100%" href="/" />
+			<Name height="95%" href="/" />
 		{/if}
 		<div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex">
 			<a
