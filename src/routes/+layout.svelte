@@ -8,11 +8,6 @@
 	import '@fontsource/merriweather/latin.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		console.log('Hello from the layout!');
-	});
 </script>
 
 <Toaster />

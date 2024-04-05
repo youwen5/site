@@ -13,7 +13,7 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import { setMode } from 'mode-watcher';
 
-	export let hideLabel: boolean = true;
+	export let hideLabel: boolean = false;
 	export let wide: boolean = false;
 
 	let modes = [
@@ -32,7 +32,7 @@
 		<slot {builder} />
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content class={wide ? 'w-[80%]' : ''}>
-		{#if hideLabel}
+		{#if !hideLabel}
 			<DropdownMenu.Label>Color Theme</DropdownMenu.Label>
 		{/if}
 		<DropdownMenu.Group>

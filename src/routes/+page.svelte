@@ -29,8 +29,8 @@
 				<h2>a hacker.</h2>
 			</Typewriter>
 			<br />
-			<Typewriter mode="scramble" scrambleDuration={1000}>
-				<p>I'm interested in systems programming, web design, data science, and statistics.</p>
+			<Typewriter>
+				<p>I'm building and designing software, for humans.</p>
 			</Typewriter>
 		</div>
 		<div class="flex flex-wrap gap-4 justify-center my-8">

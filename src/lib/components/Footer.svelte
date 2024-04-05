@@ -4,7 +4,7 @@
 	import { Code } from 'svelte-radix';
 </script>
 
-<footer class="h-24 px-2 mb-12 text-sm md:text-md xl:text-lg">
+<footer class="h-24 px-4 mb-12 text-sm md:text-md xl:text-lg">
 	<Separator class="mb-4" />
 	<div class="flex justify-center flex-col gap-4">
 		<Socials center />

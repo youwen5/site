@@ -3,7 +3,8 @@
 
 	export let height = '192';
 	export let width = 'auto';
-	export let href: string;
+	export let href: string = '/blog';
+	export let transition: 'vertical' | 'horizontal' = 'horizontal';
 </script>
 
 <svg
@@ -17,7 +18,9 @@
 	fill="currentColor"
 	{height}
 	{width}
-	in:fly={{ x: -100, duration: 300, delay: 320 }}
+	in:fly={transition === 'horizontal'
+		? { x: -100, duration: 300, delay: 320 }
+		: { y: -100, duration: 300 }}
 	out:fly={{ x: 100, duration: 300 }}
 >
 	<a {href}>

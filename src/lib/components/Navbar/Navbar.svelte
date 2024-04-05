@@ -24,7 +24,6 @@
 	};
 
 	onMount(() => {
-		console.log('test');
 		return navigating.subscribe(updateCurrent);
 	});
 </script>

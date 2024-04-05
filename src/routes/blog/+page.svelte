@@ -6,48 +6,97 @@
 	// import { config } from '$lib/stores/index.js';
 	import { cn } from '$lib/utils.js';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import Coredump from '$lib/assets/Coredump.svelte';
+	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import PostCard from '$lib/components/Blog/PostCard.svelte';
+	import { faker } from '@faker-js/faker';
+
+	let loaded = false;
+
+	onMount(() => {
+		loaded = true;
+	});
 </script>
 
 <svelte:head>
 	<title>Youwen Wu | The Coredump</title>
-	<meta name="description" content="My blog on computer science, math, and more." />
+	<meta name="description" content="My blog on computer science, math, games, art, and more." />
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
 <main class="dots-background">
-	<div class="container max-w-5xl md:mx-auto mx-4 py-8 my-1">
-		<h1 class="text-5xl md:text-6xl font-serif font-bold mt-14 sm:mt-18">The Coredump</h1>
-		<p class="text-xl sm:text-2xl text-muted-foreground mt-6">
-			My blog on computer science, math, and more.
-		</p>
-		<div class="grid grid-cols-3 mt-20 gap-2 sm:gap-4">
-			<div class="col-span-2">
-				<h2 class="text-3xl font-serif font-bold">Latest Posts</h2>
-				<div class="grid grid-cols-1 gap-4 mt-4"></div>
-			</div>
-			<Card.Root class="col-span-1 bg-secondary border-primary/10 bg-opacity-75 backdrop-blur-sm">
-				<Card.Header>
-					<h2 class="text-3xl font-serif font-bold mb-8">Archive</h2>
-					<h3 class="text-3xl font-serif font-medium text-muted-foreground">2024</h3>
-					<Separator class="mt-2 mb-4" />
-				</Card.Header>
-				<Card.Content>
+	<div class="max-w-5xl md:mx-auto py-8 my-1 container px-4">
+		<!-- <h1 class="text-5xl md:text-6xl font-serif font-bold mt-14 sm:mt-18">The Coredump</h1> -->
+		{#if loaded}
+			<Coredump width="100%" height="auto" transition="vertical" />
+			<p
+				class="text-xl sm:text-2xl text-muted-foreground font-mono"
+				in:fly={{ duration: 300, y: -50, delay: 200 }}
+			>
+				my blog on computer science, math, games, art, and more.
+			</p>
+
+			<div class="grid grid-cols-3 mt-20 gap-8">
+				<div class="col-span-3 md:col-span-2">
+					<h2 class="text-4xl font-serif font-bold" in:fly|global={{ y: -50, delay: 300 }}>
+						Latest Posts
+					</h2>
 					{#each Array(5) as _, i}
-						<div class="grid grid-cols-1 gap-2 mt-8">
-							<h3 class="text-2xl font-serif font-bold">Post Title</h3>
-							<p class="text-lg text-muted-foreground">
-								An insightful and succinct blurb about the post.
-							</p>
-							<div class="flex items-center gap-2">
-								<a href="/blog/2021/01" class="text-primary hover:underline text-lg font-serif"
-									>Read more</a
-								>
-								<ChevronRight class="w-6 h-6 text-primary" />
-							</div>
+						<div
+							class="grid grid-cols-1 gap-4 mt-8"
+							in:fly|global={{ x: -50, delay: 350 + i * 100 }}
+						>
+							<PostCard
+								title={faker.hacker.noun() +
+									' ' +
+									faker.hacker.verb() +
+									' ' +
+									faker.hacker.adjective() +
+									' ' +
+									faker.hacker.noun()}
+								blurb={faker.hacker.phrase()}
+								description={faker.lorem.paragraphs(2)}
+							/>
 						</div>
 					{/each}
-				</Card.Content>
-			</Card.Root>
-		</div>
+				</div>
+				<div in:fly={{ y: -50, delay: 300 }} class="col-span-3 md:col-span-1">
+					<Card.Root class="bg-primary-foreground backdrop-blur-sm border-primary/10">
+						<Card.Header>
+							<h2 class="text-3xl font-serif font-bold mb-6">Archive</h2>
+							<h3 class="text-3xl font-serif font-medium text-muted-foreground">2024</h3>
+							<Separator class="mt-4 bg-primary/10 h-1" />
+						</Card.Header>
+						<Card.Content>
+							{#each Array(5) as _, i}
+								<div class="grid grid-cols-1 gap-2 mb-8">
+									<h3 class="text-2xl font-serif font-bold">
+										{faker.hacker.noun() +
+											' ' +
+											faker.hacker.verb() +
+											' ' +
+											faker.hacker.adjective() +
+											' ' +
+											faker.hacker.noun()}
+									</h3>
+									<p class="text-lg text-muted-foreground">
+										{faker.hacker.phrase()}
+									</p>
+									<div class="flex items-center gap-2">
+										<a href="/blog/2021/01" class="text-primary hover:underline text-lg font-serif"
+											>Read more</a
+										>
+										<ChevronRight class="w-6 h-6 text-primary" />
+									</div>
+								</div>
+							{/each}
+						</Card.Content>
+					</Card.Root>
+				</div>
+			</div>
+		{:else}
+			<div class="h-screen"></div>
+		{/if}
 	</div>
 </main>
