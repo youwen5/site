@@ -23,55 +23,55 @@
 	<a {href}>
 		<path d="M 112,352 L 232,112" fill="none" stroke="black" />
 		<path d="M 160,352 L 280,112" fill="none" stroke="black" />
-		<circle cx="680" cy="144" r="3" class="opendot" />
-		<circle cx="680" cy="160" r="3" class="opendot" />
-		<circle cx="680" cy="176" r="3" class="opendot" />
-		<circle cx="680" cy="192" r="3" class="opendot" />
-		<circle cx="680" cy="208" r="3" class="opendot" />
-		<circle cx="680" cy="224" r="3" class="opendot" />
-		<circle cx="680" cy="240" r="3" class="opendot" />
-		<circle cx="680" cy="256" r="3" class="opendot" />
-		<circle cx="688" cy="128" r="3" class="opendot" />
-		<circle cx="688" cy="272" r="3" class="opendot" />
-		<circle cx="696" cy="128" r="3" class="opendot" />
-		<circle cx="696" cy="272" r="3" class="opendot" />
-		<circle cx="704" cy="112" r="3" class="opendot" />
-		<circle cx="704" cy="288" r="3" class="opendot" />
-		<circle cx="712" cy="112" r="3" class="opendot" />
-		<circle cx="712" cy="288" r="3" class="opendot" />
-		<circle cx="720" cy="112" r="3" class="opendot" />
-		<circle cx="720" cy="176" r="3" class="opendot" />
-		<circle cx="720" cy="192" r="3" class="opendot" />
-		<circle cx="720" cy="208" r="3" class="opendot" />
-		<circle cx="720" cy="224" r="3" class="opendot" />
-		<circle cx="720" cy="288" r="3" class="opendot" />
-		<circle cx="728" cy="112" r="3" class="opendot" />
-		<circle cx="728" cy="288" r="3" class="opendot" />
-		<circle cx="736" cy="112" r="3" class="opendot" />
-		<circle cx="736" cy="288" r="3" class="opendot" />
-		<circle cx="744" cy="112" r="3" class="opendot" />
-		<circle cx="744" cy="288" r="3" class="opendot" />
-		<circle cx="752" cy="112" r="3" class="opendot" />
-		<circle cx="752" cy="160" r="3" class="opendot" />
-		<circle cx="752" cy="240" r="3" class="opendot" />
-		<circle cx="752" cy="288" r="3" class="opendot" />
-		<circle cx="760" cy="112" r="3" class="opendot" />
-		<circle cx="760" cy="160" r="3" class="opendot" />
-		<circle cx="760" cy="240" r="3" class="opendot" />
-		<circle cx="760" cy="288" r="3" class="opendot" />
-		<circle cx="768" cy="176" r="3" class="opendot" />
-		<circle cx="768" cy="192" r="3" class="opendot" />
-		<circle cx="768" cy="208" r="3" class="opendot" />
-		<circle cx="768" cy="224" r="3" class="opendot" />
-		<circle cx="776" cy="112" r="3" class="opendot" />
-		<circle cx="776" cy="288" r="3" class="opendot" />
-		<circle cx="784" cy="112" r="3" class="opendot" />
-		<circle cx="784" cy="288" r="3" class="opendot" />
-		<circle cx="792" cy="128" r="3" class="opendot" />
-		<circle cx="792" cy="272" r="3" class="opendot" />
-		<circle cx="800" cy="128" r="3" class="opendot" />
-		<circle cx="800" cy="272" r="3" class="opendot" />
-		<circle cx="808" cy="256" r="3" class="opendot" />
+		<circle cx="680" cy="144" r="0.22em" class="opendot" />
+		<circle cx="680" cy="160" r="0.22em" class="opendot" />
+		<circle cx="680" cy="176" r="0.22em" class="opendot" />
+		<circle cx="680" cy="192" r="0.22em" class="opendot" />
+		<circle cx="680" cy="208" r="0.22em" class="opendot" />
+		<circle cx="680" cy="224" r="0.22em" class="opendot" />
+		<circle cx="680" cy="240" r="0.22em" class="opendot" />
+		<circle cx="680" cy="256" r="0.22em" class="opendot" />
+		<circle cx="688" cy="128" r="0.22em" class="opendot" />
+		<circle cx="688" cy="272" r="0.22em" class="opendot" />
+		<circle cx="696" cy="128" r="0.22em" class="opendot" />
+		<circle cx="696" cy="272" r="0.22em" class="opendot" />
+		<circle cx="704" cy="112" r="0.22em" class="opendot" />
+		<circle cx="704" cy="288" r="0.22em" class="opendot" />
+		<circle cx="712" cy="112" r="0.22em" class="opendot" />
+		<circle cx="712" cy="288" r="0.22em" class="opendot" />
+		<circle cx="720" cy="112" r="0.22em" class="opendot" />
+		<circle cx="720" cy="176" r="0.22em" class="opendot" />
+		<circle cx="720" cy="192" r="0.22em" class="opendot" />
+		<circle cx="720" cy="208" r="0.22em" class="opendot" />
+		<circle cx="720" cy="224" r="0.22em" class="opendot" />
+		<circle cx="720" cy="288" r="0.22em" class="opendot" />
+		<circle cx="728" cy="112" r="0.22em" class="opendot" />
+		<circle cx="728" cy="288" r="0.22em" class="opendot" />
+		<circle cx="736" cy="112" r="0.22em" class="opendot" />
+		<circle cx="736" cy="288" r="0.22em" class="opendot" />
+		<circle cx="744" cy="112" r="0.22em" class="opendot" />
+		<circle cx="744" cy="288" r="0.22em" class="opendot" />
+		<circle cx="752" cy="112" r="0.22em" class="opendot" />
+		<circle cx="752" cy="160" r="0.22em" class="opendot" />
+		<circle cx="752" cy="240" r="0.22em" class="opendot" />
+		<circle cx="752" cy="288" r="0.22em" class="opendot" />
+		<circle cx="760" cy="112" r="0.22em" class="opendot" />
+		<circle cx="760" cy="160" r="0.22em" class="opendot" />
+		<circle cx="760" cy="240" r="0.22em" class="opendot" />
+		<circle cx="760" cy="288" r="0.22em" class="opendot" />
+		<circle cx="768" cy="176" r="0.22em" class="opendot" />
+		<circle cx="768" cy="192" r="0.22em" class="opendot" />
+		<circle cx="768" cy="208" r="0.22em" class="opendot" />
+		<circle cx="768" cy="224" r="0.22em" class="opendot" />
+		<circle cx="776" cy="112" r="0.22em" class="opendot" />
+		<circle cx="776" cy="288" r="0.22em" class="opendot" />
+		<circle cx="784" cy="112" r="0.22em" class="opendot" />
+		<circle cx="784" cy="288" r="0.22em" class="opendot" />
+		<circle cx="792" cy="128" r="0.22em" class="opendot" />
+		<circle cx="792" cy="272" r="0.22em" class="opendot" />
+		<circle cx="800" cy="128" r="0.22em" class="opendot" />
+		<circle cx="800" cy="272" r="0.22em" class="opendot" />
+		<circle cx="808" cy="256" r="0.22em" class="opendot" />
 		<g class="text">
 			<text x="256" y="116">/////</text>
 			<text x="504" y="116">yyyyyyy</text>
@@ -279,7 +279,7 @@
 
 <style lang="postcss">
 	.opendot {
-		@apply stroke-primary fill-none stroke-2;
+		@apply stroke-primary fill-none stroke-[0.1em];
 	}
 	.logo {
 		& .text {
