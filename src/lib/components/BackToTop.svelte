@@ -24,6 +24,6 @@
 
 {#if showButton}
 	<div class="fixed bottom-10 right-10 z-40" transition:fly={{ y: 50, duration: 150 }}>
-		<Button size="icon" on:click={scrollToTop}><ChevronUp /></Button>
+		<Button size="icon" class="scale-125 md:scale-150" on:click={scrollToTop}><ChevronUp /></Button>
 	</div>
 {/if}

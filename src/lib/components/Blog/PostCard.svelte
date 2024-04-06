@@ -10,7 +10,7 @@
 
 <Card.Root>
 	<Card.Header>
-		<h3 class="text-4xl font-serif font-bold mb-4 leading-tight">{doc.title}</h3>
+		<h3 class="text-3xl lg:text-4xl font-serif font-bold mb-4 leading-tight">{doc.title}</h3>
 		<p class="text-muted-foreground text-xl">{doc.blurb}</p>
 		<PostMetadata
 			primaryTags={doc.primaryTags}

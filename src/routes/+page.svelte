@@ -29,7 +29,7 @@
 			</Typewriter>
 			<br />
 			<Typewriter>
-				<p>I'm building and designing software, for humans.</p>
+				<p>Building and designing libre software, for everyone.</p>
 			</Typewriter>
 		</div>
 		<div class="flex flex-wrap gap-4 justify-center my-8">

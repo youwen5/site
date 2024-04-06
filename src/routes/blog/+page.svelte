@@ -11,6 +11,7 @@
 	import { onMount } from 'svelte';
 	import PostCard from '$lib/components/Blog/PostCard.svelte';
 	import { faker } from '@faker-js/faker';
+	import Button from '$lib/components/ui/button/button.svelte';
 
 	let loaded = false;
 
@@ -47,8 +48,10 @@
 			>
 				my blog on computer science, math, games, art, and more.
 			</p>
-			<span class="flex flex-wrap items-center">
-				<a href="#latest">all </a>
+			<span class="flex flex-wrap items-center mt-8 md:hidden">
+				<a href="#archive" class="flex items-center font-mono gap-2 hover:underline"
+					><ChevronRight />Archived Posts</a
+				>
 			</span>
 
 			<div class="grid grid-cols-3 mt-20 gap-8">
