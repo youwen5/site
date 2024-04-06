@@ -47,6 +47,7 @@
     "@fontsource/geist-sans": "^5.0.2",
     "@fontsource/merriweather": "^5.0.12",
     "@fontsource/zilla-slab": "^5.0.12",
+    "@svelte-put/toc": "^5.0.1",
     "@sveltejs/adapter-vercel": "^5.2.0",
     "bits-ui": "^0.21.2",
     "clsx": "^2.1.0",

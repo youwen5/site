@@ -17,6 +17,9 @@ dependencies:
   '@fontsource/zilla-slab':
     specifier: ^5.0.12
     version: 5.0.12
+  '@svelte-put/toc':
+    specifier: ^5.0.1
+    version: 5.0.1(svelte@4.2.12)
   '@sveltejs/adapter-vercel':
     specifier: ^5.2.0
     version: 5.2.0(@sveltejs/kit@2.5.5)
@@ -889,6 +892,14 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
+
+  /@svelte-put/toc@5.0.1(svelte@4.2.12):
+    resolution: {integrity: sha512-oxDFPM2Y0XmhhXoNDhcPltf8RxhIvtiotFL0PX9NLossTumuAPiLVaDeEsGfBOn+nZK2J1oo9XqJU3NWHDROcw==}
+    peerDependencies:
+      svelte: ^3.55.0 || ^4.0.0
+    dependencies:
+      svelte: 4.2.12
+    dev: false
 
   /@sveltejs/adapter-vercel@5.2.0(@sveltejs/kit@2.5.5):
     resolution: {integrity: sha512-872y13DxKcOBxgnXc4C2YHRw1ow9N1CpUxMH34NYFqCn6PUO6f34qle8v/Byr8sHEC/d+PZIAI3MJs3c8f7TfA==}
