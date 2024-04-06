@@ -39,7 +39,6 @@
 
 <main class="dots-background">
 	<div class="max-w-5xl md:mx-auto py-12 my-1 container px-4">
-		<!-- <h1 class="text-5xl md:text-6xl font-serif font-bold mt-14 sm:mt-18">The Coredump</h1> -->
 		{#if loaded}
 			<Coredump width="100%" height="auto" transition="vertical" />
 			<p
@@ -48,10 +47,17 @@
 			>
 				my blog on computer science, math, games, art, and more.
 			</p>
+			<span class="flex flex-wrap items-center">
+				<a href="#latest">all </a>
+			</span>
 
 			<div class="grid grid-cols-3 mt-20 gap-8">
 				<div class="col-span-3 md:col-span-2">
-					<h2 class="text-4xl font-serif font-bold" in:fly|global={{ y: -50, delay: 300 }}>
+					<h2
+						class="text-4xl font-serif font-bold"
+						id="latest"
+						in:fly|global={{ y: -50, delay: 300 }}
+					>
 						Latest Posts
 					</h2>
 					{#each Array(5) as _, i}
@@ -92,8 +98,8 @@
 				<div in:fly={{ y: -50, delay: 300 }} class="col-span-3 md:col-span-1">
 					<Card.Root class="bg-primary-foreground backdrop-blur-sm border-primary/10">
 						<Card.Header>
-							<h2 class="text-3xl font-serif font-bold mb-6">Archive</h2>
-							<h3 class="text-3xl font-serif font-medium text-muted-foreground">2024</h3>
+							<h2 class="text-3xl font-serif font-bold mb-6" id="archive">Archive</h2>
+							<h3 class="text-3xl font-serif font-medium text-muted-foreground" id="2024">2024</h3>
 							<Separator class="mt-4 bg-primary/10 h-1" />
 						</Card.Header>
 						<Card.Content>
