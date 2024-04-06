@@ -8,6 +8,24 @@
 	import '@fontsource/merriweather/latin.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
+	import { onMount } from 'svelte';
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
+
+	let root: HTMLElement | null;
+
+	onMount(() => {
+		root = document.getElementsByTagName('html')[0];
+
+		root?.classList.add('smoothscroll');
+	});
+
+	beforeNavigate(() => {
+		root?.classList.remove('smoothscroll');
+	});
+
+	afterNavigate(() => {
+		root?.classList.add('smoothscroll');
+	});
 </script>
 
 <Toaster />
