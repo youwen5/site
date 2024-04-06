@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '$lib/app.css';
+	import '$lib/app.pcss';
 	import Navbar from '$lib/components/Navbar/Navbar.svelte';
 	import { ModeWatcher } from 'mode-watcher';
 	import '@fontsource/geist-sans/latin.css';
