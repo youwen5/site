@@ -13,8 +13,6 @@
 
 	const updateCurrent = () => {
 		const path = window.location.pathname;
-		console.log(path);
-		console.log(path.split('/'));
 		if (path === '/') {
 			current = 'home';
 		} else {
