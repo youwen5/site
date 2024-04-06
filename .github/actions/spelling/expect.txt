@@ -24,6 +24,7 @@ clsx
 coredump
 couscousdude
 cssesc
+dayjs
 dbdb
 deepmerge
 delimcenter
