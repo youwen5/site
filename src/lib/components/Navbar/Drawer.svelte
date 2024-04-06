@@ -6,15 +6,9 @@
 	import Button from '../ui/button/button.svelte';
 	import { Sun, Moon, Home, Person, File, Backpack } from 'svelte-radix';
 	import ThemePicker from '../ThemePicker.svelte';
-
-	let open: boolean = false;
-
-	const close = () => {
-		open = false;
-	};
 </script>
 
-<Drawer.Root shouldScaleBackground direction="top" bind:open>
+<Drawer.Root shouldScaleBackground direction="top">
 	<Drawer.Trigger asChild let:builder>
 		<Button variant="outline" size="icon" builders={[builder]} class="px-2 md:hidden">
 			<HamburgerMenu class="icon border-1 border-primary" />

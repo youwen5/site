@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Gpg from '$lib/components/Gpg.svelte';
 	import Socials from '$lib/components/Socials.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card';
@@ -98,9 +97,6 @@
 				<Card.Content>
 					<h3>Find me on:</h3>
 					<Socials />
-					<Gpg>
-						<Button variant="outline" class="mt-4"><span class="mr-2">🔑</span> My GPG Key</Button>
-					</Gpg>
 				</Card.Content>
 			</Card.Root>
 		</div>
