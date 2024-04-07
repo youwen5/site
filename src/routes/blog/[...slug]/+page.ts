@@ -1,4 +1,4 @@
-import type { PageLoad } from './$types.js';
+import type { PageLoad } from '../[year]/[slug]/$types.js';
 import { unified } from 'unified';
 import rehypeKatex from 'rehype-katex';
 import rehypeStringify from 'rehype-stringify';
