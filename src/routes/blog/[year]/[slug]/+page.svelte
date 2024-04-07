@@ -1,13 +1,14 @@
 <script lang="ts">
 	import ChevronRight from 'svelte-radix/ChevronRight.svelte';
 	import Code from 'svelte-radix/Code.svelte';
-	import type { PageData } from './$types.js';
+	import type { PageData } from './$types';
 	// import { config } from '$lib/stores/index.js';
 	import { cn } from '$lib/utils.js';
 	import Article from '$lib/components/Blog/Article.svelte';
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
 	import { onMount } from 'svelte';
+	import MobileTocFooter from '$lib/components/MobileTocFooter.svelte';
 
 	const tocStore = createTocStore();
 
@@ -33,9 +34,9 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<div class="md:flex max-w-6xl mx-auto mt-14 px-4">
+<div class="lg:flex max-w-6xl mx-auto mt-14 px-4">
 	<main
-		class="flex-grow basis-3/4"
+		class="flex-grow basis-3/4 flex-shrink"
 		use:toc={{
 			store: tocStore,
 			observe: true,
@@ -43,16 +44,19 @@
 				properties: { 'aria-hidden': 'true', class: 'hidden' },
 				position: 'before'
 			},
-			scrollMarginTop: 120,
-			selector: 'h1, h2, h3, h4, h5, h6, #end-marker'
+			scrollMarginTop: 120
 		}}
 	>
 		<Article {doc} />
 	</main>
 
-	<aside class="basis-1/4 relative hidden md:block">
+	<aside class="basis-1/4 relative hidden lg:block">
 		<div class="fixed mx-8">
 			<StickyToc {tocStore} />
 		</div>
+	</aside>
+
+	<aside class="lg:hidden">
+		<MobileTocFooter {tocStore} />
 	</aside>
 </div>
