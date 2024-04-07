@@ -1,11 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import Article from '$lib/components/Blog/Article.svelte';
-	import { toc, createTocStore } from '@svelte-put/toc';
+	import { toc } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
 	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
-
-	const tocStore = createTocStore();
+	import { tocStore } from '$lib/stores';
 
 	export let data: PageData;
 
@@ -28,8 +27,6 @@
 	<meta name="description" content={doc.description} />
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
-
-<TocHeader {tocStore} placeholder="On this page" />
 
 <div class="lg:flex mx-auto mt-24 lg:mt-14 px-4">
 	<div class="flex-shrink xl:basis-1/4" />

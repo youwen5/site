@@ -8,8 +8,11 @@
 	import ThemePicker from '../ThemePicker.svelte';
 	import Button from '../ui/button/button.svelte';
 	import { Moon, Sun } from 'svelte-radix';
+	import { tocStore } from '$lib/stores';
+	import TocHeader from '../Toc/TocHeader.svelte';
 
 	let current: 'blog' | 'about' | 'home' | 'portfolio' | string;
+	let readingPost = false;
 
 	const updateCurrent = () => {
 		const path = window.location.pathname;
@@ -17,8 +20,17 @@
 			current = 'home';
 		} else {
 			const segments = path.split('/');
+
 			current = segments[1] || 'home';
+			if (current === 'blog' && segments.length > 2) {
+				readingPost = true;
+				console.log(readingPost);
+			} else {
+				readingPost = false;
+				console.log(readingPost);
+			}
 		}
+		console.log(current);
 	};
 
 	onMount(() => {
@@ -66,6 +78,9 @@
 	</div>
 	<Separator />
 </nav>
+{#if readingPost}
+	<TocHeader {tocStore} placeholder="On this page" />
+{/if}
 
 <style lang="postcss">
 	.selected {

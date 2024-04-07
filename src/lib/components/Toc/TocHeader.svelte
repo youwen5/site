@@ -4,7 +4,7 @@
 	import { Accordion } from 'bits-ui';
 	import { toclink } from '@svelte-put/toc';
 	import { CaretDown } from 'svelte-radix';
-	import { slide } from 'svelte/transition';
+	import { fly, slide } from 'svelte/transition';
 
 	export let tocStore: TocStore;
 	export let placeholder: string;
@@ -23,7 +23,10 @@
 	};
 </script>
 
-<nav class="fixed top-24 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
+<div
+	transition:fly={{ y: -50, duration: 300 }}
+	class="fixed top-24 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden"
+>
 	<Accordion.Root class="px-8" bind:value>
 		<Accordion.Item value="toc">
 			<Accordion.Trigger
@@ -55,7 +58,7 @@
 		</Accordion.Item>
 	</Accordion.Root>
 	<Separator />
-</nav>
+</div>
 
 <style lang="postcss">
 	.highlighted {
