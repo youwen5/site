@@ -1,3 +1,5 @@
+## Introduction
+
 The following content is a test post for the blog's markdown and $\KaTeX$ rendering capabilities. There's a few errors, and wikilinks aren't supported. This file was copy pasted directly out of my `obsidian.md` notebook, so it contains some weird formatting.
 
 <br />

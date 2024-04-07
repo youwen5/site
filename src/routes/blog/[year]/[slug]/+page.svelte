@@ -1,9 +1,10 @@
 <script lang="ts">
-	import MobileToc from '$lib/components/Toc/MobileToc.svelte';
 	import type { PageData } from './$types';
 	import Article from '$lib/components/Blog/Article.svelte';
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
+	import TocHeader from '$lib/components/toc/TocHeader.svelte';
+
 	const tocStore = createTocStore();
 
 	export let data: PageData;
@@ -28,7 +29,9 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<div class="lg:flex mx-auto mt-14 px-4">
+<TocHeader {tocStore} placeholder="On this page" />
+
+<div class="lg:flex mx-auto mt-24 lg:mt-14 px-4">
 	<div class="flex-shrink xl:basis-1/4" />
 	<main
 		class="flex-grow basis-3/4 xl:basis-2/4 flex-shrink"
@@ -39,14 +42,11 @@
 				properties: { 'aria-hidden': 'true', class: 'hidden' },
 				position: 'before'
 			},
-			scrollMarginTop: 120
+			scrollMarginTop: 120,
+			selector: ':where(h2, h3, h4, h5, h6)'
 		}}
 	>
-		<Article {doc}>
-			<svelte:fragment slot="mobile-toc">
-				<MobileToc {tocStore} />
-			</svelte:fragment>
-		</Article>
+		<Article {doc} />
 	</main>
 
 	<aside class="basis-1/4 relative hidden lg:block">

@@ -8,7 +8,7 @@
 	import ThemePicker from '../ThemePicker.svelte';
 </script>
 
-<Drawer.Root shouldScaleBackground direction="top">
+<Drawer.Root direction="top">
 	<Drawer.Trigger asChild let:builder>
 		<Button variant="outline" size="icon" builders={[builder]} class="px-2 md:hidden">
 			<HamburgerMenu class="icon border-1 border-primary" />
