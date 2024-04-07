@@ -8,3 +8,5 @@ interface BlogDocument {
 	image?: string;
 	description: string;
 }
+
+declare module 'remark-sectionize';

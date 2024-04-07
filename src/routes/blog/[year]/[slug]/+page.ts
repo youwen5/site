@@ -7,6 +7,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkGfm from 'remark-gfm';
 import remarkGhAlerts from 'remark-gh-alerts';
+import remarkSectionize from 'remark-sectionize';
 
 export const prerender = true;
 
@@ -16,6 +17,7 @@ export const load: PageLoad = async ({ fetch }) => {
 		const content = String(
 			await unified()
 				.use(remarkParse)
+				.use(remarkSectionize)
 				.use(remarkGfm)
 				.use(remarkGhAlerts)
 				.use(remarkMath)
