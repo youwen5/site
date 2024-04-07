@@ -5,7 +5,7 @@
 	export let tocStore: TocStore;
 
 	const calcTextClasses = (el: HTMLElement) => {
-		if (el.tagName === 'H1') return 'text-lg xl:text-xl font-medium';
+		if (el.tagName === 'H1') return 'text-md xl:text-lg font-medium';
 		if (el.tagName === 'H2') return 'text-md xl:text-lg';
 		if (el.id === 'end-marker') return 'text-lg xl:text-xl';
 		return 'text-sm text-muted-foreground';
