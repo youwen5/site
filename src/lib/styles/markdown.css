@@ -1,6 +1,5 @@
 .markdown-body {
 	@apply text-primary/90;
-	h1,
 	h2 {
 		@apply text-3xl font-serif mb-5 mt-16;
 	}

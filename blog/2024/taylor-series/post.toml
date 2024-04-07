@@ -1,0 +1,18 @@
+title = "A Brief Introduction to Taylor Series"
+
+[manifest]
+date = 2024-01-01T12:00:00Z
+blurb = "The essence of calculus."
+description = "A brief introduction to Taylor series, a powerful tool in calculus. We will discuss the intuition behind Taylor series, how to derive them, and how to use them to approximate functions. We will also discuss the limitations of Taylor series and how to overcome them. This article is aimed at beginners who are interested in calculus and want to learn more about Taylor series."
+
+[manifest.tags]
+primary = ["math", "calculus"]
+secondary = ["taylor series", "numerical methods", "approximation"]
+
+[manifest.authors]
+["Youwen Wu"]
+
+[cover]
+src = "https://i.ytimg.com/vi/3d6DsjIBzJ4/maxresdefault.jpg"
+alt = "visual of taylor series for a quadratic function"
+caption = "Taylor series approximation of a quadratic function."

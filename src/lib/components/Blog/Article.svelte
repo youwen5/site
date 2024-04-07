@@ -16,11 +16,9 @@
 			<h1 class="scroll-m-20 text-5xl font-bold font-serif tracking-tight">
 				{doc.title}
 			</h1>
-			{#if doc.description}
-				<p class="text-balance text-lg text-muted-foreground">
-					{doc.description}
-				</p>
-			{/if}
+			<p class="text-balance text-lg text-muted-foreground">
+				{doc.blurb}
+			</p>
 			<PostMetadata
 				primaryTags={doc.primaryTags}
 				secondaryTags={doc.secondaryTags}
@@ -29,10 +27,9 @@
 				reverseDateAndRest
 			/>
 		</div>
-		<slot name="mobile-toc" />
 	</header>
 
-	<div class="markdown-body my-8 font-serif">
+	<div class="markdown-body mb-8 font-serif">
 		{@html doc.content}
 	</div>
 </article>

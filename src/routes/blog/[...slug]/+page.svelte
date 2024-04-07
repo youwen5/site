@@ -10,14 +10,13 @@
 	export let data: PageData;
 
 	let doc: BlogDocument = {
-		title: 'Test Post',
-		primaryTags: ['Computer Science', 'Mathematics'],
-		secondaryTags: ['Calculus', 'Taylor Series'],
-		time: Date.now() / 1000,
-		content: data.content!,
-		blurb: 'A short and succinct, yet descriptive blurb about the post.',
-		description:
-			'An insightful and longer description of the post. This should be a bit more detailed than the blurb. It should give the reader a good idea of what the post is about.'
+		title: data.metadata.title,
+		primaryTags: data.metadata.manifest.tags.primary,
+		secondaryTags: data.metadata.manifest.tags.secondary,
+		time: data.metadata.manifest.date.getTime() / 1000,
+		content: data.content,
+		blurb: data.metadata.manifest.blurb,
+		description: data.metadata.manifest.description
 	};
 	// $: doc = data.metadata;
 	// $: componentSource = data.metadata.source?.replace('default', $config.style ?? 'default');

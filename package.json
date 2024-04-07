@@ -49,6 +49,7 @@
 		"@fontsource/zilla-slab": "^5.0.12",
 		"@svelte-put/toc": "^5.0.1",
 		"@sveltejs/adapter-vercel": "^5.2.0",
+		"@types/node": "^20.12.5",
 		"bits-ui": "^0.21.2",
 		"clsx": "^2.1.0",
 		"dayjs": "^1.11.10",
@@ -65,6 +66,7 @@
 		"svelte-sonner": "^0.3.21",
 		"tailwind-merge": "^2.2.2",
 		"tailwind-variants": "^0.2.1",
+		"toml": "^3.0.0",
 		"unified": "^11.0.4",
 		"vaul-svelte": "^0.3.0"
 	},
