@@ -10,7 +10,11 @@
   - `time` - A unix epoch integer representing the time the post was published.
   - `length` - An integer representing amount of words in the post.
   - `reverseDateAndRest` - A boolean that determines whether the date should be displayed at the bottom of the metadata.
- -->
+	
+	@slots
+
+	- toc - Place a table of contents here
+-->
 
 <script lang="ts">
 	import Badge from '../ui/badge/badge.svelte';

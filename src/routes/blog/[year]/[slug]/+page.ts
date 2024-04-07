@@ -8,6 +8,7 @@ export const prerender = true;
 const options = {
 	throwOnError: false
 };
+
 marked.use(markedKatex(options));
 marked.use(markedAlert());
 

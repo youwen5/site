@@ -5,9 +5,9 @@
 	export let tocStore: TocStore;
 
 	const calcTextClasses = (el: HTMLElement) => {
-		if (el.tagName === 'H1') return 'text-md xl:text-lg';
+		if (el.tagName === 'H1') return 'text-lg xl:text-xl font-medium';
 		if (el.tagName === 'H2') return 'text-md xl:text-lg';
-		if (el.id === 'end-marker') return 'text-md xl:text-lg';
+		if (el.id === 'end-marker') return 'text-lg xl:text-xl';
 		return 'text-sm text-muted-foreground';
 	};
 </script>
@@ -24,6 +24,7 @@
 						<!-- svelte-ignore a11y-missing-attribute a11y-missing-content -->
 						<a
 							use:toclink={{ store: tocStore, tocItem, observe: true }}
+							class:highlighted={$tocStore.activeItem === tocItem}
 							class={`hover:bg-muted px-2 py-1 rounded-r-sm transition-all border-l-secondary border-l-4 ${calcTextClasses(tocItem.element)}`}
 						/>
 					</li>
@@ -32,3 +33,9 @@
 		{/if}
 	</Card.Content>
 </Card.Root>
+
+<style lang="postcss">
+	.highlighted {
+		@apply bg-blue-200 dark:bg-blue-900 border-l-blue-500;
+	}
+</style>

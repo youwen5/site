@@ -48,7 +48,10 @@
 			>
 				my blog on computer science, math, games, art, and more.
 			</p>
-			<span class="flex flex-wrap items-center mt-8 md:hidden">
+			<span
+				class="flex flex-wrap items-center mt-8 md:hidden"
+				in:fly={{ duration: 300, x: -50, delay: 300 }}
+			>
 				<a href="#archive" class="flex items-center font-mono gap-2 hover:underline"
 					><ChevronRight />Archived Posts</a
 				>

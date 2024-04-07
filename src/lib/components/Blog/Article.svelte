@@ -12,7 +12,7 @@
 		<ChevronRight class="h-4 w-4" />
 		<div class="font-medium text-foreground">{doc.title}</div>
 	</div>
-	<div class="space-y-2">
+	<header class="space-y-2">
 		<h1 class="scroll-m-20 text-5xl font-bold font-serif tracking-tight">
 			{doc.title}
 		</h1>
@@ -28,10 +28,10 @@
 			length={doc.content.length}
 			reverseDateAndRest
 		/>
-	</div>
+		<slot name="toc" />
+	</header>
 
 	<div class="markdown-body mt-8 font-serif">
 		{@html doc.content}
-		<div role="note" id="end-marker" aria-label="End of article" class="invisible h-0 w-0">End</div>
 	</div>
 </article>
