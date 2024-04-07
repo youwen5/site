@@ -29,9 +29,10 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<div class="lg:flex max-w-6xl mx-auto mt-14 px-4">
+<div class="lg:flex mx-auto mt-14 px-4">
+	<div class="flex-shrink xl:basis-1/4" />
 	<main
-		class="flex-grow basis-3/4 flex-shrink"
+		class="flex-grow basis-3/4 xl:basis-2/4 flex-shrink"
 		use:toc={{
 			store: tocStore,
 			observe: true,
