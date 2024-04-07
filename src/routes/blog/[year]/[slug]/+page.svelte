@@ -3,7 +3,7 @@
 	import Article from '$lib/components/Blog/Article.svelte';
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
-	import TocHeader from '$lib/components/toc/TocHeader.svelte';
+	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
 
 	const tocStore = createTocStore();
 
