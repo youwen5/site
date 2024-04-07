@@ -14,7 +14,7 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title><h2 class="text-lg xl:text-xl">On this page</h2></Card.Title>
+		<Card.Title><h2 class="text-lg xl:text-xl font-serif">On this page</h2></Card.Title>
 	</Card.Header>
 	<Card.Content>
 		{#if $tocStore.items.size}
