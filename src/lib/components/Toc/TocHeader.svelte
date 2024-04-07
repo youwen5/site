@@ -15,10 +15,16 @@
 	};
 
 	$: currentDisplayed = $tocStore.activeItem ? $tocStore.activeItem.text : placeholder;
+
+	let value: string;
+
+	const close = () => {
+		value = '';
+	};
 </script>
 
 <nav class="fixed top-24 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
-	<Accordion.Root class="px-8">
+	<Accordion.Root class="px-8" bind:value>
 		<Accordion.Item value="toc">
 			<Accordion.Trigger
 				class="text-xl flex w-full flex-1 items-center justify-between py-1 font-medium transition-all [&[data-state=open]>span>svg]:rotate-180"
@@ -34,9 +40,11 @@
 						{#each $tocStore.items.values() as tocItem}
 							{@const selected = $tocStore.activeItem === tocItem}
 							<li class="border-l-secondary border-l-4 py-1" class:highlighted={selected}>
-								<!-- svelte-ignore a11y-missing-attribute a11y-missing-content -->
+								<!-- svelte-ignore a11y-missing-attribute a11y-missing-content a11y-click-events-have-key-events a11y-interactive-supports-focus a11y -->
 								<a
 									use:toclink={{ store: tocStore, tocItem, observe: true }}
+									on:click={close}
+									role="button"
 									class={`hover:bg-muted px-2 py-1 rounded-r-sm transition-all ${calcTextClasses(tocItem.element)}`}
 								/>
 							</li>
