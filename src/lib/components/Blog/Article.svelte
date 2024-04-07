@@ -32,7 +32,7 @@
 		<slot name="mobile-toc" />
 	</header>
 
-	<div class="markdown-body mt-8 font-serif">
+	<div class="markdown-body my-8 font-serif">
 		{@html doc.content}
 	</div>
 </article>

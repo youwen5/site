@@ -4,7 +4,6 @@
 	import Article from '$lib/components/Blog/Article.svelte';
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
-
 	const tocStore = createTocStore();
 
 	export let data: PageData;
@@ -14,7 +13,7 @@
 		primaryTags: ['Computer Science', 'Mathematics'],
 		secondaryTags: ['Calculus', 'Taylor Series'],
 		time: Date.now() / 1000,
-		content: data.markdown,
+		content: data.content!,
 		blurb: 'A short and succinct, yet descriptive blurb about the post.',
 		description:
 			'An insightful and longer description of the post. This should be a bit more detailed than the blurb. It should give the reader a good idea of what the post is about.'

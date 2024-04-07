@@ -1,24 +1,34 @@
 import type { PageLoad } from './$types.js';
-import { marked } from 'marked';
-import markedKatex from 'marked-katex-extension';
-import markedAlert from 'marked-alert';
+import { unified } from 'unified';
+import rehypeKatex from 'rehype-katex';
+import rehypeStringify from 'rehype-stringify';
+import remarkMath from 'remark-math';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import remarkGfm from 'remark-gfm';
+import remarkGhAlerts from 'remark-gh-alerts';
 
 export const prerender = true;
-
-const options = {
-	throwOnError: false
-};
-
-marked.use(markedKatex(options));
-marked.use(markedAlert());
 
 export const load: PageLoad = async ({ fetch }) => {
 	try {
 		const data = await fetch('/test.md');
-		const markdown = await marked.parse(await data.text());
+		const content = String(
+			await unified()
+				.use(remarkParse)
+				.use(remarkGfm)
+				.use(remarkGhAlerts)
+				.use(remarkMath)
+				.use(remarkRehype)
+				.use(rehypeKatex)
+				.use(rehypeStringify)
+				.process(await data.text())
+		);
+
+		if (typeof content === 'undefined') throw new Error('No content');
 
 		return {
-			markdown
+			content
 		};
 	} catch (e) {
 		return {
