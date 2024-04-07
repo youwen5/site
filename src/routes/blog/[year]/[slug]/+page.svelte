@@ -42,7 +42,7 @@
 				properties: { 'aria-hidden': 'true', class: 'hidden' },
 				position: 'before'
 			},
-			scrollMarginTop: 120,
+			scrollMarginTop: 150,
 			selector: ':where(h2, h3, h4, h5, h6)'
 		}}
 	>
