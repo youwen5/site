@@ -18,9 +18,11 @@ callsites
 camelcase
 caniuse
 Cantarell
+ccount
 chownr
 cliui
 clsx
+commonmark
 coredump
 couscousdude
 cssesc
@@ -30,6 +32,7 @@ deepmerge
 delimcenter
 delimsizing
 dequal
+devlop
 didyoumean
 diuoxn
 dlv
@@ -56,6 +59,7 @@ fontsource
 formatjs
 fsevents
 fullwidth
+gfm
 globalyzer
 globrex
 gnueabihf
@@ -63,6 +67,7 @@ gpg
 graphemer
 halfarrow
 hasown
+hastscript
 hbox
 hdashline
 hmr
@@ -102,7 +107,9 @@ mathrm
 mathscr
 mathsf
 mathtt
+mdast
 merriweather
+micromark
 minipass
 minizlib
 mml
@@ -116,8 +123,10 @@ NONINFRINGEMENT
 npmlog
 nrt
 nulldelimiter
+octicon
 Ollama
 optionator
+pcss
 PGP
 picocolors
 picomatch
@@ -129,6 +138,7 @@ pstrut
 Qsrc
 readdirp
 regexpp
+rehype
 reusify
 risc
 rlap
@@ -139,8 +149,10 @@ shadcn
 sirv
 sonner
 sout
+subtokenize
 sugarss
 swc
+tagfilter
 tailwindcss
 textbb
 textboldsf
@@ -149,9 +161,11 @@ textitsf
 textscr
 thenify
 thinbox
+toclink
 ungap
 vaul
 veltekit
+vfile
 vitefu
 vlist
 webidl
@@ -164,3 +178,4 @@ yocto
 youwen
 youwenw
 zilla
+zwitch
