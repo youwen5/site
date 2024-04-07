@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ChevronRight } from 'svelte-radix';
 	import PostMetadata from './PostMetadata.svelte';
+	import Separator from '../ui/separator/separator.svelte';
 
 	export let doc: BlogDocument;
 </script>
@@ -31,5 +32,6 @@
 
 	<div class="markdown-body mt-8 font-serif">
 		{@html doc.content}
+		<div role="note" id="end-marker" aria-label="End of article" class="invisible h-0 w-0">End</div>
 	</div>
 </article>

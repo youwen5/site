@@ -6,23 +6,8 @@
 	import { cn } from '$lib/utils.js';
 	import Article from '$lib/components/Blog/Article.svelte';
 	import { toc, createTocStore } from '@svelte-put/toc';
-	import StickyToc from '$lib/components/StickyToc.svelte';
+	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
 	import { onMount } from 'svelte';
-
-	let distanceFromRight = 0;
-
-	let mainElement: HTMLElement;
-
-	const handleResize = () => {
-		const screenWidth = window.innerWidth;
-		const mainWidth = mainElement.offsetWidth;
-		distanceFromRight = screenWidth - mainWidth - mainElement.offsetLeft;
-		console.log(distanceFromRight);
-	};
-
-	onMount(() => {
-		handleResize();
-	});
 
 	const tocStore = createTocStore();
 
@@ -48,21 +33,26 @@
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<svelte:window on:resize={handleResize} />
+<div class="md:flex max-w-6xl mx-auto mt-14 px-4">
+	<main
+		class="flex-grow basis-3/4"
+		use:toc={{
+			store: tocStore,
+			observe: true,
+			anchor: {
+				properties: { 'aria-hidden': 'true', class: 'hidden' },
+				position: 'before'
+			},
+			scrollMarginTop: 120,
+			selector: 'h1, h2, h3, h4, h5, h6, #end-marker'
+		}}
+	>
+		<Article {doc} />
+	</main>
 
-<main
-	bind:this={mainElement}
-	class="max-w-4xl mx-auto lg:mx-0 xl:mx-auto px-4 mt-8 mb-14"
-	use:toc={{
-		store: tocStore,
-		observe: true,
-		anchor: {
-			properties: { 'aria-hidden': 'true', 'tab-index': '-1', class: 'hidden' },
-			position: 'before'
-		}
-	}}
->
-	<Article {doc} />
-</main>
-
-<StickyToc {tocStore} {distanceFromRight} />
+	<aside class="basis-1/4 relative hidden md:block">
+		<div class="fixed mx-8">
+			<StickyToc {tocStore} />
+		</div>
+	</aside>
+</div>
