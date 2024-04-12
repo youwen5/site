@@ -4,7 +4,8 @@
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
 	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
-	import { DateRangeField } from 'bits-ui';
+	import '$lib/styles/katex.css';
+	import '$lib/styles/markdown.pcss';
 
 	const tocStore = createTocStore();
 
