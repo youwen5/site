@@ -2,22 +2,7 @@ import { readdir, readFile } from 'fs/promises';
 import { join } from 'path';
 import toml from 'toml';
 
-export type PostMeta = {
-	title: string;
-	manifest: {
-		authors: string[];
-		date: Date;
-		tags: { primary: string[]; secondary: string[] };
-		blurb: string;
-		description: string;
-	};
-	cover: {
-		src: string;
-		alt: string;
-	};
-};
-
-export default async () => {
+const crawl = async () => {
 	const blogPath = join(process.cwd(), 'blog');
 	const years = await readdir(blogPath);
 
@@ -54,3 +39,8 @@ export default async () => {
 		return posts;
 	}
 };
+
+const postsResult = await crawl();
+if (!postsResult) throw new Error('No posts found!');
+
+export const posts = postsResult;

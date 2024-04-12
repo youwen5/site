@@ -4,6 +4,7 @@
 	import { toc, createTocStore } from '@svelte-put/toc';
 	import StickyToc from '$lib/components/Toc/StickyToc.svelte';
 	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
+	import { DateRangeField } from 'bits-ui';
 
 	const tocStore = createTocStore();
 
@@ -13,10 +14,11 @@
 		title: data.metadata.title,
 		primaryTags: data.metadata.manifest.tags.primary,
 		secondaryTags: data.metadata.manifest.tags.secondary,
-		time: data.metadata.manifest.date.getTime() / 1000,
+		date: data.metadata.manifest.date,
 		content: data.content,
 		blurb: data.metadata.manifest.blurb,
-		description: data.metadata.manifest.description
+		description: data.metadata.manifest.description,
+		slug: data.slug
 	};
 	// $: doc = data.metadata;
 	// $: componentSource = data.metadata.source?.replace('default', $config.style ?? 'default');

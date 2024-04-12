@@ -23,11 +23,11 @@
 	};
 </script>
 
-<nav class="fixed top-24 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
+<nav class="fixed top-16 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
 	<Accordion.Root class="px-8" bind:value>
 		<Accordion.Item value="toc">
 			<Accordion.Trigger
-				class="text-xl flex w-full flex-1 items-center justify-between py-1 font-medium transition-all [&[data-state=open]>span>svg]:rotate-180"
+				class="text-lg font-medium flex w-full flex-1 items-center justify-between py-1 transition-all [&[data-state=open]>span>svg]:rotate-180"
 				>{currentDisplayed}
 				<span
 					class="inline-flex size-8 items-center justify-center rounded-[7px] bg-transparent transition-all hover:bg-dark-10"

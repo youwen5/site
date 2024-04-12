@@ -13,23 +13,19 @@
 	import { faker } from '@faker-js/faker';
 	import Button from '$lib/components/ui/button/button.svelte';
 
+	export let data: PageData;
+
+	$: posts = data.posts;
+
 	let loaded = false;
 
 	onMount(() => {
 		loaded = true;
 	});
 
-	let testDoc: BlogDocument = {
-		title: 'An introduction to Taylor Series',
-		primaryTags: ['Computer Science', 'Mathematics'],
-		secondaryTags: ['Calculus', 'Taylor Series'],
-		time: Date.now() / 1000,
-		content:
-			"This is a test post to test the layout and rendering of the blog. It's taken directly from my obsidian notebook, so some of the formatting may be off. The blog supports KaTeX math rendering and GitHub markdown alerts. Support for syntax highlighting and graphs is coming soon.",
-		blurb: 'A brief introduction to Taylor Series and its applications in calculus.',
-		description:
-			'An insightful and longer description of the post. This should be a bit more detailed than the blurb. It should give the reader a good idea of what the post is about.'
-	};
+	$: postArray = Object.entries(posts).map(([key, value]) => {
+		return { slug: key, ...value };
+	});
 </script>
 
 <svelte:head>
@@ -46,14 +42,14 @@
 				class="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono text-center sm:text-left"
 				in:fly={{ duration: 300, y: -50, delay: 200 }}
 			>
-				my blog on computer science, math, games, art, and more.
+				ramblings on computer science, math, games, and more.
 			</p>
 			<span
 				class="flex flex-wrap items-center mt-8 md:hidden"
 				in:fly={{ duration: 300, x: -50, delay: 300 }}
 			>
 				<a href="#archive" class="flex items-center font-mono gap-2 hover:underline"
-					><ChevronRight />Archived Posts</a
+					><ChevronRight />Archive</a
 				>
 			</span>
 
@@ -66,39 +62,13 @@
 					>
 						Latest Posts
 					</h2>
-					{#each Array(5) as _, i}
-						{#if i > 0}
-							<div
-								class="grid grid-cols-1 gap-4 mt-8"
-								in:fly|global={{ x: -50, delay: 350 + i * 100 }}
-							>
-								<PostCard
-									doc={{
-										title:
-											faker.hacker.noun() +
-											' ' +
-											faker.hacker.verb() +
-											' ' +
-											faker.hacker.adjective() +
-											' ' +
-											faker.hacker.noun(),
-										primaryTags: Array(2).map(() => faker.hacker.noun()),
-										secondaryTags: Array(2).map(() => faker.hacker.noun()),
-										time: Date.now() / 1000,
-										content: faker.lorem.paragraphs(5),
-										blurb: faker.hacker.phrase(),
-										description: faker.lorem.paragraphs(2)
-									}}
-								/>
-							</div>
-						{:else}
-							<div
-								class="grid grid-cols-1 gap-4 mt-8"
-								in:fly|global={{ x: -50, delay: 350 + i * 100 }}
-							>
-								<PostCard doc={testDoc} />
-							</div>
-						{/if}
+					{#each postArray as post, i}
+						<div
+							class="grid grid-cols-1 gap-4 mt-8"
+							in:fly|global={{ x: -50, delay: 350 + i * 100 }}
+						>
+							<PostCard doc={post} />
+						</div>
 					{/each}
 				</div>
 				<div in:fly={{ y: -50, delay: 300 }} class="col-span-3 md:col-span-1">

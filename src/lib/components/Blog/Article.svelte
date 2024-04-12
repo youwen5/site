@@ -1,16 +1,13 @@
 <script lang="ts">
 	import { ChevronRight } from 'svelte-radix';
 	import PostMetadata from './PostMetadata.svelte';
+	import Crumbs from './Crumbs.svelte';
 
 	export let doc: BlogDocument;
 </script>
 
 <article>
-	<div class="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
-		<div class="overflow-hidden text-ellipsis whitespace-nowrap">The Coredump</div>
-		<ChevronRight class="h-4 w-4" />
-		<div class="font-medium text-foreground">{doc.title}</div>
-	</div>
+	<Crumbs slug={doc.slug} title={doc.title} />
 	<header class="space-y-6">
 		<div class="space-y-2">
 			<h1 class="scroll-m-20 text-5xl font-bold font-serif tracking-tight">
@@ -22,7 +19,7 @@
 			<PostMetadata
 				primaryTags={doc.primaryTags}
 				secondaryTags={doc.secondaryTags}
-				time={doc.time}
+				date={doc.date}
 				length={doc.content.length}
 				reverseDateAndRest
 			/>

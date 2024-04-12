@@ -1,10 +1,7 @@
-import crawl from '$lib/utils/crawl';
+import { posts } from '$lib/utils/crawl';
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator, PageServerLoad } from './$types';
 import parseMarkdown from '$lib/utils/parseMarkdown';
-
-const posts = await crawl();
-if (!posts) throw new Error('No posts found!');
 
 export const load: PageServerLoad = async ({ params }) => {
 	const post = posts[params.slug];
@@ -17,7 +14,8 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	return {
 		...post,
-		content: parsed
+		content: parsed,
+		slug: params.slug
 	};
 };
 

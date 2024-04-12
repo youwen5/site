@@ -1,10 +1,11 @@
 title = "My Awesome Blog Post"
 
 [manifest]
-date = 2024-01-01T12:00:00Z
-author = "Youwen Wu"
+date = 2024-04-12T20:48:40.799Z
+authors = ["Youwen Wu"]
 blurb = "A blog post about Rust and WebAssembly"
 description = "A blog post about Rust and WebAssembly, and how to use it in web development. This post will cover the basics of Rust and WebAssembly, and how to use it in web development. We will also discuss the benefits of using Rust and WebAssembly, and how it can help you build faster and more efficient web applications."
+type = "article"
 
 [manifest.tags]
 primary = ["Rust", "WebAssembly"]
