@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { ChevronRight } from 'svelte-radix';
 	import PostMetadata from './PostMetadata.svelte';
 	import Crumbs from './Crumbs.svelte';
 
