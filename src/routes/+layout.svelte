@@ -10,8 +10,10 @@
 	import { Toaster } from '$lib/components/ui/sonner';
 	import { onMount } from 'svelte';
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
+	import Loading from '$lib/components/Loading.svelte';
 
 	let root: HTMLElement | null;
+	let navigating = false;
 
 	onMount(() => {
 		root = document.getElementsByTagName('html')[0];
@@ -20,16 +22,22 @@
 	});
 
 	beforeNavigate(() => {
+		navigating = true;
 		root?.classList.remove('smoothscroll');
 	});
 
 	afterNavigate(() => {
+		navigating = false;
 		root?.classList.add('smoothscroll');
 	});
 </script>
 
 <Toaster />
 <ModeWatcher />
+
+{#if navigating}
+	<Loading />
+{/if}
 
 <Navbar />
 <div class="pt-24">
