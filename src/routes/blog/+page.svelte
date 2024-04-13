@@ -2,18 +2,12 @@
 	import Archive from '$lib/components/Blog/Archive.svelte';
 
 	import ChevronRight from 'svelte-radix/ChevronRight.svelte';
-	import * as Card from '$lib/components/ui/card';
-	import Code from 'svelte-radix/Code.svelte';
 	import type { PageData } from './$types.js';
-	// import { config } from '$lib/stores/index.js';
-	import { cn } from '$lib/utils.js';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import Coredump from '$lib/assets/Coredump.svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import PostCard from '$lib/components/Blog/PostCard.svelte';
-	import { faker } from '@faker-js/faker';
-	import Button from '$lib/components/ui/button/button.svelte';
 
 	export let data: PageData;
 

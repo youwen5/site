@@ -3,7 +3,6 @@
 	import Placeholder from '$lib/assets/img/galaxy.jpg';
 	import Button from '../ui/button/button.svelte';
 	import PostMetadata from './PostMetadata.svelte';
-	import { faker } from '@faker-js/faker';
 
 	export let doc: {
 		metadata: PostMeta;
