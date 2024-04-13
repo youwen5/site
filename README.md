@@ -19,6 +19,10 @@ pnpm build
 pnpm preview
 ```
 
+## Adding posts
+
+To add posts, create a directory in `/blog`. The top level subdirectories should be the year, but there's no hard rules on what the rest of the subdirectories will be. The blog will build itself based on the file structure in `/blog/[year]/**`, and posts will be located wherever there exists `content.md` + `post.toml` files. Check `post.schema.json` for the specification of the `post.toml` format. Finally, you can add a `.blogignore` file to any directory in `/blog` to exclude it from static rendering (useful for work-in-progress blog posts).
+
 ## License
 
 The website's source code is licensed under the [MIT License](LICENSE). The contents of my blog are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
