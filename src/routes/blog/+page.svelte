@@ -68,7 +68,7 @@
 					{/each}
 				</div>
 				<div in:fly={{ y: -50, delay: 300 }} class="col-span-3 md:col-span-1">
-					<Archive></Archive>
+					<Archive />
 				</div>
 			</div>
 		{:else}

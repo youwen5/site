@@ -10,7 +10,7 @@
 	Currently nothing in the archive, so this component is left unfinished.
  -->
 
-<Card.Root class="bg-primary-foreground backdrop-blur-sm border-primary/10">
+<Card.Root class="bg-primary-foreground backdrop-blur-sm border-primary/10 min-h-[600px]">
 	<Card.Header>
 		<h2 class="text-3xl font-serif font-bold mb-6" id="archive">Archive</h2>
 		<h3 class="text-3xl font-serif font-medium text-muted-foreground" id="2024">2024</h3>
