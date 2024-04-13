@@ -23,6 +23,10 @@
 				reverseDateAndRest
 			/>
 		</div>
+		<figure class="w-[80%]">
+			<img src={doc.image.src} alt={doc.image.alt} class="rounded-xl shadow-md" />
+			<figcaption class="mt-2 text-center text-muted-foreground">{doc.image.caption}</figcaption>
+		</figure>
 	</header>
 
 	<div class="markdown-body mb-8 font-serif">

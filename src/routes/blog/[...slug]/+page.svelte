@@ -19,7 +19,8 @@
 		content: data.content,
 		blurb: data.metadata.manifest.blurb,
 		description: data.metadata.manifest.description,
-		slug: data.slug
+		slug: data.slug,
+		image: data.metadata.cover
 	};
 	// $: doc = data.metadata;
 	// $: componentSource = data.metadata.source?.replace('default', $config.style ?? 'default');

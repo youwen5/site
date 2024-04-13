@@ -5,7 +5,7 @@ interface BlogDocument {
 	primaryTags: string[];
 	secondaryTags: string[];
 	blurb: string;
-	image?: string;
+	image: { src: string; alt: string; caption: string };
 	description: string;
 	slug;
 }
@@ -24,5 +24,6 @@ type PostMeta = {
 	cover: {
 		src: string;
 		alt: string;
+		caption: string;
 	};
 };
