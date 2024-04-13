@@ -40,7 +40,7 @@
 {/if}
 
 <Navbar />
-<div class="pt-24">
+<div class="pt-16 lg:pt-24">
 	<slot />
 </div>
 
