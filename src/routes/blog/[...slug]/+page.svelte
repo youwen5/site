@@ -6,6 +6,7 @@
 	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
 	import '$lib/styles/katex.css';
 	import '$lib/styles/markdown.pcss';
+	import { onMount } from 'svelte';
 
 	const tocStore = createTocStore();
 
@@ -22,14 +23,25 @@
 		slug: data.slug,
 		image: data.metadata.cover
 	};
-	// $: doc = data.metadata;
-	// $: componentSource = data.metadata.source?.replace('default', $config.style ?? 'default');
+
+	onMount(() => {
+		console.log(data.metadata.deps);
+		console.log(data.metadata);
+	});
 </script>
 
 <svelte:head>
 	<title>{doc.title} | The Coredump</title>
 	<meta name="description" content={doc.description} />
 	<meta name="author" content="Youwen Wu" />
+
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css"
+		integrity="sha512-dSQLLtgaq2iGigmy9xowRshaMzUHeiIUTvJW/SkUpb1J+ImXOPNGAI7ZC8V5/PiN/XN83B8uIk4qET7AMhdC5Q=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
 </svelte:head>
 
 <TocHeader {tocStore} placeholder="On this page" />

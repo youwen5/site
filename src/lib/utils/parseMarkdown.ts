@@ -7,6 +7,7 @@ import remarkRehype from 'remark-rehype';
 import remarkGfm from 'remark-gfm';
 import remarkGhAlerts from 'remark-gh-alerts';
 import remarkSectionize from 'remark-sectionize';
+import rehypeHighlight from 'rehype-highlight';
 
 export default async (markdown: string) => {
 	try {
@@ -19,6 +20,7 @@ export default async (markdown: string) => {
 				.use(remarkMath)
 				.use(remarkRehype)
 				.use(rehypeKatex)
+				.use(rehypeHighlight)
 				.use(rehypeStringify)
 				.process(markdown)
 		);

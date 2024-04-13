@@ -65,5 +65,26 @@
 			"required": ["src", "alt", "caption"]
 		}
 	},
-	"required": ["title", "manifest", "cover"]
+	"required": ["title", "manifest", "cover"],
+	"optional": {
+		"type": "object",
+		"properties": {
+			"deps": {
+				"type": "object",
+				"properties": {
+					"external": {
+						"type": "object",
+						"properties": {
+							"styles": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

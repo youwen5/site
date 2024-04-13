@@ -147,3 +147,7 @@ If $\displaystyle\frac{e}{(n+1)!} \le \frac{1}{1000000}$, we're all set.
 Assume that $e \le 3$, which implies that if $\displaystyle\frac{3}{(n+1)!} \le \frac{1}{1000000}$, we're all set.
 After trying terms, we find that $n=9$ works.
 So $P_9(1) = 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + \dots + \frac{1}{9!}$ is within $\frac{1}{1000000}$ of $e$.
+
+```rust
+let mut var: u32 = 10030;
+```
