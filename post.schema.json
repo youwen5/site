@@ -1,0 +1,69 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string"
+		},
+		"manifest": {
+			"type": "object",
+			"properties": {
+				"date": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"blurb": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"authors": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"tags": {
+					"type": "object",
+					"properties": {
+						"primary": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"secondary": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					"required": ["primary", "secondary"]
+				}
+			},
+			"required": ["date", "blurb", "description", "type", "authors", "tags"]
+		},
+		"cover": {
+			"type": "object",
+			"properties": {
+				"src": {
+					"type": "string",
+					"format": "uri"
+				},
+				"alt": {
+					"type": "string"
+				},
+				"caption": {
+					"type": "string"
+				}
+			},
+			"required": ["src", "alt", "caption"]
+		}
+	},
+	"required": ["title", "manifest", "cover"]
+}

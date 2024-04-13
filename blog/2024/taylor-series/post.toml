@@ -1,3 +1,5 @@
+#:schema ../../../post.schema.json
+
 title = "A Brief Introduction to Taylor Series"
 
 [manifest]

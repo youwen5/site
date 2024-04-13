@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	import Placeholder from '$lib/assets/img/galaxy.jpg';
 	import Button from '../ui/button/button.svelte';
 	import PostMetadata from './PostMetadata.svelte';
 
@@ -26,8 +25,8 @@
 	</Card.Header>
 	<Card.Content class="grid grid-cols-3 gap-6">
 		<img
-			src={Placeholder}
-			alt="Placeholder"
+			src={doc.metadata.cover.src}
+			alt={doc.metadata.cover.alt}
 			class="col-span-3 md:col-span-1 rounded-2xl shadow-md"
 		/>
 		<div class="flex flex-col justify-around col-span-3 md:col-span-2 gap-4">

@@ -1,3 +1,4 @@
+#:schema ../../../post.schema.json
 title = "My Awesome Blog Post"
 
 [manifest]
@@ -12,6 +13,6 @@ primary = ["Rust", "WebAssembly"]
 secondary = ["Web Development", "Frontend"]
 
 [cover]
-src = "cover.jpg"
+src = "https://machinelearningmastery.com/wp-content/uploads/2021/07/tayloreq6.png"
 alt = "A Rust and WebAssembly logo"
 caption = "Rust and WebAssembly"
