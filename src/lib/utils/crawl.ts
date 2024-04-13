@@ -19,6 +19,12 @@ const crawl = async () => {
 
 		for (const directory of directories) {
 			const postPath = join(yearPath, directory);
+			try {
+				await readFile(join(postPath, '.blogignore'), 'utf-8');
+				continue;
+			} catch (error) {
+				// If the file doesn't exist, continue with the rest of the code
+			}
 			const postTomlPath = join(postPath, 'post.toml');
 			const contentPath = join(postPath, 'content.md');
 

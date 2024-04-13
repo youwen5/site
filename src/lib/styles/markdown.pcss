@@ -30,6 +30,10 @@
 		margin: 0;
 	}
 
+	a {
+		@apply text-blue-500 dark:text-blue-600 hover:underline;
+	}
+
 	dl {
 		font-family: monospace;
 	}
@@ -41,14 +45,11 @@
 	}
 
 	img {
-		max-width: 100%;
-		display: block;
-		margin: 0 auto;
-		padding: 0.5em;
+		@apply max-w-[80%] mx-auto my-8 rounded-xl shadow-lg;
 	}
 
 	blockquote:not(.markdown-alert) {
-		@apply border-l-2 border-l-muted-foreground my-4 pl-4 italic;
+		@apply border-l-4 border-l-muted-foreground my-4 pl-4 italic mx-4;
 	}
 
 	table {
@@ -82,13 +83,11 @@
 	table,
 	.highlight > pre,
 	pre.example {
+		@apply p-4 border-2 border-primary/10 font-sans;
 		max-height: 70vh;
 		margin: 1em 0;
-		padding: 1em;
 		overflow: auto;
 		font-size: 0.85rem;
-		font-family: monospace;
-		border: 1px dashed rgba(250, 100, 50, 0.5);
 	}
 
 	figure {
@@ -103,7 +102,7 @@
 
 	/* KaTeX formatting */
 	.katex-display {
-		@apply max-w-4xl overflow-x-auto overflow-y-hidden;
+		@apply max-w-3xl overflow-x-auto overflow-y-hidden;
 	}
 
 	/* Markdown Alert formatting */
@@ -162,6 +161,6 @@
 		height: 1em;
 	}
 	.hljs {
-		@apply mx-2 my-4 rounded-xl shadow-lg;
+		@apply my-4 rounded-xl shadow-lg max-w-3xl overflow-x-auto;
 	}
 }

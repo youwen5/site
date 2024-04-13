@@ -144,10 +144,16 @@ $$
 The worst case scenario is $z=1$.
 If $\displaystyle\frac{e}{(n+1)!} \le \frac{1}{1000000}$, we're all set.
 
+![Test image](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png)
+
 Assume that $e \le 3$, which implies that if $\displaystyle\frac{3}{(n+1)!} \le \frac{1}{1000000}$, we're all set.
 After trying terms, we find that $n=9$ works.
 So $P_9(1) = 1 + 1 + \frac{1}{2!} + \frac{1}{3!} + \dots + \frac{1}{9!}$ is within $\frac{1}{1000000}$ of $e$.
 
 ```rust
 let mut var: u32 = 10030;
+
+fn takes_var(var: &mut u32) {
+  var += 1;
+}
 ```
