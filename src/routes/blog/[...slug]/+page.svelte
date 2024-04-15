@@ -23,11 +23,6 @@
 		slug: data.slug,
 		image: data.metadata.cover
 	};
-
-	onMount(() => {
-		console.log(data.metadata.deps);
-		console.log(data.metadata);
-	});
 </script>
 
 <svelte:head>
