@@ -19,4 +19,3 @@ Here's the general gist of the main setup steps:
 6. If you were successful in setting up the GPU drivers, you should now be able to enter Plasma with Wayland. For me, performance is much better and smoother, and I'm able to set up the display configurations that I want without weird `xrander` hacks. However, at this point, Wayland is still super problematic, and even more setup will need to be done.
 7. Set the environment variable to tell all electron apps to use native Wayland instead of xwayland. This will stop weird behavior in discord, vscode, obsidian. etc.
 8. Enable the experimental Nvidia kernel flag to preserve the entire video memory on suspend. This will allow you to use suspend properly and not break everything.
-
