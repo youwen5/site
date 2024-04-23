@@ -1,7 +1,8 @@
+(?:^|/)\.blogignore$
 (?:|$^ 93.94% - excluded 62/66)^src/lib/assets/
+.svelte-kit
+.vercel
 [^/]\.ico$
 ^\Q.github/actions/spelling/expect.txt\E$
 ^\Qsrc/globals.d.ts\E$
-.svelte-kit
 node_modules
-.vercel
