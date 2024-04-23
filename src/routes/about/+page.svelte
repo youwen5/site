@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Youwen Wu | About</title>
+	<title>About | Youwen Wu</title>
 </svelte:head>
 
 <UnderConstruction />

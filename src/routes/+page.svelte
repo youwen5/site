@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Youwen Wu | Home</title>
+	<title>Home | Youwen Wu</title>
 	<meta name="description" content="My personal website and blog." />
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>

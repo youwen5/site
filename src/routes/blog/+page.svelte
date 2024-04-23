@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>Youwen Wu | The Coredump</title>
+	<title>The Coredump | Youwen Wu</title>
 	<meta name="description" content="My blog on computer science, math, games, art, and more." />
 	<meta name="author" content="Youwen Wu" />
 </svelte:head>

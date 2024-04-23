@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Separator from './ui/separator/separator.svelte';
 	import Socials from './Socials.svelte';
-	import { Code } from 'svelte-radix';
 </script>
 
 <footer class="h-24 px-4 mb-12 text-sm md:text-md xl:text-lg">
