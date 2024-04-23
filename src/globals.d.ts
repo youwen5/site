@@ -7,7 +7,7 @@ interface BlogDocument {
 	blurb: string;
 	image: { src: string; alt: string; caption: string };
 	description: string;
-	slug;
+	slug: string;
 }
 
 declare module 'remark-sectionize';

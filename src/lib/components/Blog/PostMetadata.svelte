@@ -20,7 +20,6 @@
 	import Badge from '../ui/badge/badge.svelte';
 	import dayjs from 'dayjs';
 	import relativeTime from 'dayjs/plugin/relativeTime';
-	import { onMount } from 'svelte';
 
 	dayjs.extend(relativeTime);
 

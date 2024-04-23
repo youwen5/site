@@ -1,0 +1,20 @@
+
+#:schema ../../../post.schema.json
+title = "The Vim Manifesto"
+
+[manifest]
+date = 2024-04-23T07:49:52+00:00
+authors = ["Youwen Wu"]
+blurb = "Glory to the one true text editor."
+description = "The loss of the modal editor is truly one of the greatest tragedies in the history of computing. Vim is the last bastion of hope in a world of point-and-click."
+type = "article"
+highlight = true
+
+[manifest.tags]
+primary = ["vim", "neovim", "text editor", "ide"]
+secondary = []
+
+[cover]
+src = "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimShadowed.png"
+alt = "neovim vtuber style logo"
+caption = "The One True Text Editor"

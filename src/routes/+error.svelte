@@ -3,7 +3,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { Home } from 'svelte-radix';
 
-	const error = $page.error ?? { message: 'unknown' };
+  const error = $page.error ?? { message: 'unknown' };
 </script>
 
 <svelte:head>
