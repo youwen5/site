@@ -3,7 +3,6 @@
 
 	import ChevronRight from 'svelte-radix/ChevronRight.svelte';
 	import type { PageData } from './$types.js';
-	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import Coredump from '$lib/assets/Coredump.svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
