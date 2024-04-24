@@ -6,7 +6,6 @@
 	import TocHeader from '$lib/components/Toc/TocHeader.svelte';
 	import '$lib/styles/katex.css';
 	import '$lib/styles/markdown.pcss';
-	import { onMount } from 'svelte';
 
 	const tocStore = createTocStore();
 
