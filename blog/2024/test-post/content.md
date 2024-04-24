@@ -1,12 +1,12 @@
 ## Introduction
 
-Welcome! This blog is powered by a custom static site generator I made using SvelteKit. I'm working on upgrades ([see: lorelei](https://github.com/couscousdude/lorelei)), but in the meantime, check this out:
+Welcome! This blog is powered by a custom static site generator I made using SvelteKit. I'm working
+on upgrades ([see: lorelei](https://github.com/couscousdude/lorelei)), but in the meantime, check
+this out:
 
-> [!NOTE]
-> GitHub-style notifications!
+> [!NOTE] GitHub-style notifications!
 
-> [!TIP]
-> The full Commonmark spec is supported, and it's extended by the GFM spec
+> [!TIP] The full Commonmark spec is supported, and it's extended by the GFM spec
 
 ## Tables!
 
@@ -17,7 +17,8 @@ Welcome! This blog is powered by a custom static site generator I made using Sve
 
 ## More stuff!
 
-Notice the table of contents generated on the right (on desktop) or under the navbar (on mobile). It's auto-populated at build time from the content on the page.
+Notice the table of contents generated on the right (on desktop) or under the navbar (on mobile).
+It's auto-populated at build time from the content on the page.
 
 ### Math
 
@@ -55,20 +56,25 @@ caption = "This is the first post!"
 
 Code highlighting is also supported, via `highlight.js`.
 
-The `unified` plugin ecosystem is used to transform markdown into the HTML in this document. Check out the parser [here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It handles all the parsing server-side at build time, so these posts are a collection of mostly static HTML. The formatting is done mostly with a [custom stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
+The `unified` plugin ecosystem is used to transform markdown into the HTML in this document. Check
+out the parser
+[here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It
+handles all the parsing server-side at build time, so these posts are a collection of mostly static
+HTML. The formatting is done mostly with a
+[custom stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
 
 ## Raw source code of this post
 
 ````markdown
 ## Introduction
 
-Welcome! This blog is powered by a custom static site generator I made using SvelteKit. I'm working on upgrades ([see: lorelei](https://github.com/couscousdude/lorelei)), but in the meantime, check this out:
+Welcome! This blog is powered by a custom static site generator I made using SvelteKit. I'm working
+on upgrades ([see: lorelei](https://github.com/couscousdude/lorelei)), but in the meantime, check
+this out:
 
-> [!NOTE]
-> GitHub-style notifications!
+> [!NOTE] GitHub-style notifications!
 
-> [!TIP]
-> The full Commonmark spec is supported, and it's extended by the GFM spec
+> [!TIP] The full Commonmark spec is supported, and it's extended by the GFM spec
 
 ## Tables!
 
@@ -79,7 +85,8 @@ Welcome! This blog is powered by a custom static site generator I made using Sve
 
 ## More stuff!
 
-Notice the table of contents generated on the right (on desktop) or under the navbar (on mobile). It's auto-populated at build time from the content on the page.
+Notice the table of contents generated on the right (on desktop) or under the navbar (on mobile).
+It's auto-populated at build time from the content on the page.
 
 ### Math
 
@@ -118,7 +125,12 @@ caption = "This is the first post!"
 
 Code highlighting is also supported, via `highlight.js`.
 
-The `unified` plugin ecosystem is used to transform markdown into the HTML in this document. Check out the parser [here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It handles all the parsing server-side at build time, so these posts are a collection of mostly static HTML. The formatting is done mostly with a [custom stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
+The `unified` plugin ecosystem is used to transform markdown into the HTML in this document. Check
+out the parser
+[here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It
+handles all the parsing server-side at build time, so these posts are a collection of mostly static
+HTML. The formatting is done mostly with a
+[custom stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
 
 ```
 

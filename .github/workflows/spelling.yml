@@ -103,24 +103,18 @@ jobs:
           report-timing: 1
           warnings: bad-regex,binary-file,deprecated-feature,large-file,limited-references,no-newline-at-eof,noisy-file,non-alpha-in-dictionary,token-is-substring,unexpected-line-ending,whitespace-in-dictionary,minified-file,unsupported-configuration,no-files-to-check
           experimental_apply_changes_via_bot: 1
-          use_sarif: ${{ (!github.event.pull_request || (github.event.pull_request.head.repo.full_name == github.repository)) && 1 }}
+          use_sarif:
+            ${{ (!github.event.pull_request || (github.event.pull_request.head.repo.full_name ==
+            github.repository)) && 1 }}
           extra_dictionary_limit: 20
-          extra_dictionaries: cspell:software-terms/dict/softwareTerms.txt
-            cspell:html/dict/html.txt
-            cspell:svelte/src/svelte.txt
-            cspell:bash/src/bash-words.txt
-            cspell:lorem-ipsum/dictionary.txt
-            cspell:typescript/dict/typescript.txt
-            cspell:npm/dict/npm.txt
-            cspell:latex/dict/latex.txt
-            cspell:node/dict/node.txt
-            cspell:php/dict/php.txt
-            cspell:golang/dict/go.txt
-            cspell:filetypes/filetypes.txt
-            cspell:fullstack/dict/fullstack.txt
-            cspell:python/src/python/python-lib.txt
-            cspell:aws/aws.txt
-            cspell:css/dict/css.txt
+          extra_dictionaries:
+            cspell:software-terms/dict/softwareTerms.txt cspell:html/dict/html.txt
+            cspell:svelte/src/svelte.txt cspell:bash/src/bash-words.txt
+            cspell:lorem-ipsum/dictionary.txt cspell:typescript/dict/typescript.txt
+            cspell:npm/dict/npm.txt cspell:latex/dict/latex.txt cspell:node/dict/node.txt
+            cspell:php/dict/php.txt cspell:golang/dict/go.txt cspell:filetypes/filetypes.txt
+            cspell:fullstack/dict/fullstack.txt cspell:python/src/python/python-lib.txt
+            cspell:aws/aws.txt cspell:css/dict/css.txt
 
   comment-push:
     name: Report (Push)
@@ -146,7 +140,9 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    if: (success() || failure()) && needs.spelling.outputs.followup && contains(github.event_name, 'pull_request')
+    if:
+      (success() || failure()) && needs.spelling.outputs.followup && contains(github.event_name,
+      'pull_request')
     steps:
       - name: comment
         uses: check-spelling/check-spelling@main
@@ -163,11 +159,9 @@ jobs:
       pull-requests: write
       actions: read
     runs-on: ubuntu-latest
-    if: ${{
-      github.event_name == 'issue_comment' &&
-      github.event.issue.pull_request &&
-      contains(github.event.comment.body, '@check-spelling-bot apply')
-      }}
+    if:
+      ${{ github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+      contains(github.event.comment.body, '@check-spelling-bot apply') }}
     concurrency:
       group: spelling-update-${{ github.event.issue.number }}
       cancel-in-progress: false
