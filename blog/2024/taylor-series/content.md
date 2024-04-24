@@ -14,25 +14,35 @@ need a more general method.
 We can approximate some non-polynomial functions by constructing a polynomial with the _same
 derivatives_ as the function. This is called a _Taylor Polynomial_.
 
-> [!NOTE] In general, if $c \neq 0$, it's called a Taylor Polynomial. If $c = 0$, then it's a
+<!-- prettier-ignore -->
+> [!NOTE]
+> In general, if $c \neq 0$, it's called a Taylor Polynomial. If $c = 0$, then it's a
 > Maclaurin Polynomial.
 
-> [!CAUTION] test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+<!-- prettier-ignore -->
+> [!CAUTION]
+> test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
 > incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
 > ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 > voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-> [!WARNING] test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+<!-- prettier-ignore -->
+> [!WARNING]
+> test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
 > incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
 > ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 > voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-> [!TIP] test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+<!-- prettier-ignore -->
+> [!TIP]
+> test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
 > incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
 > ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 > voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-> [!IMPORTANT] test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+<!-- prettier-ignore -->
+> [!IMPORTANT]
+> test lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
 > incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
 > ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 > voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -77,7 +87,9 @@ You can confirm that this polynomial has the same first, second, and third deriv
 
 Taking repeated derivatives like this leads to a common pattern in all Taylor polynomials.
 
-> [!NOTE] We use the notation $P_n(x)$ to denote the $n^{th}$ Taylor polynomial
+<!-- prettier-ignore -->
+> [!NOTE]
+> We use the notation $P_n(x)$ to denote the $n^{th}$ Taylor polynomial
 
 Taylor polynomials take the form:
 
@@ -132,13 +144,17 @@ $$
 z \in [c,\,x]
 $$
 
-> [!TIP] This is a fancy way of saying that $z$ is between $c$ and $x$.
+<!-- prettier-ignore -->
+> [!TIP]
+> This is a fancy way of saying that $z$ is between $c$ and $x$.
 
 $$
 \text{Error} = \left|R_n(x)\right|
 $$
 
-> [!NOTE] > $R_n$ would be the "next term" in $P_n(x)$ except we put $z$ instead of $c$.
+<!-- prettier-ignore -->
+> [!NOTE]
+> $R_n$ would be the "next term" in $P_n(x)$ except we put $z$ instead of $c$.
 
 #### Applying to $e^x$
 
