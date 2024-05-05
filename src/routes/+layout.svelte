@@ -19,6 +19,8 @@
 		root = document.getElementsByTagName('html')[0];
 
 		root?.classList.add('smoothscroll');
+
+		navigating = false;
 	});
 
 	beforeNavigate(() => {
@@ -44,4 +46,5 @@
 	<slot />
 </div>
 
+<Footer />
 <Footer />
