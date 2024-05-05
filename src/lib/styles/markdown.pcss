@@ -1,167 +1,167 @@
 .markdown-body {
-	@apply text-primary/90;
-	h2 {
-		@apply text-3xl font-serif mb-5 mt-16;
-	}
-	section:first-child h2 {
-		@apply mt-6;
-	}
-	h3,
-	h4 {
-		@apply text-2xl mb-5 mt-12 text-muted-foreground;
-	}
+  @apply text-primary/90;
+  h2 {
+    @apply text-3xl font-serif mb-5 mt-16;
+  }
+  section:first-child h2 {
+    @apply mt-6;
+  }
+  h3,
+  h4 {
+    @apply text-2xl mb-5 mt-12 text-muted-foreground;
+  }
 
-	p {
-		@apply leading-loose my-2;
-	}
+  p {
+    @apply leading-loose my-2;
+  }
 
-	ol,
-	ul {
-		margin: 1em;
-	}
-	ol li ol,
-	ol li ul,
-	ul li ol,
-	ul li ul {
-		margin: 0 2em;
-	}
-	ol li p,
-	ul li p {
-		margin: 0;
-	}
+  ol,
+  ul {
+    margin: 1em;
+  }
+  ol li ol,
+  ol li ul,
+  ul li ol,
+  ul li ul {
+    margin: 0 2em;
+  }
+  ol li p,
+  ul li p {
+    margin: 0;
+  }
 
-	a {
-		@apply text-blue-500 dark:text-blue-600 hover:underline;
-	}
+  a {
+    @apply text-blue-500 dark:text-blue-600 hover:underline;
+  }
 
-	dl {
-		font-family: monospace;
-	}
-	dl dt {
-		font-weight: bold;
-	}
-	dl dd {
-		margin: -1em 0 1em 1em;
-	}
+  dl {
+    font-family: monospace;
+  }
+  dl dt {
+    font-weight: bold;
+  }
+  dl dd {
+    margin: -1em 0 1em 1em;
+  }
 
-	img {
-		@apply max-w-[80%] mx-auto my-8 rounded-xl shadow-lg;
-	}
+  img {
+    @apply max-w-[80%] mx-auto my-8 rounded-xl shadow-lg;
+  }
 
-	blockquote:not(.markdown-alert) {
-		@apply border-l-4 border-l-muted-foreground my-4 pl-4 italic mx-4;
-	}
+  blockquote:not(.markdown-alert) {
+    @apply border-l-4 border-l-muted-foreground my-4 pl-4 italic mx-4;
+  }
 
-	table {
-		@apply max-w-3xl xl:max-w-5xl;
-		font-size: 1rem;
-		text-align: left;
-		caption-side: bottom;
-		margin-bottom: 2em;
-	}
-	table * {
-		border: none;
-	}
-	table thead,
-	table tr {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-	}
-	table tr:nth-child(even) {
-		background-color: rgba(200, 200, 200, 0.2);
-	}
-	table tbody {
-		display: block;
-		max-height: 70vh;
-		overflow-y: auto;
-	}
-	table td,
-	table th {
-		padding: 0.25em;
-	}
+  table {
+    @apply max-w-3xl xl:max-w-5xl;
+    font-size: 1rem;
+    text-align: left;
+    caption-side: bottom;
+    margin-bottom: 2em;
+  }
+  table * {
+    border: none;
+  }
+  table thead,
+  table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  table tr:nth-child(even) {
+    background-color: rgba(200, 200, 200, 0.2);
+  }
+  table tbody {
+    display: block;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  table td,
+  table th {
+    padding: 0.25em;
+  }
 
-	table,
-	.highlight > pre,
-	pre.example {
-		@apply p-4 border-2 border-primary/10 font-sans;
-		max-height: 70vh;
-		margin: 1em 0;
-		overflow: auto;
-		font-size: 0.85rem;
-	}
+  table,
+  .highlight > pre,
+  pre.example {
+    @apply p-4 border-2 border-primary/10 font-sans;
+    max-height: 70vh;
+    margin: 1em 0;
+    overflow: auto;
+    font-size: 0.85rem;
+  }
 
-	figure {
-		margin: 1em 0;
-	}
-	figure figcaption {
-		font-family: monospace;
-		font-size: 0.75em;
-		text-align: center;
-		color: grey;
-	}
+  figure {
+    margin: 1em 0;
+  }
+  figure figcaption {
+    font-family: monospace;
+    font-size: 0.75em;
+    text-align: center;
+    color: grey;
+  }
 
-	/* KaTeX formatting */
-	.katex-display {
-		@apply max-w-3xl overflow-x-auto overflow-y-hidden;
-	}
+  /* KaTeX formatting */
+  .katex-display {
+    @apply max-w-3xl overflow-x-auto overflow-y-hidden;
+  }
 
-	/* Markdown Alert formatting */
-	.markdown-alert {
-		@apply border-l-4 rounded-xl px-4 py-1 my-4 shadow-md dark:shadow-none;
-	}
-	.markdown-alert.markdown-alert-caution {
-		@apply border-l-red-600 bg-red-100 dark:bg-red-900 dark:text-red-100;
-	}
-	.markdown-alert-title {
-		@apply font-medium text-xl font-sans;
-	}
-	.markdown-alert-caution > .markdown-alert-title {
-		@apply text-red-600 fill-red-600 dark:text-red-100 dark:fill-red-100;
-	}
-	.markdown-alert.markdown-alert-tip {
-		@apply border-l-green-600 bg-green-100 dark:bg-green-900 dark:text-green-100;
-	}
-	.markdown-alert-tip > .markdown-alert-title {
-		@apply text-green-600 fill-green-600 dark:text-green-100 dark:fill-green-100;
-	}
+  /* Markdown Alert formatting */
+  .markdown-alert {
+    @apply border-l-4 rounded-xl px-4 py-1 my-4 shadow-md dark:shadow-none;
+  }
+  .markdown-alert.markdown-alert-caution {
+    @apply border-l-red-600 bg-red-100 dark:bg-red-900 dark:text-red-100;
+  }
+  .markdown-alert-title {
+    @apply font-medium text-xl font-sans;
+  }
+  .markdown-alert-caution > .markdown-alert-title {
+    @apply text-red-600 fill-red-600 dark:text-red-100 dark:fill-red-100;
+  }
+  .markdown-alert.markdown-alert-tip {
+    @apply border-l-green-600 bg-green-100 dark:bg-green-900 dark:text-green-100;
+  }
+  .markdown-alert-tip > .markdown-alert-title {
+    @apply text-green-600 fill-green-600 dark:text-green-100 dark:fill-green-100;
+  }
 
-	.markdown-alert.markdown-alert-important {
-		@apply border-l-purple-600 bg-purple-100 dark:bg-purple-900 dark:text-purple-100;
-	}
-	.markdown-alert-important > .markdown-alert-title {
-		@apply text-purple-600 fill-purple-600 dark:text-purple-100 dark:fill-purple-100;
-	}
+  .markdown-alert.markdown-alert-important {
+    @apply border-l-purple-600 bg-purple-100 dark:bg-purple-900 dark:text-purple-100;
+  }
+  .markdown-alert-important > .markdown-alert-title {
+    @apply text-purple-600 fill-purple-600 dark:text-purple-100 dark:fill-purple-100;
+  }
 
-	.markdown-alert.markdown-alert-note {
-		@apply border-l-blue-600 bg-blue-100 dark:bg-blue-900 dark:text-blue-100;
-	}
-	.markdown-alert-note > .markdown-alert-title {
-		@apply text-blue-600 fill-blue-600 dark:text-blue-100 dark:fill-blue-100;
-	}
+  .markdown-alert.markdown-alert-note {
+    @apply border-l-blue-600 bg-blue-100 dark:bg-blue-900 dark:text-blue-100;
+  }
+  .markdown-alert-note > .markdown-alert-title {
+    @apply text-blue-600 fill-blue-600 dark:text-blue-100 dark:fill-blue-100;
+  }
 
-	.markdown-alert.markdown-alert-warning {
-		@apply border-l-yellow-600 bg-yellow-100 dark:bg-yellow-900 dark:text-yellow-100;
-	}
-	.markdown-alert-warning > .markdown-alert-title {
-		@apply text-yellow-600 fill-yellow-600 dark:text-yellow-100 dark:fill-yellow-100;
-	}
-	.markdown-alert .markdown-alert-title .octicon {
-		margin-right: 0.5rem;
-		overflow: visible !important;
+  .markdown-alert.markdown-alert-warning {
+    @apply border-l-yellow-600 bg-yellow-100 dark:bg-yellow-900 dark:text-yellow-100;
+  }
+  .markdown-alert-warning > .markdown-alert-title {
+    @apply text-yellow-600 fill-yellow-600 dark:text-yellow-100 dark:fill-yellow-100;
+  }
+  .markdown-alert .markdown-alert-title .octicon {
+    margin-right: 0.5rem;
+    overflow: visible !important;
 
-		-webkit-mask: var(--oct-icon) no-repeat;
-		mask: var(--oct-icon) no-repeat;
-		-webkit-mask-size: 100% 100%;
-		mask-size: 100% 100%;
-		background-color: currentColor;
-		color: inherit;
-		display: inline-block;
-		vertical-align: -0.125em;
-		width: 1em;
-		height: 1em;
-	}
-	.hljs {
-		@apply my-4 rounded-xl shadow-lg overflow-x-auto text-wrap;
-	}
+    -webkit-mask: var(--oct-icon) no-repeat;
+    mask: var(--oct-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    display: inline-block;
+    vertical-align: -0.125em;
+    width: 1em;
+    height: 1em;
+  }
+  .hljs {
+    @apply my-4 rounded-xl shadow-lg overflow-x-auto text-wrap;
+  }
 }

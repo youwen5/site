@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BackToTop from '$lib/components/BackToTop.svelte';
+  import BackToTop from '$lib/components/BackToTop.svelte'
 </script>
 
 <BackToTop />

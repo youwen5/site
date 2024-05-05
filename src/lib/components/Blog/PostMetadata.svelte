@@ -17,38 +17,38 @@
 -->
 
 <script lang="ts">
-	import Badge from '../ui/badge/badge.svelte';
-	import dayjs from 'dayjs';
-	import relativeTime from 'dayjs/plugin/relativeTime';
+  import Badge from '../ui/badge/badge.svelte'
+  import dayjs from 'dayjs'
+  import relativeTime from 'dayjs/plugin/relativeTime'
 
-	dayjs.extend(relativeTime);
+  dayjs.extend(relativeTime)
 
-	export let primaryTags: string[] = [];
-	export let secondaryTags: string[] = [];
-	export let date: Date;
-	export let length: number;
-	export let reverseDateAndRest: boolean = false;
+  export let primaryTags: string[] = []
+  export let secondaryTags: string[] = []
+  export let date: Date
+  export let length: number
+  export let reverseDateAndRest: boolean = false
 
-	let dayjsDate = dayjs(date);
+  let dayjsDate = dayjs(date)
 </script>
 
 <div class="grid grid-cols-1">
-	{#if !reverseDateAndRest}
-		<p class="text-muted-foreground/80 my-1 text-lg">{dayjsDate.format('MMMM DD, YYYY')}</p>
-	{/if}
-	<span class="flex items-center flex-wrap my-2 gap-2">
-		{#each primaryTags as tag}
-			<Badge>{tag}</Badge>
-		{/each}
-		{#each secondaryTags as tag}
-			<Badge variant="secondary">{tag}</Badge>
-		{/each}
-	</span>
-	<!-- Assuming adult silent reading rate of 238 wpm -->
-	<span class="text-muted-foreground text-sm mt-2">
-		{dayjsDate.fromNow()} | {Math.ceil(length / 238)} min read | {length} words
-	</span>
-	{#if reverseDateAndRest}
-		<p class="text-muted-foreground/80 text-xl mt-4">{dayjsDate.format('MMMM DD, YYYY')}</p>
-	{/if}
+  {#if !reverseDateAndRest}
+    <p class="text-muted-foreground/80 my-1 text-lg">{dayjsDate.format('MMMM DD, YYYY')}</p>
+  {/if}
+  <span class="flex items-center flex-wrap my-2 gap-2">
+    {#each primaryTags as tag}
+      <Badge>{tag}</Badge>
+    {/each}
+    {#each secondaryTags as tag}
+      <Badge variant="secondary">{tag}</Badge>
+    {/each}
+  </span>
+  <!-- Assuming adult silent reading rate of 238 wpm -->
+  <span class="text-muted-foreground text-sm mt-2">
+    {dayjsDate.fromNow()} | {Math.ceil(length / 238)} min read | {length} words
+  </span>
+  {#if reverseDateAndRest}
+    <p class="text-muted-foreground/80 text-xl mt-4">{dayjsDate.format('MMMM DD, YYYY')}</p>
+  {/if}
 </div>

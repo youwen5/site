@@ -1,7 +1,8 @@
 overrides = [{ "files" = "*.svelte", "options" = { "parser" = "svelte" } }]
-useTabs = true
+useTabs = false
 singleQuote = true
 trailingComma = "none"
 printWidth = 100
 proseWrap = "always"
 plugins = ["prettier-plugin-svelte"]
+semi = false
