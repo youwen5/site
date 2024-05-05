@@ -25,7 +25,7 @@
 						<span class="px-2 flex justify-center">
 							<Name href="/" width="80vw" height="auto" />
 						</span>
-						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500" />
+						<Separator class="bg-zinc-300 h-1 rounded-3xl mt-1 dark:bg-zinc-500" />
 					</Drawer.Title>
 					<div class="grid grid-cols-1 my-10 gap-4">
 						<Drawer.Close asChild let:builder>
@@ -37,7 +37,7 @@
 								><Home class="mr-2" />Home</Button
 							>
 						</Drawer.Close>
-						<Separator class="dark:bg-zinc-500" />
+						<Separator class="bg-zinc-400 dark:bg-zinc-500" />
 						<Drawer.Close asChild let:builder>
 							<Button
 								variant="link"
@@ -47,7 +47,7 @@
 								><Person class="mr-2" />About Me</Button
 							>
 						</Drawer.Close>
-						<Separator class="dark:bg-zinc-500" />
+						<Separator class="bg-zinc-400 dark:bg-zinc-500" />
 						<Drawer.Close asChild let:builder>
 							<Button
 								variant="link"
@@ -57,7 +57,7 @@
 								><Backpack class="mr-2" />Portfolio</Button
 							>
 						</Drawer.Close>
-						<Separator class="dark:bg-zinc-500" />
+						<Separator class="bg-zinc-400 dark:bg-zinc-500" />
 						<Drawer.Close asChild let:builder>
 							<Button
 								href="/blog"
@@ -67,7 +67,7 @@
 								><File class="mr-2" />Blog</Button
 							>
 						</Drawer.Close>
-						<Separator class="h-1 rounded-3xl mt-1 dark:bg-zinc-500 my-2" />
+						<Separator class="bg-zinc-300 h-1 rounded-3xl mt-1 dark:bg-zinc-500 my-2" />
 						<ThemePicker let:builder hideLabel wide>
 							<Button variant="outline" size="lg" builders={[builder]}>
 								<Sun class="mr-4 dark:hidden" />
