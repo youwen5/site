@@ -48,16 +48,11 @@
 		<div class="grid grid-cols-2 gap-4">
 			<Card.Root class="col-span-2 sm:col-span-1">
 				<Card.Header>
-					<Card.Title>Projects</Card.Title>
+					<Card.Title>What I'm up to</Card.Title>
 				</Card.Header>
 				<Card.Content>
 					I'm currently working on:
 					<ul class="list-disc ml-4">
-						<li>
-							<a class="link" href="https://github.com/couscousdude/discard" target="_blank"
-								>discard</a
-							>, a lightweight self-generating flashcards app.
-						</li>
 						<li>
 							<a class="link" href="https://github.com/couscousdude/aural" target="_blank">aural</a
 							>, a no-frills Ollama client for interfacing with local LLMs using voice-to-text,
