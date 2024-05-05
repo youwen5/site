@@ -29,7 +29,7 @@
     </figure>
   </header>
 
-  <div class="markdown-body mb-8 font-serif">
+  <div class="markdown-body mb-8 font-serif max-w-3xl">
     {@html doc.content}
   </div>
 </article>
