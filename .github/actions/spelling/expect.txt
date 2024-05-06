@@ -1,6 +1,5 @@
 aashutoshrathi
 ajv
-AMhd
 ampproject
 amsrm
 angl
@@ -29,8 +28,10 @@ commonmark
 coredump
 couscousdude
 cssesc
+daca
 dayjs
 dbdb
+dcfff
 deepmerge
 delimcenter
 delimsizing
@@ -39,8 +40,10 @@ devlop
 didyoumean
 diuoxn
 dlv
+doctag
 eabi
 eastasianwidth
+ece
 emoji
 eqn
 espree
@@ -56,14 +59,12 @@ fbox
 fce
 fcolorbox
 fega
-flashcards
 fleqn
 fontsource
 formatjs
 fsevents
 fullwidth
 gfm
-Gigmy
 globalyzer
 globrex
 gnueabihf
@@ -79,13 +80,13 @@ hjkl
 hmr
 HTMLOl
 humanwhocodes
+hvandersleyen
 ies
 ight
 imurmurhash
 iojs
 isaacs
 isexe
-IUTv
 jackspeak
 jridgewell
 jsonify
@@ -104,7 +105,6 @@ llap
 LLMs
 localematcher
 lowlight
-Ltgaq
 Maclaurin
 mainrm
 mapbox
@@ -120,6 +120,7 @@ mathscr
 mathsf
 mathtt
 mdast
+mdlintrc
 meme
 merriweather
 micromark
@@ -159,7 +160,6 @@ reusify
 risc
 rlap
 Roboto
-Rsha
 Rustacean
 sddm
 Segoe
@@ -182,11 +182,10 @@ textscr
 thenify
 thinbox
 toclink
-UHei
 undici
 ungap
 unsplash
-Upb
+Vandersleyen
 vaul
 veltekit
 vfile
@@ -198,8 +197,6 @@ wikilinks
 wrappy
 XClasses
 Xero
-XOPNGAI
-xow
 xrander
 xwayland
 yallist
