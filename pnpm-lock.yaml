@@ -14,9 +14,6 @@ dependencies:
   '@fontsource/merriweather':
     specifier: ^5.0.12
     version: 5.0.12
-  '@fontsource/zilla-slab':
-    specifier: ^5.0.12
-    version: 5.0.12
   '@svelte-put/toc':
     specifier: ^5.0.1
     version: 5.0.1(svelte@4.2.12)
@@ -632,10 +629,6 @@ packages:
 
   /@fontsource/merriweather@5.0.12:
     resolution: {integrity: sha512-l7brVGcFUiGhK7bucRbwWYZDInfyXuVYEthHNw26RkkfMR9TFTiOAIABnN6PFr6Vjaz+c0o7ibLmdEMeSMDfRA==}
-    dev: false
-
-  /@fontsource/zilla-slab@5.0.12:
-    resolution: {integrity: sha512-5wQe+7zr/KnUCJ6WZWXYhSfFZfg4d3BXC66nP+72YRitKov87Jqs8uyMXAw7NyRg2aoX+Yu82rmKyOU4P2it/A==}
     dev: false
 
   /@formatjs/ecma402-abstract@1.18.2:
