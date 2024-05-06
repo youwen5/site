@@ -34,16 +34,16 @@
 
 <TocHeader {tocStore} placeholder="On this page" />
 
-<div class="mx-auto px-4 mt-14 grid grid-cols-4">
-  <div class="col-span-1" />
-  <div class="col-span-2">
+<div class="mx-auto px-4 mt-14 grid grid-cols-4 max-w-[1800px]">
+  <div class="hidden xl:block xl:col-span-1 aria-hidden" />
+  <div class="lg:col-span-3 col-span-full xl:col-span-2">
     <ArticleHeader {doc} />
   </div>
-  <div class="col-span-1" />
+  <div class="hidden lg:block aria-hidden lg:col-span-1" />
 
-  <div class="col-span-1" />
+  <div class="aria-hidden hidden xl:block xl:col-span-1" />
   <main
-    class="col-span-2"
+    class="xl:col-span-2 lg:col-span-3 col-span-4"
     use:toc={{
       store: tocStore,
       observe: true,
@@ -58,7 +58,7 @@
     <Article {doc} />
   </main>
 
-  <aside class="col-span-1">
+  <aside class="hidden lg:block lg:col-span-1">
     <div class="sticky top-32 mx-8 w-fit mt-14">
       <StickyToc {tocStore} />
     </div>
