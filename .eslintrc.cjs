@@ -27,5 +27,9 @@ module.exports = {
         parser: '@typescript-eslint/parser'
       }
     }
-  ]
+  ],
+  globals: {
+    BlogDocument: true,
+    PostMeta: true
+  }
 }
