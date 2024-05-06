@@ -37,22 +37,22 @@
     <div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex tracking-tight">
       <a
         href="/"
-        class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-300 dark:hover:bg-zinc-800 transition-colors duration-200"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'home'}>Home</a
       >
       <a
         href="/about"
-        class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors duration-200"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'about'}>About</a
       >
       <a
         href="/portfolio"
-        class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors duration-200"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'portfolio'}>Portfolio</a
       >
       <a
         href="/blog"
-        class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors duration-200"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'blog'}>Blog</a
       >
       <ThemePicker let:builder>
@@ -69,6 +69,6 @@
 
 <style lang="postcss">
   .selected {
-    @apply bg-zinc-300 dark:bg-zinc-600;
+    @apply border-b-primary;
   }
 </style>
