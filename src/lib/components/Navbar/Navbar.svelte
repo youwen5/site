@@ -26,9 +26,7 @@
   })
 </script>
 
-<nav
-  class="h-16 lg:h-24 bg-background bg-opacity-50 backdrop-blur-lg fixed w-full z-40 font-serif tracking-tight"
->
+<nav class="h-16 lg:h-24 bg-background bg-opacity-50 backdrop-blur-lg fixed w-full z-40 font-serif">
   <div class="container mx-auto flex justify-between items-center h-full gap-6 overflow-x-auto">
     <Drawer />
     {#if current === 'blog'}
@@ -36,7 +34,7 @@
     {:else}
       <Name height="95%" href="/" />
     {/if}
-    <div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex">
+    <div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex tracking-tight">
       <a
         href="/"
         class="text-lg sm:text-xl md:text-2xl font-medium text-primary px-4 py-1 rounded-3xl hover:bg-zinc-300 dark:hover:bg-zinc-800 transition-colors duration-200"
