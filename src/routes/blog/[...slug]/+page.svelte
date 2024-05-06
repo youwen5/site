@@ -7,6 +7,7 @@
   import '$lib/styles/katex.css'
   import '$lib/styles/markdown.css'
   import '$lib/styles/tokyo-night-dark.min.css'
+  import ArticleHeader from '$lib/components/Blog/ArticleHeader.svelte'
 
   const tocStore = createTocStore()
 
@@ -33,7 +34,13 @@
 
 <TocHeader {tocStore} placeholder="On this page" />
 
-<div class="lg:flex mx-auto mt-24 lg:mt-14 px-4">
+<div class="max-w-3xl 2xl:max-w-3xl px-4 xl:px-0 xl:mx-auto mt-14">
+  <div class="flex-grow basis-3/4 xl:basis-2/4 flex-shrink">
+    <ArticleHeader {doc} />
+  </div>
+</div>
+
+<div class="lg:flex mx-auto px-4">
   <div class="flex-shrink xl:basis-1/4" />
   <main
     class="flex-grow basis-3/4 xl:basis-2/4 flex-shrink"
@@ -51,8 +58,8 @@
     <Article {doc} />
   </main>
 
-  <aside class="basis-1/4 relative hidden lg:block">
-    <div class="fixed mx-8">
+  <aside class="basis-1/4 relative hidden lg:block mt-10">
+    <div class="sticky top-32 mx-8">
       <StickyToc {tocStore} />
     </div>
   </aside>
