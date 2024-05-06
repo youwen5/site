@@ -5,7 +5,7 @@
   import StickyToc from '$lib/components/Toc/StickyToc.svelte'
   import TocHeader from '$lib/components/Toc/TocHeader.svelte'
   import '$lib/styles/katex.css'
-  import '$lib/styles/markdown.pcss'
+  import '$lib/styles/markdown.css'
   import '$lib/styles/tokyo-night-dark.min.css'
 
   const tocStore = createTocStore()
