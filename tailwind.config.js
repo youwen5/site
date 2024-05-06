@@ -55,7 +55,6 @@ const config = {
       fontFamily: {
         sans: ['Geist Sans', 'sans-serif'],
         mono: ['Geist Mono', 'monospace'],
-        display: ['Zilla Slab', 'serif'],
         serif: ['Merriweather', 'serif']
       }
     }
