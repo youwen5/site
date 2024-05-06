@@ -40,7 +40,7 @@
             {#each $tocStore.items.values() as tocItem}
               {@const selected = $tocStore.activeItem === tocItem}
               <li class="border-l-secondary border-l-4 py-1" class:highlighted={selected}>
-                <!-- svelte-ignore a11y-missing-attribute a11y-missing-content a11y-click-events-have-key-events a11y-interactive-supports-focus a11y -->
+                <!-- svelte-ignore a11y-missing-attribute a11y-missing-content a11y-click-events-have-key-events a11y-interactive-supports-focus -->
                 <a
                   use:toclink={{ store: tocStore, tocItem, observe: true }}
                   on:click={close}
