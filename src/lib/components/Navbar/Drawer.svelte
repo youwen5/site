@@ -10,7 +10,12 @@
 
 <Drawer.Root direction="top">
   <Drawer.Trigger asChild let:builder>
-    <Button variant="outline" size="icon" builders={[builder]} class="px-2 md:hidden">
+    <Button
+      variant="outline"
+      size="icon"
+      builders={[builder]}
+      class="px-2 md:hidden bg-opacity-75 backdrop-blur-lg"
+    >
       <HamburgerMenu class="icon border-1 border-primary" />
     </Button>
   </Drawer.Trigger>
