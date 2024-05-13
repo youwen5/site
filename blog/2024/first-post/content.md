@@ -78,7 +78,7 @@ HTML. The formatting is done mostly with a
 
 Welcome! This blog is powered by a custom static site generator I made using SvelteKit. I'm working
 on upgrades ([see: lorelei](https://github.com/couscousdude/lorelei)), but in the meantime, check
-this out:
+this out:/first-post/post
 
 <!-- prettier-ignore -->
 > [!NOTE] 
@@ -141,10 +141,6 @@ The `unified` plugin ecosystem is used to transform markdown into the HTML in th
 out the parser
 [here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It
 handles all the parsing server-side at build time, so these posts are a collection of mostly static
-HTML. Basically, the Markdown files are transformed by `remark` and `rehype` into equivalent HTML,
-and then styled with a
-[custom CSS stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
-
-```
-
-```
+HTML. The Markdown files are transformed by `remark` and `rehype` into equivalent HTML, and then
+styled with a
+[custom CSS stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.css).
