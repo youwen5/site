@@ -9,12 +9,21 @@
   import Button from '../ui/button/button.svelte'
   import { Moon, Sun } from 'svelte-radix'
 
-  let current: 'blog' | 'about' | 'home' | 'portfolio' | string
+  let current: 'blogpost' | 'blog' | 'about' | 'home' | 'portfolio' | string
 
   const updateCurrent = () => {
     const path = window.location.pathname
-    if (path === '/') {
-      current = 'home'
+    // if (path === '/') {
+    //   current = 'home'
+    // } else {
+    //   const segments = path.split('/')
+    //   current = segments[1] || 'home'
+    // }
+
+    if (path === '/blog') {
+      current = 'blog'
+    } else if (path.startsWith('/blog')) {
+      current = 'blogpost'
     } else {
       const segments = path.split('/')
       current = segments[1] || 'home'
@@ -24,10 +33,14 @@
   onMount(() => navigating.subscribe(updateCurrent))
 </script>
 
-<nav class="h-16 lg:h-24 bg-background bg-opacity-50 backdrop-blur-lg fixed w-full z-40 font-serif">
+<nav
+  class="h-16 lg:h-24 bg-background bg-opacity-50 backdrop-blur-lg md:fixed w-full z-40 font-serif"
+  class:fixed={current !== 'blogpost'}
+  class:absolute={current === 'blogpost'}
+>
   <div class="container mx-auto flex justify-between items-center h-full gap-6 overflow-x-auto">
     <Drawer />
-    {#if current === 'blog'}
+    {#if current === 'blog' || current === 'blogpost'}
       <Coredump height="95%" href="/blog" />
     {:else}
       <Name height="95%" href="/" />

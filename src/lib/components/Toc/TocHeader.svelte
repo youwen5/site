@@ -23,7 +23,7 @@
   }
 </script>
 
-<nav class="fixed top-16 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
+<nav class="sticky top-0 left-0 w-full bg-background bg-opacity-50 backdrop-blur-lg z-30 lg:hidden">
   <Accordion.Root class="px-8" bind:value>
     <Accordion.Item value="toc">
       <Accordion.Trigger
