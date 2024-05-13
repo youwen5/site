@@ -21,9 +21,7 @@
     }
   }
 
-  onMount(() => {
-    return navigating.subscribe(updateCurrent)
-  })
+  onMount(() => navigating.subscribe(updateCurrent))
 </script>
 
 <nav class="h-16 lg:h-24 bg-background bg-opacity-50 backdrop-blur-lg fixed w-full z-40 font-serif">
@@ -37,22 +35,22 @@
     <div class="gap-4 lg:gap-14 justify-around align-middle hidden md:flex tracking-tight">
       <a
         href="/"
-        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'home'}>Home</a
       >
       <a
         href="/about"
-        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'about'}>About</a
       >
       <a
         href="/portfolio"
-        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'portfolio'}>Portfolio</a
       >
       <a
         href="/blog"
-        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
+        class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'blog'}>Blog</a
       >
       <ThemePicker let:builder>
@@ -69,6 +67,6 @@
 
 <style lang="postcss">
   .selected {
-    @apply border-b-primary;
+    @apply border-b-primary rounded-b-lg;
   }
 </style>
