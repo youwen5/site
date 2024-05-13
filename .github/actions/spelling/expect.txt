@@ -11,6 +11,7 @@ Aslp
 axobject
 blib
 blogignore
+blogpost
 boldsymbol
 boxpad
 breadcrumb
@@ -102,7 +103,6 @@ lightningcss
 lilconfig
 Linkedin
 llap
-LLMs
 localematcher
 lowlight
 Maclaurin
@@ -140,10 +140,8 @@ nrt
 nulldelimiter
 Nvidia
 octicon
-Ollama
 optionator
 paru
-pcss
 PGP
 picocolors
 picomatch
@@ -204,5 +202,4 @@ YClasses
 yocto
 youwen
 youwenw
-zilla
 zwitch
