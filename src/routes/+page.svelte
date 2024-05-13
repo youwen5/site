@@ -31,7 +31,7 @@
       </Typewriter>
       <br />
       <Typewriter>
-        <p>Building and designing libre software, for everyone.</p>
+        <p>Building efficient <b>free and open source</b> software.</p>
       </Typewriter>
     </div>
     <div class="flex flex-wrap gap-4 justify-center my-8">
@@ -51,12 +51,13 @@
           <Card.Title>What I'm up to</Card.Title>
         </Card.Header>
         <Card.Content>
-          I'm currently working on:
+          I'm working on:
           <ul class="list-disc ml-4">
             <li>
-              <a class="link" href="https://github.com/couscousdude/aural" target="_blank">aural</a
-              >, a no-frills Ollama client for interfacing with local LLMs using voice-to-text,
-              without any internet.
+              An ongoing effort to bring <a
+                class="link"
+                href="https://github.com/quantum9Innovation/splitcycle">efficient voting theory</a
+              > to Rust and Haskell.
             </li>
           </ul>
         </Card.Content>
