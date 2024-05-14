@@ -64,7 +64,7 @@
       <a
         href="/blog"
         class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
-        class:selected={current === 'blog'}>Blog</a
+        class:selected={current === 'blog' || current === 'blogpost'}>Blog</a
       >
       <ThemePicker let:builder>
         <Button builders={[builder]} variant="outline" size="icon" class="my-1">
