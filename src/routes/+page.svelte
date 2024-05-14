@@ -56,8 +56,10 @@
             <li>
               An ongoing effort to bring <a
                 class="link"
-                href="https://github.com/quantum9Innovation/splitcycle">efficient voting theory</a
-              > to Rust and Haskell.
+                href="https://github.com/quantum9Innovation/splitcycle"
+                >efficient axiomatic voting theory</a
+              >
+              to <a href="https://github.com/couscousdude/tally-rs" class="link">Rust</a> and other languages.
             </li>
           </ul>
         </Card.Content>
