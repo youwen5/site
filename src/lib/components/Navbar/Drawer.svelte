@@ -65,7 +65,7 @@
             <Separator class="bg-zinc-400 dark:bg-zinc-500" />
             <Drawer.Close asChild let:builder>
               <Button
-                href="/blog"
+                href="https://blog.youwen.dev"
                 variant="link"
                 builders={[builder]}
                 class="pl-2 text-4xl tracking-tight font-serif dark:text-zinc-200 w-min"

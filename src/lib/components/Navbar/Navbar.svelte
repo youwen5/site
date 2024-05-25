@@ -62,7 +62,7 @@
         class:selected={current === 'portfolio'}>Portfolio</a
       >
       <a
-        href="/blog"
+        href="https://blog.youwen.dev"
         class="text-lg border-b-4 sm:text-xl md:text-2xl font-medium text-primary px-2 py-1 rounded-b-sm rounded-t-md hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-300 border-b-secondary"
         class:selected={current === 'blog' || current === 'blogpost'}>Blog</a
       >
