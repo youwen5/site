@@ -82,12 +82,15 @@
         </Card.Header>
         <Card.Content>
           <p>
-            Check out my blog, <strong>The Coredump</strong>, where I occasionally write about
-            computer science, math, and everything else on my mind.
+            Check out my blog where I write about code, math, games, and other hacks I do. It's <a
+              href="https://github.com/couscousdude/blog">built with Haskell.</a
+            >
           </p>
         </Card.Content>
         <Card.Footer>
-          <Button variant="outline" href="/blog">Go to my blog<ArrowRight class="ml-2" /></Button>
+          <Button variant="outline" href="https://blog.youwen.dev"
+            >Go to my blog<ArrowRight class="ml-2" /></Button
+          >
         </Card.Footer>
       </Card.Root>
       <Card.Root class="col-span-2">
