@@ -5,25 +5,13 @@
     GithubLogo,
     LinkedinLogo,
     DiscordLogo,
-    EnvelopeClosed,
-    ClipboardCopy
+    EnvelopeClosed
   } from 'svelte-radix'
   import * as Popover from '$lib/components/ui/popover'
 
   export let center = false
 
   import Button from './ui/button/button.svelte'
-  import { toast } from 'svelte-sonner'
-
-  const copyDiscord = async () => {
-    try {
-      await navigator.clipboard.writeText('couscousdude')
-      toast('Copied Discord username to clipboard')
-    } catch (e) {
-      console.error(e)
-      toast('Failed to copy Discord username to clipboard')
-    }
-  }
 </script>
 
 <div class="flex gap-2 mt-2 flex-wrap" class:justify-center={center}>
@@ -55,25 +43,14 @@
   >
     <LinkedinLogo />
   </Button>
-  <Popover.Root>
-    <Popover.Trigger asChild let:builder>
-      <Button
-        class="hover:scale-110 transition-transform"
-        variant="ghost"
-        size="icon"
-        builders={[builder]}
-      >
-        <DiscordLogo />
-      </Button>
-    </Popover.Trigger>
-    <Popover.Content>
-      Discord (for some reason) doesn't support direct links to profiles. You can find me on discord
-      with my username, <strong>@couscousdude</strong>.
-      <Button variant="outline" size="icon" on:click={copyDiscord} class="mt-2"
-        ><ClipboardCopy /></Button
-      >
-    </Popover.Content>
-  </Popover.Root>
+  <Button
+    class="hover:scale-110 transition-transform"
+    variant="ghost"
+    size="icon"
+    href="https://discord.com/users/307507140199710720"
+  >
+    <DiscordLogo />
+  </Button>
   <Popover.Root>
     <Popover.Trigger asChild let:builder>
       <Button
@@ -87,17 +64,15 @@
     </Popover.Trigger>
     <Popover.Content>
       <p>
-        You can reach my Gmail at <a class="link" href="mailto:youwenw@gmail.com"
+        You can reach my personal mail at <a class="link" href="mailto:youwenw@gmail.com"
           >youwenw@gmail.com</a
         >
+        or my institutional address at
+        <a class="link" href="mailto:youwen@ucsb.edu">youwen@ucsb.edu</a>. I sign all of my mail
+        with my <a href="./youwen.gpg">PGP key</a>. It is also available on the
+        <a href="https://keys.openpgp.org/">OpenPGP key servers</a>.
       </p>
       <br />
-      <p>
-        Or, if you prefer, you can securely email me on Protonmail at <a
-          class="link"
-          href="mailto:youwenw@protonmail.com">youwenw@protonmail.com</a
-        >
-      </p>
     </Popover.Content>
   </Popover.Root>
 </div>

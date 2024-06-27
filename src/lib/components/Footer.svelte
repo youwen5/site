@@ -13,10 +13,6 @@
         target="_blank"
         class="hover:underline"><strong>SvelteKit</strong></a
       >
-      and
-      <a href="https://www.shadcn-svelte.com/" class="hover:underline" target="_blank"
-        ><strong>shadcn-svelte</strong></a
-      >
       |
       <a href="https://github.com/couscousdude/coredump" target="_blank" class="hover:underline"
         >View the source</a
