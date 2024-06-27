@@ -51,16 +51,22 @@
           <Card.Title>What I'm up to</Card.Title>
         </Card.Header>
         <Card.Content>
-          I'm working on:
           <ul class="list-disc ml-4">
             <li>
-              An ongoing effort to bring <a
-                class="link"
-                href="https://github.com/quantum9Innovation/splitcycle"
-                >efficient axiomatic voting theory</a
+              I'm currently reading through <a
+                href="https://www.math.brown.edu/streil/papers/LADW/LADW.html"
+                >Linear Algebra Done Wrong</a
+              >, by Sergei Treil. I'm syncing my notes and problem set solutions to a
+              <a href="https://github.com/youwen5/linear-algebra-done-wrong"
+                >public git repository here.</a
               >
-              to <a href="https://github.com/couscousdude/tally-rs" class="link">Rust</a> and other languages.
             </li>
+            <li>
+              I'm working on a dotfile manager for people who want a dotfile manager, but don't want
+              to manage dotfiles for their dotfile manager (in other words, minimal configuration.
+              See <a href="https://suckless.org/">suckless</a>.)
+            </li>
+            <li>I'm still trying to understand Haskell.</li>
           </ul>
         </Card.Content>
         <Card.Footer>
