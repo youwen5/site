@@ -107,8 +107,10 @@
         <Card.Content>
           <h3>Find me on:</h3>
           <Socials />
-          I read message requests everywhere but do not accept Discord friend requests if I don't know
-          you. The best way to reach me and receive a response is probably by email.
+          <p class="mt-4">
+            I read message requests everywhere but do not accept Discord friend requests if I don't
+            know you. The best way to reach me and receive a response is probably by email.
+          </p>
         </Card.Content>
       </Card.Root>
     </div>
