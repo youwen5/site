@@ -54,17 +54,18 @@
           <ul class="list-disc ml-4">
             <li>
               I'm currently reading through <a
+                class="link"
                 href="https://www.math.brown.edu/streil/papers/LADW/LADW.html"
                 >Linear Algebra Done Wrong</a
               >, by Sergei Treil. I'm syncing my notes and problem set solutions to a
-              <a href="https://github.com/youwen5/linear-algebra-done-wrong"
+              <a class="link" href="https://github.com/youwen5/linear-algebra-done-wrong"
                 >public git repository here.</a
               >
             </li>
             <li>
               I'm working on a dotfile manager for people who want a dotfile manager, but don't want
-              to manage dotfiles for their dotfile manager (in other words, minimal configuration.
-              See <a href="https://suckless.org/">suckless</a>.)
+              to manage dotfiles for their dotfile manager (in other words, with minimal
+              configuration).
             </li>
             <li>I'm still trying to understand Haskell.</li>
           </ul>
