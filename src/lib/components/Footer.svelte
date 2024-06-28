@@ -14,7 +14,7 @@
         class="hover:underline"><strong>SvelteKit</strong></a
       >
       |
-      <a href="https://github.com/couscousdude/coredump" target="_blank" class="hover:underline"
+      <a href="https://github.com/youwen5/site" target="_blank" class="hover:underline"
         >View the source</a
       >
     </p>

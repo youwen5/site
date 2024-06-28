@@ -65,8 +65,7 @@ caption = "This is the first post! (image courtesy of unsplash)"
 Code highlighting is also supported, via `highlight.js`.
 
 The `unified` plugin ecosystem is used to transform markdown into the HTML in this document. Check
-out the parser
-[here](https://github.com/couscousdude/coredump/blob/main/src/lib/utils/parseMarkdown.ts). It
+out the parser [here](https://github.com/youwen5/site/blob/main/src/lib/utils/parseMarkdown.ts). It
 handles all the parsing server-side at build time, so these posts are a collection of mostly static
 HTML. The formatting is done mostly with a
 [custom stylesheet](https://github.com/couscousdude/coredump/blob/main/src/lib/styles/markdown.pcss).
