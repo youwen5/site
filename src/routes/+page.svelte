@@ -36,7 +36,7 @@
     <div class="flex flex-wrap gap-4 justify-center my-8">
       <Button href="/about" size="lg" class="text-xl flex-grow sm:flex-grow-0">About Me</Button>
       <Button
-        href="https://github.com/couscousdude"
+        href="https://github.com/youwen5"
         target="_blank"
         variant="outline"
         size="lg"
@@ -73,7 +73,7 @@
             <Button
               variant="secondary"
               size="icon"
-              href="https://github.com/couscousdude?tab=repositories"><GithubLogo /></Button
+              href="https://github.com/youwen5?tab=repositories"><GithubLogo /></Button
             >
             <Button variant="outline" href="/portfolio"
               >My Portfolio<ArrowRight class="ml-2" /></Button
@@ -88,7 +88,7 @@
         <Card.Content>
           <p>
             Check out my blog where I write about code, math, games, and other hacks I do. It's <a
-              href="https://github.com/couscousdude/blog">built with Haskell.</a
+              href="https://blog.youwen.dev">built with Haskell.</a
             >
           </p>
         </Card.Content>
