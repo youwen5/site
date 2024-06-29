@@ -12,7 +12,7 @@
   <meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<div class="md:dots-background py-20">
+<div class="md:dots-background py-12">
   <main class="px-4 mx-auto max-w-5xl bg-background rounded-lg py-4">
     <h1 class="font-serif text-5xl font-medium tracking-tight">
       Portfolio
@@ -24,6 +24,12 @@
     </p>
     <h2 class="text-4xl font-serif font-medium mt-8">Projects</h2>
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
+    <p class="mt-4 text-lg leading-relaxed">
+      Below are some selected projects I am particularly proud of. You can also view <a
+        href="/projects"
+        class="link">all of my projects</a
+      > here.
+    </p>
     <Card.Root class="p-0 md:p-6 mt-8">
       <Card.Header>
         <span class="inline-flex items-center gap-2">

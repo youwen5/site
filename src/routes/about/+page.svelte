@@ -8,7 +8,7 @@
 </svelte:head>
 
 <main class="dots-background">
-  <div class="max-w-3xl mx-auto pb-14 md:py-14 px-0 sm:px-8 justify-center">
+  <div class="max-w-3xl mx-auto pb-14 pt-6 md:py-14 px-2 sm:px-8 justify-center">
     <Card.Root class="sm:px-6 px-0">
       <Card.Header class="inline-flex items-center">
         <Card.Title class="text-4xl">about.</Card.Title>
