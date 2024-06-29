@@ -23,11 +23,13 @@ pnpm preview
 
 ## Adding posts
 
-This site contains custom SSG blog generation functionality that I built myself. It converts Markdown
-into static HTML pages served under `/blog`. I decided to replace it with a fully standalone blog
-created with an actual static site generator to avoid NIH syndrome and decrease maintenance time.
+This site contains custom SSG blog generation functionality that I built myself. It converts
+Markdown into static HTML pages served under `/blog`. I decided to replace it with a fully
+standalone blog created with an actual static site generator to avoid NIH syndrome and decrease
+maintenance time.
 
-It may still serve as a useful reference for how to build a static blog in SvelteKit, for anyone interested.
+It may still serve as a useful reference for how to build a static blog in SvelteKit, for anyone
+interested.
 
 To add posts, create a directory in `/blog`. The top level subdirectories should be the year, but
 there's no hard rules on what the rest of the subdirectories will be. The blog will build itself
