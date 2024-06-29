@@ -9,7 +9,8 @@
 
 <Breadcrumb.Root class="mb-4">
   <Breadcrumb.List>
-    <Breadcrumb.Item><Breadcrumb.Link href="/blog">The Coredump</Breadcrumb.Link></Breadcrumb.Item>
+    <Breadcrumb.Item><Breadcrumb.Link href="/devlog">The Coredump</Breadcrumb.Link></Breadcrumb.Item
+    >
     <Breadcrumb.Separator />
     {#each trail as crumb}
       <Breadcrumb.Item>{crumb}</Breadcrumb.Item>

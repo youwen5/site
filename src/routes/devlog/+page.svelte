@@ -37,7 +37,7 @@
         class="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono text-center sm:text-left"
         in:fly={{ duration: 300, y: -50, delay: 200 }}
       >
-        ramblings on computer science, math, games, and more.
+        a dev-log about projects and failures
       </p>
       <span
         class="flex flex-wrap items-center mt-8 md:hidden"

@@ -20,9 +20,9 @@
     //   current = segments[1] || 'home'
     // }
 
-    if (path === '/blog') {
+    if (path === '/devlog') {
       current = 'blog'
-    } else if (path.startsWith('/blog')) {
+    } else if (path.startsWith('devlog')) {
       current = 'blogpost'
     } else {
       const segments = path.split('/')
