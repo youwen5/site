@@ -1,8 +1,9 @@
 <script>
   import { Button } from '$lib/components/ui/button'
   import * as Card from '$lib/components/ui/card'
-  import { Code, Image } from 'svelte-radix'
+  import { Code, Image, Link2 } from 'svelte-radix'
   import Badge from '$lib/components/ui/badge/badge.svelte'
+  import * as Tooltip from '$lib/components/ui/tooltip'
 </script>
 
 <svelte:head>
@@ -25,8 +26,28 @@
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
     <Card.Root class="p-0 md:p-6 mt-8">
       <Card.Header>
-        <Card.Title class="text-4xl font-serif tracking-normal font-medium">Jankboard</Card.Title>
-        <div class="w-24 h-1 bg-green-800 dark:bg-green-400 rounded-lg" />
+        <span class="inline-flex items-center gap-2">
+          <Card.Title class="text-4xl font-serif tracking-normal font-medium" id="jankboard"
+            >Jankboard</Card.Title
+          >
+          <Tooltip.Root openDelay={300}>
+            <Tooltip.Trigger asChild let:builder>
+              <Button
+                on:click={() =>
+                  navigator.clipboard.writeText(
+                    window.location.origin + window.location.pathname + '#jankboard'
+                  )}
+                builders={[builder]}
+                size="icon"
+                variant="ghost"><Link2 /></Button
+              >
+            </Tooltip.Trigger>
+            <Tooltip.Content>
+              <p>Copy link</p>
+            </Tooltip.Content>
+          </Tooltip.Root>
+        </span>
+        <div class="w-24 h-1 bg-blue-800 dark:bg-blue-400 rounded-lg" />
         <div class="flex flex-wrap gap-2 py-2">
           <Badge>Robotics</Badge>
           <Badge variant="secondary">License: GPLv3</Badge>
