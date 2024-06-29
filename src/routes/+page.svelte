@@ -14,10 +14,8 @@
 <main class="dots-background">
   <div class="container max-w-5xl mx-auto py-14 px-4 sm:px-8 justify-center">
     <Typewriter mode="scramble" scrambleDuration={750}>
-      <h1
-        class="text-5xl tracking-tight sm:text-6xl font-bold text-center mt-14 sm:mt-20 font-serif"
-      >
-        👋 Hi, I'm Youwen,
+      <h1 class="text-5xl tracking-tight sm:text-6xl font-bold text-center mt-14 sm:mt-20">
+        👋 Hi. I'm Youwen.
       </h1>
     </Typewriter>
     <div class="text-2xl md:text-3xl font-medium mt-10 text-center">
