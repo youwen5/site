@@ -109,6 +109,11 @@
       var(--dot-color);
   }
   .link {
-    @apply text-blue-500 dark:text-blue-600 hover:text-blue-600 dark:hover:text-blue-500 hover:underline visited:text-purple-500 dark:visited:text-purple-600;
+    @apply relative inline-block hover:text-violet-700 dark:hover:text-violet-600;
+  }
+
+  .link::after {
+    content: '';
+    @apply absolute w-full left-0 h-0.5 bottom-0.5 bg-violet-800 dark:bg-violet-500;
   }
 }

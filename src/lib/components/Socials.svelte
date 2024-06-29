@@ -19,7 +19,7 @@
     class="hover:scale-110 transition-transform"
     variant="ghost"
     size="icon"
-    href="https://github.com/couscousdude"
+    href="https://github.com/youwen5"
   >
     <GithubLogo />
   </Button>
@@ -27,7 +27,7 @@
     class="hover:scale-110 transition-transform"
     variant="ghost"
     size="icon"
-    href="https://www.instagram.com/uncle_uwon/"><InstagramLogo /></Button
+    href="https://www.instagram.com/youwenw5/"><InstagramLogo /></Button
   >
   <Button
     class="hover:scale-110 transition-transform"

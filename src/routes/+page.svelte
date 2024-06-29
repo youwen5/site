@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Socials from '$lib/components/Socials.svelte'
   import Button from '$lib/components/ui/button/button.svelte'
   import * as Card from '$lib/components/ui/card'
   import { ArrowRight, GithubLogo } from 'svelte-radix'
@@ -31,18 +30,17 @@
       </Typewriter>
       <br />
       <Typewriter>
-        <p>Building efficient <b>free and open source</b> software.</p>
+        <p>Building <b>free and open source</b> software.</p>
       </Typewriter>
     </div>
     <div class="flex flex-wrap gap-4 justify-center my-8">
-      <Button href="/about" size="lg" class="text-xl flex-grow sm:flex-grow-0">More About Me</Button
-      >
+      <Button href="/about" size="lg" class="text-xl flex-grow sm:flex-grow-0">About Me</Button>
       <Button
         href="https://github.com/couscousdude"
         target="_blank"
         variant="outline"
         size="lg"
-        class="text-xl flex-grow sm:flex-grow-0"><GithubLogo class="mr-2" />My GitHub</Button
+        class="text-xl flex-grow sm:flex-grow-0"><GithubLogo class="mr-2" />GitHub</Button
       >
     </div>
     <div class="grid grid-cols-2 gap-4">
@@ -102,15 +100,12 @@
       </Card.Root>
       <Card.Root class="col-span-2">
         <Card.Header>
-          <Card.Title>Contact Me</Card.Title>
+          <Card.Title>What's new?</Card.Title>
         </Card.Header>
         <Card.Content>
-          <h3>Find me on:</h3>
-          <Socials />
-          <p class="mt-4">
-            I read message requests everywhere but do not accept Discord friend requests if I don't
-            know you. The best way to reach me and receive a response is probably by email.
-          </p>
+          This section will contain a feed of new projects, blog posts, and other stuff that I've
+          deemed "ready to display". For now, it has this text, because I'm too lazy to actually
+          implement this feature right now.
         </Card.Content>
       </Card.Root>
     </div>
