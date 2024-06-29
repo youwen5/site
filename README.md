@@ -2,7 +2,7 @@
 
 [![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
 
-My personal website and its associated blog. Written in [SvelteKit](https://kit.svelte.dev) using
+My personal website. Written in [SvelteKit](https://kit.svelte.dev) using
 [TailwindCSS](https://tailwindcss.com/) and components from
 [shadcn-svelte](https://www.shadcn-svelte.com/).
 
@@ -22,6 +22,12 @@ pnpm preview
 ```
 
 ## Adding posts
+
+This site contains custom SSG blog generation functionality that I built myself. It converts Markdown
+into static HTML pages served under `/blog`. I decided to replace it with a fully standalone blog
+created with an actual static site generator to avoid NIH syndrome and decrease maintenance time.
+
+It may still serve as a useful reference for how to build a static blog in SvelteKit, for anyone interested.
 
 To add posts, create a directory in `/blog`. The top level subdirectories should be the year, but
 there's no hard rules on what the rest of the subdirectories will be. The blog will build itself
