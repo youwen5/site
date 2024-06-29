@@ -10,6 +10,7 @@
   import { onMount } from 'svelte'
   import { afterNavigate, beforeNavigate } from '$app/navigation'
   import Loading from '$lib/components/Loading.svelte'
+  import type { BeforeNavigate } from '@sveltejs/kit'
 
   let root: HTMLElement | null
   let navigating = false
@@ -22,9 +23,11 @@
     navigating = false
   })
 
-  beforeNavigate(() => {
-    navigating = true
-    root?.classList.remove('smoothscroll')
+  beforeNavigate((navigation: BeforeNavigate) => {
+    if (navigation.to?.url.origin === window.location.origin) {
+      navigating = true
+      root?.classList.remove('smoothscroll')
+    }
   })
 
   afterNavigate(() => {
