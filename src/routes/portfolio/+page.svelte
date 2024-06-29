@@ -22,7 +22,12 @@
       Here's some of the stuff I've worked on which I think is notable or interesting enough to
       write about.
     </p>
-    <h2 class="text-4xl font-serif font-medium mt-8">Projects</h2>
+    <p class="leading-loose text-lg mt-4">
+      Quick links: <a class="link mx-1" href="#projects">Projects.</a>
+      <a class="link mx-1" href="#research">Research.</a>
+      <a class="link mx-1" href="#certifications">Certifications.</a>
+    </p>
+    <h2 id="projects" class="text-4xl font-serif font-medium mt-8">Projects</h2>
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
     <p class="mt-4 text-lg leading-relaxed">
       Below are some selected projects I am particularly proud of. You can also view <a
@@ -104,8 +109,19 @@
         </div>
       </Card.Content>
     </Card.Root>
-    <h2 class="text-4xl font-serif font-medium mt-8">Research</h2>
+    <h2 class="text-4xl font-serif font-medium mt-8" id="research">Research</h2>
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
     <p class="text-lg mt-8">Nothing here for now...</p>
+    <h2 class="text-4xl font-serif font-medium mt-8" id="certifications">Certifications</h2>
+    <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
+    <ul class="my-4 text-lg leading-loose">
+      <li class="p-2 rounded-lg border-2 border-accent">
+        <a
+          class="link"
+          href="https://www.freecodecamp.org/certification/couscousdude/javascript-algorithms-and-data-structures"
+          >Legacy JavaScript Data Structures and Algorithms</a
+        >. Represents roughly 300 hours of work. Earned in 2022.
+      </li>
+    </ul>
   </main>
 </div>
