@@ -32,6 +32,11 @@
         >. Tailwind is a terrible, ugly way to do CSS; however, every other method of doing CSS is
         arguably worse.
       </p>
+      <p class="leading-loose text-lg">
+        My domain is currently managed by <a href="https://vercel.com/youwen-wus-projects">Vercel</a
+        >, and they also host this site. My blog is hosted on GitHub Pages. I may switch to a more
+        long-term domain provider and hosting solution at a later time.
+      </p>
     </div>
   </div>
 </main>
