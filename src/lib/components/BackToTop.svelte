@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
   import Button from './ui/button/button.svelte'
   import { ChevronUp } from 'svelte-radix'

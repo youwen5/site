@@ -1,4 +1,4 @@
-<main class="container mx-auto max-w-3xl my-20">
+<main class="px-2 mx-auto max-w-3xl my-20">
   <div class="px-2">
     <h1 class="text-4xl font-semibold tracking-tight">
       colophon.

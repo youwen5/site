@@ -11,6 +11,7 @@
   import { afterNavigate, beforeNavigate } from '$app/navigation'
   import Loading from '$lib/components/Loading.svelte'
   import type { BeforeNavigate } from '@sveltejs/kit'
+  import BackToTop from '$lib/components/BackToTop.svelte'
 
   let root: HTMLElement | null
   let navigating = false
@@ -47,5 +48,6 @@
 <div class="pt-16 lg:pt-24">
   <slot />
 </div>
+<BackToTop />
 
 <Footer />

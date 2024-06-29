@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="md:dots-background py-20">
-  <main class="container mx-auto max-w-5xl bg-background rounded-lg py-4">
+  <main class="px-4 mx-auto max-w-5xl bg-background rounded-lg py-4">
     <h1 class="font-serif text-5xl font-medium tracking-tight">
       Portfolio
       <hr class="w-32 mt-0.5 h-1 bg-muted-foreground rounded-lg" />
