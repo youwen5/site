@@ -38,10 +38,14 @@
             I learned how to code when I was in 3rd grade (around 8-9 years old). Regrettably, I am
             not a gifted genius and did not build a massive open source empire nor did I found a
             startup before the age of 12. My projects consisted principally of crummy games or
-            terrible websites. I only really figured out the fundamentals in 2019 and started
-            working on actual projects at the tail end of 2023 (as you can tell from my GitHub
-            activity history). My biggest regret is spending the pandemic lockdown learning React
+            terrible websites. My biggest regret is spending the pandemic lockdown learning React
             and web development in 2020 instead of becoming a cool kernel hacker or something.
+          </p>
+          <p class="text-xl leading-relaxed">
+            Nowadays, my personal projects primarily consist of tools for developers, and everyone
+            else. I usually create CLIs for the former and websites for the latter. I see the web as
+            a necessary evil - it's bloated and inefficient beyond reason, but it remains the
+            easiest way to reach users with the lowest barriers of entry and commitment.
           </p>
           <img
             src="https://github.com/youwen5/youwen5/raw/main/profile-3d-contrib/profile-night-view.svg"
