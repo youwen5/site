@@ -11,8 +11,8 @@
   <main class="max-w-3xl px-4 mx-auto">
     <p class="text-xl leading-relaxed border-2 border-accent bg-background p-2 rounded-lg">
       Below is a list of most of the projects I've worked on, in no particular order. My most
-      notable projects are also displayed in greater detail <a class="link" href="/portfolio"
-        >on my portfolio.</a
+      notable projects are also displayed in greater detail on my <a class="link" href="/portfolio"
+        >portfolio.</a
       >
     </p>
     <hr class="border-0 h-3 w-12 mx-auto rounded-lg bg-zinc-600 dark:bg-zinc-300 my-6" />
