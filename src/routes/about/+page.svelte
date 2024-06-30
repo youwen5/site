@@ -17,7 +17,8 @@
       <Card.Content class="gap-8">
         <div class="space-y-4">
           <p class="text-2xl font-semibold">
-            Hi. I'm Youwen. I like to write - {'{code | essays | math}'}.
+            Hi. I'm Youwen. My foremost passion is writing - code, math, and words. I strive for
+            elegant code, beautiful math, and authentic prose.
           </p>
           <p class="text-xl leading-relaxed">
             I put most worthwhile things I do on my <a
@@ -26,7 +27,7 @@
             >. I write over at a blog called
             <a class="link" href="https://blog.youwen.dev">Gradient Ascent</a>. You can check out my
             <a class="link" href="/portfolio">portfolio</a>
-            right here on this site. You can skip down to my
+            here on this site. You can skip down to my
             <a class="link" href="#contact">contact info</a>, or keep reading.
           </p>
           <h2 class="text-3xl font-semibold tracking-tight">

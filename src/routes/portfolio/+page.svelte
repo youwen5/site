@@ -30,9 +30,9 @@
     <h2 id="projects" class="text-4xl font-serif font-medium mt-8">Projects</h2>
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
     <p class="mt-4 text-lg leading-relaxed">
-      Below are some selected projects I am particularly proud of. You can also view <a
+      Below are some selected projects I am particularly proud of. You can also view all of <a
         href="/projects"
-        class="link">all of my projects</a
+        class="link">my projects</a
       > here.
     </p>
     <Card.Root class="p-0 md:p-6 mt-8">
@@ -116,10 +116,11 @@
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
     <ul class="my-4 text-lg leading-loose">
       <li class="p-2 rounded-lg border-2 border-accent">
+        FreeCodeCamp - Legacy JavaScript Data Structures and Algorithms
         <a
           class="link"
           href="https://www.freecodecamp.org/certification/couscousdude/javascript-algorithms-and-data-structures"
-          >Legacy JavaScript Data Structures and Algorithms</a
+          >Certificate</a
         >. Represents roughly 300 hours of work. Earned in 2022.
       </li>
     </ul>
