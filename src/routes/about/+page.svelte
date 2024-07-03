@@ -42,10 +42,10 @@
             and web development in 2020 instead of becoming a cool kernel hacker or something.
           </p>
           <p class="text-xl leading-relaxed">
-            Nowadays, my personal projects primarily consist of tools for developers, and everyone
-            else. I usually create CLIs for the former and websites for the latter. I see the web as
-            a necessary evil - it's bloated and inefficient beyond reason, but it remains the
-            easiest way to reach users with the lowest barriers of entry and commitment.
+            Nowadays, my personal projects primarily consist of tools to make life easier. My
+            academic interest is in exploring how we can improve the reliability of computer
+            programs through formal mathematical methods - namely, the correspondence between
+            programs, proofs, and categories.
           </p>
           <img
             src="https://github.com/youwen5/youwen5/raw/main/profile-3d-contrib/profile-night-view.svg"
