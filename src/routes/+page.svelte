@@ -6,6 +6,7 @@
   import Typewriter from 'svelte-typewriter'
 
   let homelabStatus: 'checking' | 'failed' | 'unknown' | 'operational' = 'checking'
+  let showFortune = false
 
   onMount(async () => {
     const timeoutPromise = new Promise<Response>((_, reject) =>
@@ -38,22 +39,22 @@
   <meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<main class="max-w-3xl mx-auto py-14 mt-14 sm:mt-18 px-4">
-  <Typewriter mode="scramble" scrambleDuration={750}>
+<main class="max-w-3xl mx-auto py-14 sm:mt-18 px-4">
+  <Typewriter interval={75}>
     <h1 class="text-4xl tracking-tight sm:text-6xl font-bold">👋 Hi. I'm Youwen.</h1>
   </Typewriter>
   <div class="mt-10">
     <Card.Root class="p-4">
       <span class="inline-flex gap-6 align-center font-mono">
         <p class="text-2xl md:text-3xl">sh-5.2$</p>
-        <Typewriter cursor mode="cascade" interval={200}>
+        <Typewriter cursor mode="cascade" interval={300}>
           <h2 class="text-2xl md:text-3xl">uname -a</h2>
         </Typewriter>
       </span></Card.Root
     >
     <br />
     <p class="sm:text-2xl text-xl leading-relaxed mt-2">
-      I'm a first-year studying math at the <a class="link" target="_blank" href="https://ucsb.edu"
+      I'm a first-year math student at the <a class="link" target="_blank" href="https://ucsb.edu"
         >University of California, Santa Barbara</a
       >. Before that, I built robots with
       <a class="link" href="https://github.com/Team-1280">Team 1280</a>. In my spare time, I hack on
@@ -80,7 +81,7 @@
     >
   </div>
   <Card.Root class="p-4">
-    <span class="inline-flex gap-6 align-center font-mono">
+    <span class="inline-flex gap-4 align-center font-mono">
       <p class="text-lg sm:text-xl overflow-x-auto">sh-5.2$</p>
       <p class="text-lg sm:text-xl overflow-x-auto">ls -l /home/youwen</p>
     </span></Card.Root
@@ -111,8 +112,28 @@
       </Card.Header>
       <Card.Content>
         This section will probably contain a feed of new projects, blog posts, and other stuff that
-        I've deemed "ready to display". For now, it has this text, because I'm too lazy to actually
-        implement this feature right now.
+        I've deemed "ready to display". For now, because I'm too lazy to actually implement this
+        feature right now, try this instead:
+        <div class="inline-flex gap-2 w-full mt-4">
+          <Card.Root class="py-2 px-4 w-fit">
+            <span class="inline-flex gap-3 align-center font-mono">
+              <p class="text-md overflow-x-auto">sh-5.2$</p>
+              <p class="text-md overflow-x-auto">fortune</p>
+            </span></Card.Root
+          >
+          <Button variant="secondary" size="lg" on:click={() => (showFortune = true)}>Enter</Button>
+        </div>
+        {#if showFortune}
+          <Card.Root class="font-mono w-full mt-2">
+            <Card.Header>Your fortune:</Card.Header>
+            <Card.Content>
+              <Typewriter
+                >In civilizations without monads, dreams dry up, mutation takes the place of purity
+                and the Rustaceans take the place of Hasklars. - Simon Haskal</Typewriter
+              >
+            </Card.Content>
+          </Card.Root>
+        {/if}
       </Card.Content>
     </Card.Root>
     <Card.Root class="col-span-2 sm:col-span-1">
