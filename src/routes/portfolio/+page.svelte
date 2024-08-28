@@ -12,7 +12,7 @@
   <meta name="author" content="Youwen Wu" />
 </svelte:head>
 
-<div class="md:dots-background py-12">
+<div class="py-12">
   <main class="px-4 mx-auto max-w-5xl bg-background rounded-lg py-4">
     <h1 class="font-serif text-5xl font-medium tracking-tight">
       Portfolio

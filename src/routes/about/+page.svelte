@@ -7,7 +7,7 @@
   <title>About | Youwen Wu</title>
 </svelte:head>
 
-<main class="dots-background">
+<main>
   <div class="max-w-3xl mx-auto pb-14 pt-6 md:py-14 px-2 sm:px-8 justify-center">
     <Card.Root class="sm:px-6 px-0">
       <Card.Header class="inline-flex items-center">
