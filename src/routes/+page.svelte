@@ -44,10 +44,10 @@
     <h1 class="text-4xl tracking-tight sm:text-6xl font-bold">👋 Hi. I'm Youwen.</h1>
   </Typewriter>
   <div class="mt-10">
-    <Card.Root class="p-4">
+    <Card.Root class="p-4 h-fit">
       <span class="inline-flex gap-6 align-center font-mono">
         <p class="text-2xl md:text-3xl">sh-5.2$</p>
-        <Typewriter cursor mode="cascade" interval={300}>
+        <Typewriter cursor mode="cascade" interval={300} keepCursorOnFinish>
           <h2 class="text-2xl md:text-3xl">uname -a</h2>
         </Typewriter>
       </span></Card.Root
