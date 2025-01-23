@@ -13,8 +13,8 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@playwright/test": "^1.49.0",
-    "@sveltejs/kit": "^2.9.0",
+    "@playwright/test": "^1.49.1",
+    "@sveltejs/kit": "^2.16.1",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@types/eslint": "^8.56.12",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -23,16 +23,16 @@
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.46.1",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.1",
     "prettier": "^3.4.2",
-    "prettier-plugin-svelte": "^3.3.2",
+    "prettier-plugin-svelte": "^3.3.3",
     "svelte": "^4.2.19",
     "svelte-check": "^3.8.6",
     "svelte-typewriter": "^3.2.3",
-    "tailwindcss": "^3.4.16",
+    "tailwindcss": "^3.4.17",
     "tslib": "^2.8.1",
-    "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14"
   },
   "type": "module",
   "trustedDependencies": [
@@ -42,12 +42,12 @@
     "@sveltejs/adapter-vercel"
   ],
   "dependencies": {
-    "@fontsource/geist-mono": "^5.1.0",
+    "@fontsource/geist-mono": "^5.1.1",
     "@fontsource/geist-sans": "^5.1.0",
-    "@fontsource/merriweather": "^5.1.0",
+    "@fontsource/merriweather": "^5.1.1",
     "@svelte-put/toc": "^5.0.2",
-    "@sveltejs/adapter-vercel": "^5.5.0",
-    "@types/node": "^20.17.9",
+    "@sveltejs/adapter-vercel": "^5.5.3",
+    "@types/node": "^20.17.14",
     "bits-ui": "^0.21.16",
     "clsx": "^2.1.1",
     "coredump": "link:",
@@ -64,7 +64,7 @@
     "remark-sectionize": "^2.1.0",
     "svelte-radix": "^1.1.1",
     "svelte-sonner": "^0.3.28",
-    "tailwind-merge": "^2.5.5",
+    "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.2.1",
     "toml": "^3.0.0",
     "unified": "^11.0.5",
