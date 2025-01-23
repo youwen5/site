@@ -22,10 +22,13 @@
       Here's some of the stuff I've worked on which I think is notable or interesting enough to
       write about.
     </p>
+    <p class="text-xl mt-4">
+      You can also view my <a href="/cv.pdf" class="link">CV directly</a>.
+    </p>
+
     <p class="leading-loose text-lg mt-4">
       Quick links: <a class="link mx-1" href="#projects">Projects.</a>
       <a class="link mx-1" href="#research">Research.</a>
-      <a class="link mx-1" href="#certifications">Certifications.</a>
     </p>
     <h2 id="projects" class="text-4xl font-serif font-medium mt-8">Projects</h2>
     <hr class="w-32 mt-1 h-1 bg-muted-foreground rounded-lg" />
