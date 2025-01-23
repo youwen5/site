@@ -16,10 +16,24 @@
       </Card.Header>
       <Card.Content class="gap-8">
         <div class="space-y-4">
-          <p class="text-2xl font-semibold">
-            Hi. I'm Youwen. My foremost passion is writing - code, math, and words. I strive for
-            elegant code, beautiful math, and authentic prose.
+          <p class="text-2xl font-semibold">Hi. I'm Youwen.</p>
+          <p class="text-xl leading-relaxed">
+            I generally spend at least half of my time theorizing about abstract vapid nonsense in
+            mathematics and equally useless nonsense in computing.
           </p>
+          <p class="text-xl leading-relaxed">
+            The rest of my time is spent pursuing more fruitful endeavors such as writing software
+            and spending an inordinate amount of time optimizing my systems.
+          </p>
+          <p class="text-xl leading-relaxed">
+            I'm deeply committed to the craft of software engineering. In fact I am constantly
+            analyzing and predicting the latest trends of the industry so that I can do the exact
+            opposite.
+          </p>
+          <h2 class="text-3xl font-semibold tracking-tight">
+            computing.
+            <div class="w-24 h-1.5 rounded-lg bg-muted-foreground mt-1" />
+          </h2>
           <p class="text-xl leading-relaxed">
             I put most worthwhile things I do on my <a
               href="https://github.com/youwen5"
@@ -30,88 +44,14 @@
             here on this site. You can skip down to my
             <a class="link" href="#contact">contact info</a>, or keep reading.
           </p>
-          <h2 class="text-3xl font-semibold tracking-tight">
-            coding.
-            <div class="w-24 h-1.5 rounded-lg bg-muted-foreground mt-1" />
-          </h2>
-          <p class="text-xl leading-relaxed">
-            I learned how to code when I was in 3rd grade (around 8-9 years old). Regrettably, I am
-            not a gifted genius and did not build a massive open source empire nor did I found a
-            startup before the age of 12. My projects consisted principally of crummy games or
-            terrible websites. My biggest regret is spending the pandemic lockdown learning React
-            and web development in 2020 instead of becoming a cool kernel hacker or something.
-          </p>
-          <p class="text-xl leading-relaxed">
-            Nowadays, my personal projects primarily consist of tools to make life easier. My
-            academic interest is in exploring how we can improve the reliability of computer
-            programs through formal mathematical methods - namely, the correspondence between
-            programs, proofs, and categories.
-          </p>
-          <img
-            src="https://github.com/youwen5/youwen5/raw/main/profile-3d-contrib/profile-night-view.svg"
-            alt="github activity graph"
-            class="rounded-lg dark:block hidden"
-          />
-          <img
-            src="https://github.com/youwen5/youwen5/raw/main/profile-3d-contrib/profile-green-animate.svg"
-            alt="github activity graph"
-            class="rounded-lg dark:hidden"
-          />
-          <h2 class="text-3xl font-semibold tracking-tight">
-            hacking.
-            <div class="w-24 h-1.5 rounded-lg bg-muted-foreground mt-1" />
-          </h2>
-          <p class="text-xl leading-relaxed">
-            Most people I know in real life think that I am some kind of hacker - likely because
-            they once saw me open up a text terminal and update my packages with <code>pacman</code
-            >. I proclaim myself a hacker because I once learned how to create shoddy CRUD web
-            applications with fad web technologies and believe that places me in the same group as
-            Torvalds and the other hackers who build actual software.
-          </p>
-          <img
-            class="w-[350px] rounded-lg"
-            src="https://media.tenor.com/XUD0K8qLJYsAAAAe/how-linux-users-install-a-web-browser-linux.png"
-            alt="linux users installing a web browser"
-          />
-          <p class="text-xl leading-relaxed">
-            I subscribe to <a href="https://stallman.org/articles/on-hacking.html" class="link"
-              >this definition</a
-            >
-            of hacking, though, by which I <em>am</em> deemed a hacker.
-          </p>
-          <h2 class="text-3xl font-semibold tracking-tight">
-            math.
-            <div class="w-24 h-1.5 rounded-lg bg-muted-foreground mt-1" />
-          </h2>
-          <p class="text-xl leading-relaxed">
-            I learn about math I find interesting as a hobby. I also happen to be pursuing it an
-            undergraduate degree in it, soon.
-          </p>
-          <p class="text-xl leading-relaxed">
-            I tried doing math competitions in middle and early high school before I realized that
-            it wasn't for me (that's my way of saying that I couldn't hope to compete with the
-            prodigies). Still, I wholly recommend that anyone who likes math take a look at <a
-              href="https://artofproblemsolving.com/"
-              class="link">The Art of Problem Solving</a
-            > before stepping into calculus and beyond, as mathematical intuition and insight is magnitudes
-            more valuable than a shallow familiarity with formulas or integration methods.
-          </p>
-          <h2 class="text-3xl font-semibold tracking-tight">
-            other stuff.
-            <div class="w-24 h-1.5 rounded-lg bg-muted-foreground mt-1" />
-          </h2>
-          <p class="text-xl leading-relaxed">
-            Let's see. I play guitar, although I haven't had much time lately. I play video games
-            sometimes, <a href="https://steamcommunity.com/id/couscousdude/" class="link"
-              >here's my Steam profile</a
-            >.
-          </p>
           <p class="text-xl leading-relaxed">
             If for whatever reason you're interested in the tools I use on my computer, I have a <a
               class="link"
               href="/about/computing">brief page about it</a
-            >. I'm legally obligated to notify you that I run Arch Linux with a tiling window
-            manager and Neovim.
+            >. I maintain a personal purely functional Linux distribution of sorts called
+            <a href="https://github.com/youwen5/liminalOS" class="link">liminalOS</a>, as well as an
+            extensive hand-rolled purely functional
+            <a href="https://github.com/youwen5/viminal2" class="link">Neovim configuration</a>.
           </p>
           <p class="text-xl leading-relaxed">
             This site contains a <a class="link" href="/colophon">colophon</a>, for those interested

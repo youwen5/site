@@ -5,6 +5,9 @@
 <main class="container max-w-5xl">
   <div class="py-12 space-y-4">
     <h1 class="text-4xl font-medium tracking-tight">My Computing Setup</h1>
+    <em class="text-3xl text-red-500"
+      >This page is currently outdated and will be updated in the future (when I feel like it)!</em
+    >
     <p>
       I'm generally very particular about how I use my computer and the software that runs on it. I
       don't always configure my tools in the most "user-friendly" way, but rather the most efficient
