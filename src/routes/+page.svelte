@@ -91,16 +91,18 @@
         I'm reachable at any of the platforms below, but a good place to start if I don't know you
         is via email, which I always respond to.
         <Socials />
-        <p class="mt-2">Fellow Linux geeks can download my PGP key from</p>
-        <a
-          href="https://keys.openpgp.org/vks/v1/by-fingerprint/8F5E6C1AF90976CA7102917A865658ED1FE61EC3"
-          class="link">OpenPGP</a
-        >,
-        <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x865658ED1FE61EC3" class="link"
-          >MIT</a
-        >,
-        <a href="https://github.com/youwen5.gpg" class="link">GitHub</a>, or my personal
-        <a href="https://code.youwen.dev/youwen5.gpg" class="link">Git forge</a>.
+        <p class="mt-2">
+          Fellow Linux geeks can download my PGP key from
+          <a
+            href="https://keys.openpgp.org/vks/v1/by-fingerprint/8F5E6C1AF90976CA7102917A865658ED1FE61EC3"
+            class="link">OpenPGP</a
+          >,
+          <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x865658ED1FE61EC3" class="link"
+            >MIT</a
+          >,
+          <a href="https://github.com/youwen5.gpg" class="link">GitHub</a>, or my personal
+          <a href="https://code.youwen.dev/youwen5.gpg" class="link">Git forge</a>.
+        </p>
       </Card.Content>
     </Card.Root>
     <Card.Root class="col-span-2 sm:col-span-1">
