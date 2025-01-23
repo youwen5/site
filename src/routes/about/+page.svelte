@@ -39,7 +39,8 @@
               href="https://github.com/youwen5"
               class="link">GitHub</a
             >. I write over at a blog called
-            <a class="link" href="https://blog.youwen.dev">Gradient Ascent</a>. You can check out my
+            <a class="link" href="https://blog.youwen.dev">Conditional Finality</a>. You can check
+            out my
             <a class="link" href="/portfolio">portfolio</a>
             here on this site. You can skip down to my
             <a class="link" href="#contact">contact info</a>, or keep reading.
