@@ -155,5 +155,34 @@
         </span>
       </Card.Footer>
     </Card.Root>
+    <Card.Root class="col-span-2">
+      <Card.Header></Card.Header>
+      <Card.Content class="flex items-center gap-4 flex-col sm:flex-row">
+        <img
+          src="https://m.media-amazon.com/images/I/61xNnNOEppL._AC_UF1000,1000_QL80_.jpg"
+          alt="a basic course in algebraic topology"
+          class="rounded-sm flex-shrink max-h-80 shadow-md"
+        />
+        <div class="col-span-3 space-y-2 min-w-20 flex-grow">
+          <p>
+            If I were a Springer-Verlag Graduate Text in Mathematics, I would be William S. Massey's <b
+              ><i>A Basic Course in Algebraic Topology</i></b
+            >.
+          </p>
+          <p>
+            I am intended to serve as a textbook for a course in algebraic topology at the beginning
+            graduate level. The main topics covered are the classification of compact 2-manifolds,
+            the fundamental group, covering spaces, singular homology theory, and singular
+            cohomology theory. These topics are developed systematically, avoiding all unecessary
+            definitions, terminology, and technical machinery. Wherever possible, the geometric
+            motivation behind the various concepts is emphasized.
+          </p>
+          <p>
+            Which Springer GTM would <i>you</i> be?
+            <a href="http://math.jhu.edu/~savitt/GTM.html" class="link">The Springer GTM Test</a>
+          </p>
+        </div>
+      </Card.Content>
+    </Card.Root>
   </div>
 </main>
