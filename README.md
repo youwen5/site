@@ -1,6 +1,6 @@
 # site
 
-> [!INFO]
+> [!NOTE]
 > I am no longer using this website and this repo is up for archival purposes
 > exclusively. See my current website [here](https://web.youwen.dev).
 
