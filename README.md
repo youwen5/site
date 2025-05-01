@@ -1,5 +1,11 @@
 # site
 
+> [!INFO]
+> I am no longer using this website and this repo is up for archival purposes
+> exclusively. See my current website [here](https://web.youwen.dev).
+
+---
+
 [![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
 
 My personal website. Written in [SvelteKit](https://kit.svelte.dev) using
